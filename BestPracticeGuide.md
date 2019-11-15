@@ -28,15 +28,15 @@ The second part, [Best Practice for specific fields](#best-practice-for-specific
 
 The third part consists of four complete examples.
 
-## [A. General Best Practice](https://github.com/UB-LMU/DataCite_BestPracticeGuide/BestPracticeGuide.md#general-best-practice)
+## [A. General Best Practice](#general-best-practice)
 
-* [What do the metadata describe?](https://github.com/UB-LMU/DataCite_BestPracticeGuide/BestPracticeGuide.md#what-do-the-metadata-describe)
-* [What is the language of the metadata?](https://github.com/UB-LMU/DataCite_BestPracticeGuide/BestPracticeGuide.md#what-is-the-language-of-the-metadata)
-* [How should I specify an institution?](https://github.com/UB-LMU/DataCite_BestPracticeGuide/BestPracticeGuide.md#how-should-i-specify-an-institution)
-* [How should I specify a person?](https://github.com/UB-LMU/DataCite_BestPracticeGuide/BestPracticeGuide.md#how-should-i-specify-a-person)
-* [How should I handle different versions of research data?](https://github.com/UB-LMU/DataCite_BestPracticeGuide/BestPracticeGuide.md#how-should-i-handle-different-versions-of-the-same-research-data)
+* [What do the metadata describe?](#what-do-the-metadata-describe)
+* [What is the language of the metadata?](#what-is-the-language-of-the-metadata)
+* [How should I specify an institution?](#how-should-i-specify-an-institution)
+* [How should I specify a person?](#how-should-i-specify-a-person)
+* [How should I handle different versions of research data?](#how-should-i-handle-different-versions-of-the-same-research-data)
 
-## [B. Best Practice for specific fields](https://github.com/UB-LMU/DataCite_BestPracticeGuide/BestPracticeGuide.md#best-practice-for-specific-fields)
+## [B. Best Practice for specific fields](#best-practice-for-specific-fields)
 
 * [1 Identifier](#identifier)
 * [2 Title](#title)
@@ -684,13 +684,13 @@ __Example__
 ### Bayerisches Musiker-Lexikon Online (BMLO)
 The Digital Encyclopedia of Bavarian Musicians (Bayerisches Musiker-Lexikon Online, short BMLO) refers as a musicological model project. The BMLO offers a digital biographical dictionary focussing on music science, furthermore it enriches the presented personalities of Bavarian history of music by implementing further information, gathered from biographical literature, archives, libraries and digital collections. In this way, the BMLO constitutes the core of an interconnected, virtual cluster for history of music. Currently, 24621 out of a total of 27818 records is presented on the web. As parts of this semantic network should also be mentioned the Munich Dictionary of Musik (Münchner Musiklexikon, short MUK), which serves since 2010 as a encyclopedia for music corporations with a linkage to Munich, as well as LOCI, a geographic database for music, culture and history, founded in 2012.
 
-[BMLO metadata example [external link]](https://github.com/UB-LMU/DataCite_BestPracticeGuide/examples/example_1_bmlo.xml)
+[BMLO metadata example](https://github.com/UB-LMU/DataCite_BestPracticeGuide/blob/master/examples/example_1_bmlo.xml)
 
 ### VerbaAlpina
 The project VerbaAlpina seeks to investigate the Alpine region in its cultural and historical linguistic unity from a transnational perspective through selective analyses. For this purpose, a comprehensive, multilingual research environment will be set up using up-to-date media technology (database, georeferenced cartography, internet, data collection with social software). The guiding intention is to analyze already existing data from linguistic atlases and dictionaries (partly difficult of access) which is first structured and linguistically annotated according to certain principles to fit the database of VerbaAlpina.
 
-[Verba Alpina metadata example 1 [external link]](https://github.com/UB-LMU/DataCite_BestPracticeGuide/examples/example_2_va.xml)
-[Verba Alpina metadata example 2 [external link]](https://github.com/UB-LMU/DataCite_BestPracticeGuide/examples/example_3_va.xml)
+[Verba Alpina metadata example 1](https://github.com/UB-LMU/DataCite_BestPracticeGuide/blob/master/examples/example_2_va.xml)
+[Verba Alpina metadata example 2](https://github.com/UB-LMU/DataCite_BestPracticeGuide/blob/master/examples/example_3_va.xml)
 
 ### ClimEx
 The ClimEx project investigates the effects of climate change on meteorological and hydrological extreme events and implications for water management in Bavaria and Québec.
@@ -702,4 +702,4 @@ It especially consists of two new aspects:
 
 ClimEx further strengthens the international collaboration between Bavaria and Québec as research facilities, universities and public water agencies intensify their former cooperation approaches.
 
-[ClimEx metadata example [external link]](https://github.com/UB-LMU/DataCite_BestPracticeGuide/examples/example_4_climex.xml)
+[ClimEx metadata example [external link]](https://github.com/UB-LMU/DataCite_BestPracticeGuide/blob/master/examples/example_4_climex.xml)
