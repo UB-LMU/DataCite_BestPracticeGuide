@@ -1,0 +1,148 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://datacite.org/schema/kernel-4" xsi:schemaLocation="http://datacite.org/schema/kernel-4 http://schema.datacite.org/meta/kernel-4/metadata.xsd">
+<identifier identifierType="DOI">n/a</identifier>
+  <creators>
+    <creator>
+      <creatorName>Martin Leduc</creatorName>
+      <givenName>Martin</givenName>
+      <nameIdentifier nameIdentifierScheme="ORCID" schemeURI="http://orcid.org/">0000-0002-1596-3788</nameIdentifier>
+      <affiliation affiliation="Consortium Ouranos"/>
+    </creator>
+    <creator>
+      <creatorName>Michele Giguère</creatorName>
+      <givenName>Michele</givenName>
+      <nameIdentifier nameIdentifierScheme="ORCID" schemeURI="http://orcid.org/">0000-0002-1091-3140</nameIdentifier>
+      <affiliation affiliation="Consortium Ouranos"/>
+    </creator>
+    <creator>
+      <creatorName>Gilbert Brietzke</creatorName>
+      <givenName>Gilbert</givenName>
+      <affiliation affiliation="Leibniz Supercomputing Centre"/>
+    </creator>
+  </creators>
+  <titles>
+    <title>ClimEx Simulation: Total cloud fraction (Europe | September 2050 | kba)</title>
+    <title titleType="alternativeTitle">clt_EUR-11_CCCma-CanESM2_rcp85_r1-r1i1p1_OURANOS-CRCM5_kba_day_205009</title>
+  </titles>
+  <publisher>Leibniz Supercomputing Centre</publisher>
+  <publicationYear>2019</publicationYear>
+  <subjects>
+    <subject subjectScheme="Dewey Decimal Classification" schemeURI="http://dewey.info">550</subject>
+    <subject subjectScheme="DFG" schemeURI="www.dfg.de">313</subject>
+    <subject subjectScheme="wikidata" schemeURI="https://www.wikidata.org/wiki/">Q5135703</subject>
+    <subject subjectScheme="geonames" schemeURI="https://www.geonames.org/">6255148</subject>
+  </subjects>
+  <contributors>
+    <contributor contributorType="ProjectLeader">
+      <contributorName>Ralf Ludwig</contributorName>
+      <givenName>Ralf</givenName>
+      <nameIdentifier nameIdentifierScheme="ORCID" schemeURI="http://orcid.org/">0000-0002-4225-4098</nameIdentifier>
+      <affiliation affiliation="Ludwig-Maximilians-Universitaet Muenchen"/>
+    </contributor>
+    <contributor contributorType="ProjectMember">
+      <contributorName>Anne Frigon</contributorName>
+      <givenName>Anne</givenName>
+      <nameIdentifier nameIdentifierScheme="ORCID" schemeURI="http://orcid.org/">0000-0002-3621-214X</nameIdentifier>
+      <affiliation affiliation="Consortium Ouranos"/>
+    </contributor>
+    <contributor contributorType="ProjectMember">
+      <contributorName>Marco Braun</contributorName>
+      <givenName>Marco</givenName>
+      <affiliation affiliation="Ludwig-Maximilians-Universitaet Muenchen"/>
+    </contributor>
+    <contributor contributorType="ProjectMember">
+      <contributorName>Francois Brissette</contributorName>
+      <givenName>Francois</givenName>
+      <affiliation affiliation="École de technologie supérieure"/>
+    </contributor>
+    <contributor contributorType="ProjectMember">
+      <contributorName>Holger Komischke</contributorName>
+      <givenName>Holger</givenName>
+      <affiliation affiliation="Bayerisches Landesamt fuer Umwelt"/>
+    </contributor>
+    <contributor contributorType="ProjectMember">
+      <contributorName>Dieter Kranzlmueller</contributorName>
+      <givenName>Dieter</givenName>
+      <nameIdentifier nameIdentifierScheme="Scpopus Author ID" schemeURI="https://www.scopus.com/">26643233300</nameIdentifier>
+      <affiliation affiliation="Leibniz Supercomputing Centre"/>
+    </contributor>
+    <contributor contributorType="Reasearcher">
+      <contributorName>Jean-Luc Martel</contributorName>
+      <givenName>Jean-Luc</givenName>
+      <nameIdentifier nameIdentifierScheme="ORCID" schemeURI="http://orcid.org/">0000-0001-7142-6875</nameIdentifier>
+      <affiliation affiliation="École de technologie supérieure"/>
+    </contributor>
+    <contributor contributorType="ProjectMember">
+      <contributorName>Simon Ricard</contributorName>
+      <givenName>Simon</givenName>
+      <affiliation affiliation="Ministère du Développement durable, de l'Environnement, de la Faune et des Parcs"/>
+    </contributor>
+    <contributor contributorType="Researcher">
+      <contributorName>Franz-Josef Schmid</contributorName>
+      <givenName>Franz-Josef</givenName>
+      <affiliation affiliation="Ludwig-Maximilians-Universitaet Muenchen"/>
+    </contributor>
+    <contributor contributorType="ProjectMember">
+      <contributorName>Richard Turcotte</contributorName>
+      <givenName>Richard</givenName>
+      <nameIdentifier nameIdentifierScheme="ORCID" schemeURI="http://orcid.org/">0000-0002-5907-435X</nameIdentifier>
+      <affiliation affiliation="Ministère du Développement durable, de l'Environnement, de la Faune et des Parcs"/>
+    </contributor>
+    <contributor contributorType="Reasearcher">
+      <contributorName>Fabian von Trentini</contributorName>
+      <givenName>Fabian</givenName>
+      <nameIdentifier nameIdentifierScheme="ORCID" schemeURI="http://orcid.org/">0000-0001-9522-9323</nameIdentifier>
+      <affiliation affiliation="Ludwig-Maximilians-Universitaet Muenchen"/>
+    </contributor>
+    <contributor contributorType="ProjectMember">
+      <contributorName>Jens Weismueller</contributorName>
+      <givenName>Jens</givenName>
+      <nameIdentifier nameIdentifierScheme="ORCID" schemeURI="http://orcid.org/">0000-0002-0252-5826</nameIdentifier>
+      <affiliation affiliation="Leibniz Supercomputing Centre"/>
+    </contributor>
+    <contributor contributorType="Reasearcher">
+      <contributorName>Florian Willkofer</contributorName>
+      <givenName>Florian</givenName>
+      <nameIdentifier nameIdentifierScheme="ORCID" schemeURI="http://orcid.org/">0000-0002-7575-0178</nameIdentifier>
+      <affiliation affiliation="Ludwig-Maximilians-Universitaet Muenchen"/>
+    </contributor>
+    <contributor contributorType="Reasearcher">
+      <contributorName>Raul R. Wood</contributorName>
+      <givenName>Raul R.</givenName>
+      <nameIdentifier nameIdentifierScheme="ORCID" schemeURI="http://orcid.org/">0000-0003-4172-7719</nameIdentifier>
+      <affiliation affiliation="Ludwig-Maximilians-Universitaet Muenchen"/>
+    </contributor>
+  </contributors>
+  <dates>
+    <date dateType="Created">2016</date>
+    <date dateType="Other">2050-09-01T00:00:00</date>
+  </dates>
+  <resourceType resourceTypeGeneral="Dataset">Dataset/Regional Climate Simulation</resourceType>
+  <relatedIdentifiers>
+    <relatedIdentifier relatedIdentifierType="DOI" relationType="IsDescribedBy">10.1175/JAMC-D-18-0021.1</relatedIdentifier>
+  </relatedIdentifiers>
+  <sizes>
+    <size>6197732B</size>
+  </sizes>
+  <formats>
+    <format>application/tar</format>
+    <format>application/netcdf</format>
+    <format>text/plain</format>
+  </formats>
+  <descriptions>
+    <description descriptionType="Abstract">The ClimEx project is based on a longstanding collaboration between Bavaria and Québec to address common issues related to climate change impacts, notably in      hydrology. In the scope of this project, a 50-member ensemble of climate-change simulations was produced using the Canadian Regional Climate Model (CRCM5) driven by the CanESM2 global model from 1950 to 2100 under RCP8.5. The 50 simulations differ by slight perturbations in the initial conditions of CanESM2, thus allowing to explore independent trajectories of the natural climate variability and to study extreme events with return periods of hundreds of years. Dynamical downscaling with CRCM5 was performed over two regional domains, namely Europe and northeastern North America, which are defined using a 12-km resolution grid mesh. Model results (over 50 variables) for each domain were outputted on an analysis grid of 280x280 points with an archival time period that varies between one hour (for precipitation only), three hours (e.g., surface-air temperature) and one day (e.g., daily maximum wind speed).
+
+This data product includes a time series for the following variable
+* Total cloud fraction (clt,)measured in % (percentage) with the following time resolution: day</description>
+  </descriptions>
+  <fundingReferences>
+    <fundingReference>
+      <funderName>Bavarian State Ministry for the Environment and Consumer Protection</funderName>
+    </fundingReference>
+  </fundingReferences>
+  <geoLocations>
+    <geoLocation>
+      <geoLocationPlace geoLocationPlace="Europe"/>
+    </geoLocation>
+  </geoLocations>
+</resource>
