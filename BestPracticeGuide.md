@@ -477,8 +477,8 @@ __Example__
 * Always specify the used language (*xml:lang attribute*) of each description.
 * If there are descriptions in more than one language, the content may be different (no literal translation required).
 * Each description has a limit of 300 words.
-* Description of *descriptionType* "Methods" is optional. Best practice: use keywords from [this controlled list](https://github.com/UB-LMU/DataCite_BestPracticeGuide/Description_Methods.md), separated by comma. This list will either be extended in the future or replaced by a controlled vocabulary (in this case mappings will be provided).
-* Description of *descriptionType* "TechnicalInfo" is optional. Best practice: use keywords from [theis controlled list](https://github.com/UB-LMU/DataCite_BestPracticeGuide/Description_TechnicalInfo.md), separated by comma. This list will either be extended in the future or replaced by a controlled vocabulary (in this case mappings will be provided). Additionally, data producers could consider creating a README and link it via the [RelatedIdentifier](#relatedIdentifier) field.
+* Description of *descriptionType* "Methods" is optional. Best practice: use keywords from [this controlled list](https://github.com/UB-LMU/DataCite_BestPracticeGuide/blob/master/Description_Methods.md), separated by comma. This list will either be extended in the future or replaced by a controlled vocabulary (in this case mappings will be provided).
+* Description of *descriptionType* "TechnicalInfo" is optional. Best practice: use keywords from [this controlled list](https://github.com/UB-LMU/DataCite_BestPracticeGuide/blob/master/Description_TechnicalInfo.md), separated by comma. This list will either be extended in the future or replaced by a controlled vocabulary (in this case mappings will be provided). Additionally, data producers could consider creating a README and link it via the [RelatedIdentifier](#relatedIdentifier) field.
 * These types are not recommended:
     * SeriesInformation
     * TableOfContents
