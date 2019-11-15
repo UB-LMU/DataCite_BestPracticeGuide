@@ -1,5 +1,5 @@
 all:
-	sed '/^## \[A\./,/^## \[C. Examples/d' bestpractice.md | \
+	sed '/^## \[A\./,/^## \[C. Examples/d' BestPracticeGuide.md | \
 	sed 's/^# DataCite Best Practice Guide//' | \
 	sed 's/^#//' | \
 	pandoc \
