@@ -345,7 +345,7 @@ __Example__
 
 ### Contributor
 * This field is recommended if the data are published with a free license.
-* If the license specified via the [Rights](#rights) field restricts the usage in a way, that possibly necessitates interaction with the rightsholder, contributor of type *RightsHolder* must be specified. Examples of free licenses are CC-0, CC-BY, or CC-SA; non-free licenses are for example CC-NC or CC-ND.
+* If the license specified via the [Rights](#rights) field restricts the usage in a way, that possibly necessitates interaction with the rightsholder, contributor of type "RightsHolder" must be specified. Examples of free licenses are CC-0, CC-BY, or CC-SA; non-free licenses are for example CC-NC or CC-ND.
 * Consult the section on [how to specify a person](#how-should-i-specify-a-person).
 * If contributors change over versions, the version metadata should only include the actual contributors of the updated version. A metadata set representing all versions of the dataset (including links to the versions) can include all contributors with the dates of participation, see [how to handle different versions of the research data](#how-should-i-handle-different-versions-of-the-same-research-data).
 * Duplicate mentions between Creator and Contributor are unproblematic.
