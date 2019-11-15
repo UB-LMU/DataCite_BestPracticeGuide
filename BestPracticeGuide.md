@@ -1,10 +1,15 @@
 % DataCite Best Practice Guide
-% Sonja Kümmet (UB LMU, sonja.kuemmet@ub.uni-muenchen.de)
-  Stephan Lücke (VerbAlpina, luecke@lmu.de)
-  Julian Schulz (ITG, julian.schulz@lmu.de)
-  Martin Spenger (UB LMU, martin.spenger@ub.uni-muenchen.de)
-  Tobias Weber (LRZ, mail@tgweber.de)
-% 30.10.2019
+% Sonja Kümmet, Universitätsbibliothek der LMU
+  (sonja.kuemmet@ub.uni-muenchen.de https://orcid.org/0000-0002-8954-0200)
+  Stephan Lücke, VerbaAlpina und IT-Gruppe Geisteswissenschaften (LMU)
+  (luecke@lmu.de https://orcid.org/0000-0002-5853-1918)
+  Julian Schulz, IT-Gruppe Geisteswissenschaften (LMU)
+  (julian.schulz@lmu.de https://orcid.org/0000-0003-4374-2680)
+  Martin Spenger, Universitätsbibliothek der LMU
+  (martin.spenger@ub.uni-muenchen.de https://orcid.org/0000-0002-8841-5985)
+  Tobias Weber, Leibniz Supercomputing Centre
+  (mail@tgweber.de https://orcid.org/0000-0003-1815-7041)
+% 15.11.2019
 
 
 # DataCite Best Practice Guide
@@ -24,7 +29,7 @@ To create the DataCite-XML file for the project you want to describe, we recomme
 
 The first part, [General Best Practice](#general-best-practice), is a selection of recommendations and obligations when using DataCite in general. It has been written in an FAQ-style (Frequently Asked Questions).
 
-The second part, [Best Practice for specific fields](#best-practice-for-specific-fields), gives more details for each of the 19 metadata fields of the DataCite metadata standard. Note that the following fields are optional/recommended in the DataCite standard, but mandatory according to this guide: [Subject](#subject), [Contributor](#contributor), [Description](#description), and [Rights](#rights).
+The second part, [Best Practice for specific fields](#best-practice-for-specific-fields), gives more details for each of the 19 metadata fields of the DataCite metadata standard. Note that the following fields are optional/recommended in the DataCite standard, but mandatory according to this guide: [Subject](#subject), [Description](#description), and [Rights](#rights).
 
 The third part consists of four complete examples.
 
@@ -339,7 +344,8 @@ __Example__
 ```
 
 ### Contributor
-* This field is mandatory (at least a RightsHolder must be specified). The RightsHolder is the person or institution that owns the rights listed in the field [Rights](#rights).
+* This field is recommended if the data are published with a free license.
+* If the license specified via the [Rights](#rights) field restricts the usage in a way, that possibly necessitates interaction with the rightsholder, contributor of type *RightsHolder* must be specified. Examples of free licenses are CC-0, CC-BY, or CC-SA; non-free licenses are for example CC-NC or CC-ND.
 * Consult the section on [how to specify a person](#how-should-i-specify-a-person).
 * If contributors change over versions, the version metadata should only include the actual contributors of the updated version. A metadata set representing all versions of the dataset (including links to the versions) can include all contributors with the dates of participation, see [how to handle different versions of the research data](#how-should-i-handle-different-versions-of-the-same-research-data).
 * Duplicate mentions between Creator and Contributor are unproblematic.
@@ -357,7 +363,7 @@ __Example__
 |ProjectManager    | *Person officially designated as manager of a project. Project may consist of one or many project teams and sub-teams.*|
 |ProjectMember     | *Person on the membership list of a designated project/project team.* All persons with a contract in the context of the project which produced the resource.|
 |Researcher        | *A person involved in analyzing data or the results of an experiment or formal study. May indicate an intern or assistant to one of the authors who helped with research but who was not so “key” as to be listed as an author.*|
-|RightsHolder      | *Person or institution owning or managing property rights, including intellectual property rights over the resource.* Mandatory; person or institution that owns the rights listed in field [Rights](#rights). |
+|RightsHolder      | *Person or institution owning or managing property rights, including intellectual property rights over the resource.* Mandatory for non-free licenses; person or institution that owns the rights listed in field [Rights](#rights). |
 |WorkPackageLeader | *The Work Package Leader is responsible for ensuring the comprehensive contents, versioning, and availability of the Work Package during the development of the resource.*|
 
 
