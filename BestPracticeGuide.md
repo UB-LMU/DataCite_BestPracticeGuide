@@ -1,7 +1,7 @@
 % DataCite Best Practice Guide
 % Sonja Kümmet, Universitätsbibliothek der LMU
   (sonja.kuemmet@ub.uni-muenchen.de https://orcid.org/0000-0002-8954-0200)
-  Stephan Lücke, VerbaAlpina und IT-Gruppe Geisteswissenschaften (LMU)
+  Stephan Lücke, VerbaAlpina and IT-Gruppe Geisteswissenschaften (LMU)
   (luecke@lmu.de https://orcid.org/0000-0002-5853-1918)
   Julian Schulz, IT-Gruppe Geisteswissenschaften (LMU)
   (julian.schulz@lmu.de https://orcid.org/0000-0003-4374-2680)
@@ -10,6 +10,7 @@
   Tobias Weber, Leibniz Supercomputing Centre
   (mail@tgweber.de https://orcid.org/0000-0003-1815-7041)
 % 15.11.2019
+% Version 1.0
 
 
 # DataCite Best Practice Guide
@@ -22,6 +23,8 @@ It is meant for researchers, IT and library support staff in the context of the 
 * Leibniz Supercomputing Centre
 
 If you wish to publish your research data in one of these institutions, this guide helps to make your submission compliant to best practices in the context of research data management.
+
+This guide is also designed to be reused by other institutions as well.
 
 To create the DataCite-XML file for the project you want to describe, we recommend to you to use our [DataCite-Generator [external link]](https://dhvlab.gwi.uni-muenchen.de/datacite-generator/). This tool is kept in sync with this guideline, safe for transmission times inbetween versions. If you want to create metadata for research data on a scale that is too large for manual procedures, please contact one of the institutions named above.
 
@@ -287,14 +290,14 @@ __Example__
 |Type of Subject | Standard                | Type of standard          | Usage hint |
 |----------------|-------------------------|---------------------------|----------------------------------------------------------------|
 |Discipline      | DDC                     | Classification            | Add 3 digits DDC as specific as possible followed by the English term for the discipline ([Canonical Source [external link]](https://www.oclc.org/content/dam/oclc/dewey/resources/summaries/deweysummaries.pdf)) |
-|Keywords        | Q-IDs/Wikidata AND GND  | Keyword                   | Wikidata and GND terms are both mandatory, including redundancy (if an appropriate entry does not exist contact the ITG). Use [Wikidata-Search [external link]](https://www.wikidata.org) and [GND-Search [external link]](http://swb.bsz-bw.de/DB=2.104/LNG=EN/) to find the appropriate identifiers.
+|Keywords        | Wikidata Q-ID AND GND  | Keyword                   | Wikidata and GND terms are both mandatory, including redundancy (if an appropriate entry does not exist contact the ITG). Use [Wikidata-Search [external link]](https://www.wikidata.org) and [GND-Search [external link]](http://swb.bsz-bw.de/DB=2.104/LNG=EN/) to find the appropriate identifiers.
 
 There should be no overlap between the discipline specifier(s) and the keywords.
 
 #### Geotagging
 Specifying the location via subject is mandatory, if applicable to the resource:
 
-* Canonical source for geonames is the [Geoname Service [external link]](http://www.geonames.org/export/web-services.html) (a registration for API access is necessary).
+* Canonical source for geonames is the [GeoNames Service [external link]](http://www.geonames.org/export/web-services.html) (a registration for API access is necessary).
 * See [GeoLocation section](#geolocation) for a more detailed specification.
 
 #### Additional subject annotations
@@ -414,7 +417,7 @@ __Example__
     * Withdrawn: point in time when the publisher retracts the data publication.
 * For dates describing the period the resource covers use "Other" and add "Coverage" as a description.
 * It is recommended to use the attribute *dateInformation* for disambiguation, if multiple dates with the same type are specified.
-* *CopyRighted* as a *dateType* will not be used.
+* "CopyRighted" as a *dateType* will not be used.
 
 __Example__
 ```xml
@@ -430,36 +433,36 @@ __Example__
 
 ### RelatedIdentifier
 * This field is recommended.
-* The relations are always specified from the perspective of the described resource (if the metadata describe a publication A and this publication cites another publication B, the relation is A cites B and *not* B IsCitedBy A).
+* The relations are always specified from the perspective of the described resource (if the metadata describe a publication A and this publication cites another publication B, the relation is A cites B and not B IsCitedBy A).
 * Only use these *relationTypes*:
 
 |relationType | Definition (Derived from DataCite Metadata Schema v4.3)                | Example | Usage |
 |-----------------------|-------------------------|---------------------------------|------------------------|
-|describes | indicates A describes B | a README "describes" a dataset ||
-|isDescribedBy | indicates A is described by B | a dataset "isDescribedBy" a README ||
-|hasPart | indicates A is a portion of B; may be used for elements of a series | a container "hasPart" a dataset | use to create hierarchical structures |
-|isPartOf | indicates A includes the part B | a dataset "isPartOf" a container | use to create hierarchical structures |
-|hasMetadata | indicates resource A has additional metadata B | a dataset "hasMetadata" | use to add additional metadata to a dataset e.g. domain-specific metadata |
-|isMetadataFor | indicates additional metadata A for a resource B | a metadata file "isMetadataFor" a dataset | use to add additional metadata to a dataset e.g. domain-specific metadata |
-|hasVersion | indicates A has a version B | a dataset "hasVersion" | use for relating a non-versioned or abstract resource to a versioned resource e.g. a snapshot; alternative Usage: Use if exact order of the versions is not known
-|isVersionOf | indicates B is a version of A | a dataset "isVersionOf" of a dataset | use for relating a versioned resource (e.g. a snapshot) to a non-versioned or abstract resource; alternative Usage: Use if exact order of the versions is not known
-|isNewVersionOf | indicates A is a new edition of B, where the new edition has been modified or updated | a dataset "isNewVersionOf" a dataset | use to order versions|
-|isPreviousVersionOf | indicates B is a previous edition of A | a dataset "isPreviousVersionOf" a dataset |use to order versions|
-|isSourceOf | indicates A is a source upon which B is based | a dataset A "isSourceOf" a dataset B | use to express that A has been refined or modified by B |
-|isDerivedFrom | indicates B is a source upon which A is based | a dataset B "isDerivedFrom" a dataset A | use to express that B is the result of refining or modifying the content of A |
-|references | indicates B is used as a source of information for A | an article “references” a dataset ||
-|isReferencedBy | indicates A is used as a source of information by B | a dataset “isReferencedBy” an article ||
-|isVariantFormOf | indicates A is a variant or different form of B | a dataset (xml-file) "isVariantFormOf" a dataset (csv-file) with the same content ||
-|isIdenticalTo | indicates that A is identical to B, for use when there is a need to register two separate instances of the same resource  | a dataset in location A "isIdenticalTo" a dataset in location B | use for a resource that is the same as the registered resource but is saved on another location, maybe another institution.    |
-|isSupplementTo | indicates that A is a supplement to B | a dataset “isSupplementTo” an article ||
-|isSupplementedBy | indicates that B is a supplement to A | an article “isSupplementedBy” a dataset ||
-|documents | indicates A is documentation about B; e.g. points to software documentation | a data management plan (DMP) "documents" a dataset ||
-|isDocumentedBy | indicates B is documentation about/explaining A; e.g. points to software documentation | a dataset "isDocumentedBy" a data management plan (DMP) ||
+|Describes | indicates A describes B | a README "describes" a dataset ||
+|IsDescribedBy | indicates A is described by B | a dataset "IsDescribedBy" a README ||
+|HasPart | indicates A is a portion of B; may be used for elements of a series | a container "HasPart" a dataset | use to create hierarchical structures |
+|IsPartOf | indicates A includes the part B | a dataset "IsPartOf" a container | use to create hierarchical structures |
+|HasMetadata | indicates resource A has additional metadata B | a dataset "HasMetadata" | use to add additional metadata to a dataset e.g. domain-specific metadata |
+|IsMetadataFor | indicates additional metadata A for a resource B | a metadata file "IsMetadataFor" a dataset | use to add additional metadata to a dataset e.g. domain-specific metadata |
+|HasVersion | indicates A has a version B | a dataset "HasVersion" | use for relating a non-versioned or abstract resource to a versioned resource e.g. a snapshot; alternative usage: Use if exact order of the versions is not known
+|IsVersionOf | indicates B is a version of A | a dataset "IsVersionOf" of a dataset | use for relating a versioned resource (e.g. a snapshot) to a non-versioned or abstract resource; alternative Usage: Use if exact order of the versions is not known
+|IsNewVersionOf | indicates A is a new edition of B, where the new edition has been modified or updated | a dataset "IsNewVersionOf" a dataset | use to order versions|
+|IsPreviousVersionOf | indicates B is a previous edition of A | a dataset "IsPreviousVersionOf" a dataset |use to order versions|
+|IsSourceOf | indicates A is a source upon which B is based | a dataset A "IsSourceOf" a dataset B | use to express that A has been refined or modified by B |
+|IsDerivedFrom | indicates B is a source upon which A is based | a dataset B "IsDerivedFrom" a dataset A | use to express that B is the result of refining or modifying the content of A |
+|References | indicates B is used as a source of information for A | an article "References" a dataset ||
+|IsReferencedBy | indicates A is used as a source of information by B | a dataset "IsReferencedBy" an article ||
+|IsVariantFormOf | indicates A is a variant or different form of B | a dataset (xml-file) "IsVariantFormOf" a dataset (csv-file) with the same content ||
+|IsIdenticalTo | indicates that A is identical to B, for use when there is a need to register two separate instances of the same resource  | a dataset in location A "IsIdenticalTo" a dataset in location B | use for a resource that is the same as the registered resource but is saved in another location, maybe another institution    |
+|IsSupplementTo | indicates that A is a supplement to B | a dataset "IsSupplementTo" an article ||
+|IsSupplementedBy | indicates that B is a supplement to A | an article "IsSupplementedBy" a dataset ||
+|Documents | indicates A is documentation about B; e.g. points to software documentation | a data management plan (DMP) "Documents" a dataset ||
+|IsDocumentedBy | indicates B is documentation about/explaining A; e.g. points to software documentation | a dataset "IsDocumentedBy" a data management plan (DMP) ||
 
-* Make sure, that links from the described resource are mirrored in in the referenced resource. For example, make sure that a paper referencing the data includes a formal link to the data set (and vice versa). This also applies to all reciprocal *relationTypes* (e.g. "isNewVersionOf" and "isPreviousVersionOf").
+* Make sure, that links from the described resource are mirrored in in the referenced resource. For example, make sure that a paper referencing the data includes a formal link to the data set (and vice versa). This also applies to all reciprocal *relationTypes* (e.g. "IsNewVersionOf" and "IsPreviousVersionOf").
 * The *relationIdentifierType* offers a list containing the most important identifier types to specify the relation (e.g. DOI, ISSN, PURL, URN).
 * If *relationType* "HasMetadata" is chosen, please specify additionally the *relatedMetadataSchema*, *schemeURI* and *schemeType* (e.g. XSD, DDT) of the related identifier.
-* The publisher may curate the list of *relatedIdentifiers* (e.g. adding relevant related resources overt time on a best effort basis).
+* The publisher may curate the list of *relatedIdentifiers* (e.g. adding relevant related resources over time on a best effort basis).
 
 __Example__
 ```xml
@@ -512,8 +515,8 @@ __Example__
 ### GeoLocation
 * This field is recommended.
 * Describes the resource (e.g. where an image has been taken or where a sensor is located), *not* the related project or institute, if the former is not applicable, do *not* use it for the latter.
-* *geoLocationPlace* must be identical to payload of the according geoname field in the subjects, consult the [geotagging](#geotagging) subsection.
-* Canonical source for coordinates is the [Geoname Service [external link]](http://www.geonames.org/export/web-services.html).
+* *geoLocationPlace* must be identical to payload of the according GeoNames field in the subjects, consult the [geotagging](#geotagging) subsection.
+* Canonical source for coordinates is the [GeoName Service [external link]](http://www.geonames.org/export/web-services.html).
 
 __Examples__
 * geoLocationPlace and geoLocationPolygon:
@@ -645,7 +648,7 @@ Guidance for using a license:
 * Recommendation: [Creative Commons (CC) [external link]](https://creativecommons.org/) as license for data and [Apache 2.0 license [external link]](http://www.apache.org/licenses/LICENSE-2.0) for software.
 * You should not use CC licenses with the NC or ND extension (although submissions with these extensions are accepted).
 * It is recommend to use only one type of licence, not several at the same time.
-* In case both research data and software code need to be licensed in one publication (which is not recommended, consider two data publications), specify the licenses in the order data, software.
+* In case both research data and software code need to be licensed in one publication (which is not recommended, consider two data publications, see [ResourceType](#resourcetype)), specify the licenses in the order data, software.
 * For further license options consult [Choose a license [external link]](https://choosealicense.com/) or the [CC license helper [external link]](https://creativecommons.org/choose/).
 
 __Example__
