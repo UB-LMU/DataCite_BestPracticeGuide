@@ -658,7 +658,7 @@ __Example__
         xml:lang="en-US"
         schemeURI="https://spdx.org/licenses/"
         rightsIdentifierScheme="SPDX"
-        rightsIdentifier="CC0 1.0"
+        rightsIdentifier="CC0-1.0"
         rightsURI="http://creativecommons.org/publicdomain/zero/1.0/"
     />
 </rightsList>
