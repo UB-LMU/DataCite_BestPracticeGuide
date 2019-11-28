@@ -9,9 +9,7 @@
   (martin.spenger@ub.uni-muenchen.de https://orcid.org/0000-0002-8841-5985)
   Tobias Weber, Leibniz Supercomputing Centre
   (mail@tgweber.de https://orcid.org/0000-0003-1815-7041)
-% 15.11.2019
-% Version 1.0
-
+% Version 1.0 (15.11.2019)
 
 # DataCite Best Practice Guide
 
@@ -19,7 +17,7 @@ This document is a guideline to use the [DataCite Metadata Schema [external link
 
 It is meant for researchers, IT and library support staff in the context of the following institutions:
 
-* Ludwig-Maximilian-Universität München
+* Ludwig-Maximilians-Universität München
 * Leibniz Supercomputing Centre
 
 If you wish to publish your research data in one of these institutions, this guide helps to make your submission compliant to best practices in the context of research data management.
@@ -290,7 +288,7 @@ __Example__
 |Type of Subject | Standard                | Type of standard          | Usage hint |
 |----------------|-------------------------|---------------------------|----------------------------------------------------------------|
 |Discipline      | DDC                     | Classification            | Add 3 digits DDC as specific as possible followed by the English term for the discipline ([Canonical Source [external link]](https://www.oclc.org/content/dam/oclc/dewey/resources/summaries/deweysummaries.pdf)) |
-|Keywords        | Wikidata Q-ID AND GND  | Keyword                   | Wikidata and GND terms are both mandatory, including redundancy (if an appropriate entry does not exist contact the ITG). Use [Wikidata-Search [external link]](https://www.wikidata.org) and [GND-Search [external link]](http://swb.bsz-bw.de/DB=2.104/LNG=EN/) to find the appropriate identifiers.
+|Keywords        | Wikidata Q-ID and GND  | Keyword                   | Wikidata and GND terms are both mandatory, including redundancy (if an appropriate entry does not exist contact the ITG). Use [Wikidata-Search [external link]](https://www.wikidata.org) and [GND-Search [external link]](http://swb.bsz-bw.de/DB=2.104/LNG=EN/) to find the appropriate identifiers.
 
 There should be no overlap between the discipline specifier(s) and the keywords.
 
@@ -516,7 +514,7 @@ __Example__
 * This field is recommended.
 * Describes the resource (e.g. where an image has been taken or where a sensor is located), *not* the related project or institute, if the former is not applicable, do *not* use it for the latter.
 * *geoLocationPlace* must be identical to payload of the according GeoNames field in the subjects, consult the [geotagging](#geotagging) subsection.
-* Canonical source for coordinates is the [GeoName Service [external link]](http://www.geonames.org/export/web-services.html).
+* Canonical source for coordinates is the [GeoNames Service [external link]](http://www.geonames.org/export/web-services.html).
 
 __Examples__
 * geoLocationPlace and geoLocationPolygon:
