@@ -301,7 +301,7 @@ Specifying the location via subject is mandatory, if applicable to the resource:
 #### Additional subject annotations
 * Every other subject may be added.
 * Specify the language of the subject.
-* It is recommended to always qualify subjects by URL or scheme name. A good starting point to research existing schemes is [Bartog.org [external link]](http://www.bartoc.org/de) - Basel Register of Thesauri, Ontologies & Classifications. Unqualified subjects (not controlled by a controlled vocabulary, ontology or any other standard for the subject terms) are often useless for research data aggregators due to ambiguities.
+* It is recommended to always qualify subjects by URL or scheme name. A good starting point to research existing schemes is [Bartoc.org [external link]](http://www.bartoc.org/de) - Basel Register of Thesauri, Ontologies & Classifications. Unqualified subjects (not controlled by a controlled vocabulary, ontology or any other standard for the subject terms) are often useless for research data aggregators due to ambiguities.
 
 
 __Example__
