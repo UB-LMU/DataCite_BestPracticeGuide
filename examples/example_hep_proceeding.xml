@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource xmlns="http://datacite.org/schema/kernel-4" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://datacite.org/schema/kernel-4 http://schema.datacite.org/meta/kernel-4-4/metadata.xsd">
+
+<identifier identifierType="DOI">10.1142/9789812796950_0037</identifier>
+
+<titles>
+	<title xml:lang="en">Light-cone sum rules for the form-factors of the N gamma Delta transition at Q**2=0</title>
+</titles>
+
+<creators>
+	<creator>
+		<creatorName nameType="Personal">Rohrwild, Jürgen</creatorName>
+		<givenName>Jürgen</givenName>
+		<familyName>Rohrwild</familyName>
+		<nameIdentifier schemeURI="http://orcid.org/" nameIdentifierScheme="ORCID">0000-0002-1167-0339</nameIdentifier>
+		<nameIdentifier schemeURI="https://d-nb.info/gnd/" nameIdentifierScheme="GND">1079292241</nameIdentifier>
+		<affiliation 
+		  xml:lang="de" 
+		  affiliationIdentifier="https://ror.org/01eezs655" 
+          affiliationIdentifierScheme="ROR"
+          schemeURI="https://ror.org">
+		     Universität Regensburg
+		</affiliation>
+	</creator>
+</creators>
+
+<publicationYear>2008</publicationYear>
+
+<subjects>
+	<subject xml:lang="en"
+             subjectScheme="dewey"
+             classificationCode="539.76">   
+             539.76 High Energy Physics
+    </subject>
+	<subject subjectScheme="GND" schemeURI="https://d-nb.info/gnd/" xml:lang="de" valueURI="https://d-nb.info/gnd/4333385-0">Formfaktor</subject>
+	<subject subjectScheme="GND" schemeURI="https://d-nb.info/gnd/" xml:lang="de" valueURI="https://d-nb.info/gnd/4212506-6">Summenregel</subject>
+	<subject subjectScheme="wikidata" schemeURI="https://www.wikidata.org/wiki/" xml:lang="en" valueURI="https://www.wikidata.org/wiki/Q238170">quantum chromodynamics</subject>
+	<subject subjectScheme="wikidata" schemeURI="https://www.wikidata.org/wiki/" xml:lang="en" valueURI="https://www.wikidata.org/wiki/Q423998">Delta baryon</subject>
+</subjects>
+
+<dates>
+	<date dateType="Created">2008-10-21</date>
+</dates>
+
+<language>en</language>
+
+<resourceType resourceTypeGeneral="ConferencePaper">contribution to conference proceeding</resourceType>
+
+<relatedIdentifiers>
+	<relatedIdentifier relatedIdentifierType="DOI" relationType="IsDerivedFrom">10.1103/PhysRevD.75.074025</relatedIdentifier>
+	<relatedIdentifier relatedIdentifierType="arXiv" relationType="IsVariantFormOf">0709.0836</relatedIdentifier>
+	<relatedIdentifier relatedIdentifierType="DOI" relationType="IsVariantFormOf">10.48550/arXiv.0709.0836</relatedIdentifier>
+	<relatedIdentifier relatedIdentifierType="DOI" relationType="IsPublishedIn">10.1142/6787</relatedIdentifier>
+	<relatedIdentifier relatedIdentifierType="ISBN" relationType="IsPublishedIn">978-981-279-694-3</relatedIdentifier>
+	<relatedIdentifier relatedIdentifierType="ISBN" relationType="IsPublishedIn">978-981-4471-51-0</relatedIdentifier>
+</relatedIdentifiers>
+
+<rightsList>
+    <rights
+        xml:lang="en-US">
+          Publisher retains copyright. 
+    </rights>
+</rightsList>
+
+<descriptions>
+	<description xml:lang="en" descriptionType="Abstract">
+		The radiative Δ→γN transition is examined at the real photon point Q^2=0 using the framework of light-cone QCD sum rules. In particular, we determine the sum rules for the transition form factors G_M(0) and R_{EM}​ up to twist 4.
+		Text based on talk given at Workshop on Exclusive Reactions at High Momentum Transfer, 21-24 May 2007. Newport News, VA, United States
+	</description>
+</descriptions>
+
+<relatedItem relatedItemType="ConferenceProceeding" relationType="IsPublishedIn">
+	<relatedIdentifier relatedIdentifierType="DOI">10.1142/6787</relatedIdentifier>
+	<title>Exclusive Reactions at High Momentum Transfer</title>
+	<contributor contributorType="Editor">
+		<contributorName nameType="Personal">Radyushkin, Anatoly</contributorName>
+			<givenName>Anatoly</givenName>
+			<familyName>Radyushkin</familyname>
+		<nameIdentifier schemeURI="http://orcid.org/" nameIdentifierScheme="ORCID">0000-0002-9326-1300</nameIdentifier>
+	</contributor>	
+	<contributor contributorType="Editor">
+		<contributorName nameType="Personal">Stoler, Paul</contributorName>
+			<givenName>Paul</givenName>
+			<familyName>Stoler</familyname>
+	</contributor>
+	<publicationYear>2008</publicationYear>
+    <firstPage>298</firstPage>
+	<lastPage>303</lastPage>
+</relatedItem>
+</resource>

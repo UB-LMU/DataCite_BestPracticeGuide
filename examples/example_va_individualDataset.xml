@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://datacite.org/schema/kernel-4" xsi:schemaLocation="http://datacite.org/schema/kernel-4 http://schema.datacite.org/meta/kernel-4.3/metadata.xsd">
+  <identifier identifierType="DOI">10.5282/verba-alpina_S15645_v4</identifier>
+  <creators>
+    <creator>
+      <creatorName nameType="Personal">Krefeld, Thomas</creatorName>
+      <givenName>Thomas</givenName>
+      <familyName>Krefeld</familyName>
+      <nameIdentifier schemeURI="http://d-nb.info/gnd/" nameIdentifierScheme="GND">123778689</nameIdentifier>
+      <nameIdentifier schemeURI="http://orcid.org/" nameIdentifierScheme="ORCID">0000-0001-9657-6052</nameIdentifier>
+      <affiliation affiliationIdentifier="http://isni.org/isni/000000040589340X" schemeURI="http://www.isni.org" affiliationIdentifierScheme="ISNI">Institut für Romanische Philologie, Ludwig-Maximilians-Universität München</affiliation>
+    </creator>
+    <creator>
+      <creatorName nameType="Personal">Lücke, Stephan</creatorName>
+      <givenName>Stephan</givenName>
+      <familyName>Lücke</familyName>
+      <nameIdentifier schemeURI="http://d-nb.info/gnd/" nameIdentifierScheme="GND">1167274636</nameIdentifier>
+      <nameIdentifier schemeURI="http://orcid.org/" nameIdentifierScheme="ORCID">0000-0002-5853-1918</nameIdentifier>
+      <affiliation>IT-Gruppe Geisteswissenschaften (ITG), Ludwig-Maximilians-Universität München</affiliation>
+    </creator>
+  </creators>
+  <titles>
+    <title xml:lang="en">Instance for "Attestation ɔlmʃtɔːt͉ɫ, Source: TSA III_98#1 D36_3 (Hall)"</title>
+  </titles>
+  <publisher xml:lang="de">Universitätsbibliothek der Ludwig-Maximilians-Universität München</publisher>
+  <publicationYear>2019</publicationYear>
+  <subjects>
+    <subject xml:lang="en" subjectScheme="dewey" classificatonCode="410">Linguistics</subject>
+    <subject xml:lang="en" subjectScheme="dewey" classificatonCode="004">Data processing computer science</subject>
+    <subject xml:lang="de">Hall in Tirol</subject>
+    <subject xml:lang="de">STADEL (HÜTTE, FÜR HEU, AUF DER ALM ODER AUF DER WIESE)</subject>
+    <subject xml:lang="de">Almstadel (gem.)</subject>
+    <subject xml:lang="en" subjectScheme="dewey" classificatonCode="430">Germanic languages German</subject>
+    <subject xml:lang="en" subjectScheme="Glottocode" schemeURI="https://glottolog.org/resource/languoid/id/" valueURI="https://glottolog.org/resource/languoid/id/high1286" classificatonCode=high1286>High German</subject>
+  </subjects>
+  <contributors>
+    <contributor contributorType="ProjectLeader">
+      <contributorName nameType="Personal">Krefeld, Thomas</contributorName>
+      <givenName>Thomas</givenName>
+      <familyName>Krefeld</familyName>
+      <nameIdentifier schemeURI="http://d-nb.info/gnd/" nameIdentifierScheme="GND">123778689</nameIdentifier>
+      <nameIdentifier schemeURI="http://orcid.org/" nameIdentifierScheme="ORCID">0000-0001-9657-6052</nameIdentifier>
+      <affiliation affiliationIdentifier="http://isni.org/isni/000000040589340X" schemeURI="http://www.isni.org" affiliationIdentifierScheme="ISNI">Institut für Romanische Philologie, Ludwig-Maximilians-Universität München</affiliation>
+    </contributor>
+    <contributor contributorType="ProjectLeader">
+      <contributorName nameType="Personal">Lücke, Stephan</contributorName>
+      <givenName>Stephan</givenName>
+      <familyName>Lücke</familyName>
+      <nameIdentifier schemeURI="http://d-nb.info/gnd/" nameIdentifierScheme="GND">1167274636</nameIdentifier>
+      <nameIdentifier schemeURI="http://orcid.org/" nameIdentifierScheme="ORCID">0000-0002-5853-1918</nameIdentifier>
+      <affiliation>IT-Gruppe Geisteswissenschaften (ITG), Ludwig-Maximilians-Universität München</affiliation>
+    </contributor>
+    <contributor contributorType="ProjectMember">
+      <contributorName nameType="Personal">Englmeier, David</contributorName>
+      <givenName>David</givenName>
+      <familyName>Englmeier</familyName>
+      <nameIdentifier schemeURI="http://d-nb.info/gnd/" nameIdentifierScheme="GND">1170932088</nameIdentifier>
+      <affiliation>IT-Gruppe Geisteswissenschaften (ITG), Ludwig-Maximilians-Universität München</affiliation>
+    </contributor>
+    <contributor contributorType="DataCurator">
+      <contributorName nameType="Personal">Kümmet, Sonja</contributorName>
+      <givenName>Sonja</givenName>
+      <familyName>Kümmet</familyName>
+      <nameIdentifier schemeURI="http://d-nb.info/gnd/" nameIdentifierScheme="GND">1042287090</nameIdentifier>
+      <nameIdentifier schemeURI="http://orcid.org/" nameIdentifierScheme="ORCID">0000-0002-8954-0200</nameIdentifier>
+      <affiliation affiliationIdentifier="http://isni.org/isni/0000000460298179" schemeURI="http://www.isni.org" affiliationIdentifierScheme="ISNI">Universitätsbibliothek, Ludwig-Maximilians-Universität München</affiliation>
+    </contributor>
+    <contributor contributorType="ProjectMember">
+      <contributorName nameType="Personal">Kunzmann, Markus</contributorName>
+      <givenName>Markus</givenName>
+      <familyName>Kunzmann</familyName>
+      <nameIdentifier schemeURI="http://d-nb.info/gnd/" nameIdentifierScheme="GND">1170932126</nameIdentifier>
+      <affiliation>IT-Gruppe Geisteswissenschaften (ITG), Ludwig-Maximilians-Universität München</affiliation>
+    </contributor>
+    <contributor contributorType="ProjectManager">
+      <contributorName nameType="Personal">Mutter, Christina</contributorName>
+      <givenName>Christina</givenName>
+      <familyName>Mutter</familyName>
+      <nameIdentifier schemeURI="http://d-nb.info/gnd/" nameIdentifierScheme="GND">1170932207</nameIdentifier>
+      <nameIdentifier schemeURI="http://orcid.org/" nameIdentifierScheme="ORCID">0000-0003-4889-6611</nameIdentifier>
+      <affiliation affiliationIdentifier="http://isni.org/isni/000000040589340X" schemeURI="http://www.isni.org" affiliationIdentifierScheme="ISNI">Institut für Romanische Philologie, Ludwig-Maximilians-Universität München</affiliation>
+    </contributor>
+    <contributor contributorType="ProjectMember">
+      <contributorName nameType="Personal">Wiatr, Aleksander</contributorName>
+      <givenName>Aleksander</givenName>
+      <familyName>Wiatr</familyName>
+      <nameIdentifier schemeURI="http://d-nb.info/gnd/" nameIdentifierScheme="GND">1170932290</nameIdentifier>
+      <affiliation affiliationIdentifier="http://isni.org/isni/000000040589340X" affiliationIdentifierScheme="ISNI" schemeURI="http://www.isni.org">Institut für Romanische Philologie, Ludwig-Maximilians-Universität München</affiliation>
+    </contributor>
+    <contributor contributorType="ProjectMember">
+      <contributorName nameType="Personal">Zacherl, Florian</contributorName>
+      <givenName>Florian</givenName>
+      <familyName>Zacherl</familyName>
+      <nameIdentifier schemeURI="http://d-nb.info/gnd/" nameIdentifierScheme="GND">1170932363</nameIdentifier>
+      <nameIdentifier schemeURI="http://orcid.org/" nameIdentifierScheme="ORCID">0000-0001-8695-6983</nameIdentifier>
+      <affiliation>IT-Gruppe Geisteswissenschaften (ITG), Ludwig-Maximilians-Universität München</affiliation>
+    </contributor>
+    <contributor contributorType="HostingInstitution">
+      <contributorName nameType="Organizational" xml:lang="de">IT-Gruppe Geisteswissenschaften (ITG), Ludwig-Maximilians-Universität München</contributorName>
+    </contributor>
+  </contributors>
+  <dates>
+    <date dateType="Submitted">2019-05-07</date>
+    <date dateType="Created">2018-07-01/2018-12-31</date>
+  </dates>
+  <language>de</language>
+  <resourceType resourceTypeGeneral="Dataset">Linguistic Data</resourceType>
+  <alternateIdentifiers>
+    <alternateIdentifier alternateIdentifierType="project-specific identifier">S15645_v4</alternateIdentifier>
+  </alternateIdentifiers>
+  <relatedIdentifiers>
+    <relatedIdentifier relationType="IsPartOf" relatedIdentifierType="DOI">10.5282/verba-alpina_A72868_v5</relatedIdentifier>
+	<relatedIdentifier relationType="IsPartOf" relatedIdentifierType="DOI">10.5282/verba-alpina_L3943_v3</relatedIdentifier>
+	<relatedIdentifier relationType="IsPartOf" relatedIdentifierType="DOI">10.5282/verba-alpina_A72868_v5</relatedIdentifier>
+  </relatedIdentifiers>
+  <sizes>
+    <size>814 B</size>
+  </sizes>
+  <formats>
+    <format>text/csv</format>
+  </formats>
+  <version>18/2</version>
+  <rightsList>
+    <rights xml:lang="en-US" schemeURI="https://spdx.org/licenses/" rightsIdentifierScheme="SPDX" rightsIdentifier="CC-BY-SA-4.0" rightsURI="http://creativecommons.org/licenses/by-sa/4.0/">CC BY 4.0</rights>
+  </rightsList>
+  <descriptions>
+    <description xml:lang="en" descriptionType="Abstract">Answer from informant D36_3 of source TSA to stimulus Alm-/Wiesenstadel.</description>
+  </descriptions>
+  <geoLocations>
+    <geoLocation>
+      <geoLocationPlace>Hall in Tirol</geoLocationPlace>
+      <geoLocationPolygon>
+        <polygonPoint>
+          <pointLatitude>47.2697830200196</pointLatitude>
+          <pointLongitude>11.4707803726196</pointLongitude>
+        </polygonPoint>
+        <polygonPoint>
+          <pointLatitude>47.2697830200196</pointLatitude>
+          <pointLongitude>11.5272636413574</pointLongitude>
+        </polygonPoint>
+        <polygonPoint>
+          <pointLatitude>47.2893867492676</pointLatitude>
+          <pointLongitude>11.5272636413574</pointLongitude>
+        </polygonPoint>
+        <polygonPoint>
+          <pointLatitude>47.2893867492676</pointLatitude>
+          <pointLongitude>11.4707803726196</pointLongitude>
+        </polygonPoint>
+        <polygonPoint>
+          <pointLatitude>47.2697830200196</pointLatitude>
+          <pointLongitude>11.4707803726196</pointLongitude>
+        </polygonPoint>
+      </geoLocationPolygon>
+    </geoLocation>
+  </geoLocations>
+  <fundingReferences>
+    <fundingReference>
+      <funderName>Deutsche Forschungsgemeinschaft (DFG)</funderName>
+      <funderIdentifier schemeURI="https://ror.org/" funderIdentifierType="ROR">https://ror.org/018mejw64</funderIdentifier>
+      <awardNumber awardURI="http://gepris.dfg.de/gepris/projekt/253900505">253900505</awardNumber>
+      <awardTitle>VERBA ALPINA. Der alpine Kulturraum im Spiegel seiner Mehrsprachigkeit</awardTitle>
+    </fundingReference>
+  </fundingReferences>
+</resource>

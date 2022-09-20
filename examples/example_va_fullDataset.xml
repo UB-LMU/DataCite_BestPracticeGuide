@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://datacite.org/schema/kernel-4" xsi:schemaLocation="http://datacite.org/schema/kernel-4 http://schema.datacite.org/meta/kernel-4.3/metadata.xsd">
+  <identifier identifierType="DOI">10.5282/verba-alpina/A12317_v4</identifier>
+  <creators>
+    <creator>
+      <creatorName nameType="Personal">Krefeld, Thomas</creatorName>
+      <givenName>Thomas</givenName>
+      <familyName>Krefeld</familyName>
+      <nameIdentifier schemeURI="http://d-nb.info/gnd/" nameIdentifierScheme="GND">123778689</nameIdentifier>
+      <nameIdentifier schemeURI="http://orcid.org/" nameIdentifierScheme="ORCID">0000-0001-9657-6052</nameIdentifier>
+      <affiliation affiliationIdentifier="http://isni.org/isni/000000040589340X" schemeURI="http://www.isni.org" affiliationIdentifierScheme="ISNI">Institut für Romanische Philologie, Ludwig-Maximilians-Universität München</affiliation>
+    </creator>
+    <creator>
+      <creatorName nameType="Personal">Lücke, Stephan</creatorName>
+      <givenName>Stephan</givenName>
+      <familyName>Lücke</familyName>
+      <nameIdentifier schemeURI="http://d-nb.info/gnd/" nameIdentifierScheme="GND">1167274636</nameIdentifier>
+      <nameIdentifier schemeURI="http://orcid.org/" nameIdentifierScheme="ORCID">0000-0002-5853-1918</nameIdentifier>
+      <affiliation>IT-Gruppe Geisteswissenschaften (ITG), Ludwig-Maximilians-Universität München</affiliation>
+    </creator>
+  </creators>
+  <titles>
+    <title xml:lang="en">VerbaAlpina instances for the concept "MITTAGSRAST HALTEN"</title>
+  </titles>
+  <publisher xml:lang="de">Universitätsbibliothek der Ludwig-Maximilians-Universität München</publisher>
+  <publicationYear>2019</publicationYear>
+  <subjects>
+    <subject xml:lang="en" schemeURI="http://dewey.info/" subjectScheme="dewey">410 Linguistics</subject>
+    <subject xml:lang="en" schemeURI="http://dewey.info/" subjectScheme="dewey">004 Data processing computer science</subject>
+    <subject xml:lang="de">MITTAGSRAST HALTEN</subject>
+    <subject xml:lang="en" schemeURI="http://dewey.info/" subjectScheme="dewey">430 Germanic languages German</subject>
+    <subject xml:lang="en" schemeURI="https://glottolog.org/resource/languoid/id/" subjectScheme="Glottocode" valueURI="https://glottolog.org/resource/languoid/id/high1286">High German</subject>
+    <subject xml:lang="en" schemeURI="https://glottolog.org/resource/languoid/id/" subjectScheme="Glottocode" valueURI="https://glottolog.org/resource/languoid/id/sout3147">Western South Slavic</subject>
+  </subjects>
+  <contributors>
+    <contributor contributorType="ProjectLeader">
+      <contributorName nameType="Personal">Krefeld, Thomas</contributorName>
+      <givenName>Thomas</givenName>
+      <familyName>Krefeld</familyName>
+      <nameIdentifier schemeURI="http://d-nb.info/gnd/" nameIdentifierScheme="GND">123778689</nameIdentifier>
+      <nameIdentifier schemeURI="http://orcid.org/" nameIdentifierScheme="ORCID">0000-0001-9657-6052</nameIdentifier>
+      <affiliation affiliationIdentifier="http://isni.org/isni/000000040589340X" schemeURI="http://www.isni.org" affiliationIdentifierScheme="ISNI">Institut für Romanische Philologie, Ludwig-Maximilians-Universität München</affiliation>
+    </contributor>
+    <contributor contributorType="ProjectLeader">
+      <contributorName nameType="Personal">Lücke, Stephan</contributorName>
+      <givenName>Stephan</givenName>
+      <familyName>Lücke</familyName>
+      <nameIdentifier schemeURI="http://d-nb.info/gnd/" nameIdentifierScheme="GND">1167274636</nameIdentifier>
+      <nameIdentifier schemeURI="http://orcid.org/" nameIdentifierScheme="ORCID">0000-0002-5853-1918</nameIdentifier>
+      <affiliation>IT-Gruppe Geisteswissenschaften (ITG), Ludwig-Maximilians-Universität München</affiliation>
+    </contributor>
+    <contributor contributorType="ProjectMember">
+      <contributorName nameType="Personal">Englmeier, David</contributorName>
+      <givenName>David</givenName>
+      <familyName>Englmeier</familyName>
+      <nameIdentifier schemeURI="http://d-nb.info/gnd/" nameIdentifierScheme="GND">1170932088</nameIdentifier>
+      <affiliation>IT-Gruppe Geisteswissenschaften (ITG), Ludwig-Maximilians-Universität München</affiliation>
+    </contributor>
+    <contributor contributorType="DataCurator">
+      <contributorName nameType="Personal">Kümmet, Sonja</contributorName>
+      <givenName>Sonja</givenName>
+      <familyName>Kümmet</familyName>
+      <nameIdentifier schemeURI="http://d-nb.info/gnd/" nameIdentifierScheme="GND">1042287090</nameIdentifier>
+      <nameIdentifier schemeURI="http://orcid.org/" nameIdentifierScheme="ORCID">0000-0002-8954-0200</nameIdentifier>
+      <affiliation affiliationIdentifier="http://isni.org/isni/0000000460298179" schemeURI="http://www.isni.org" affiliationIdentifierScheme="ISNI">Universitätsbibliothek, Ludwig-Maximilians-Universität München</affiliation>
+    </contributor>
+    <contributor contributorType="ProjectMember">
+      <contributorName nameType="Personal">Kunzmann, Markus</contributorName>
+      <givenName>Markus</givenName>
+      <familyName>Kunzmann</familyName>
+      <nameIdentifier schemeURI="http://d-nb.info/gnd/" nameIdentifierScheme="GND">1170932126</nameIdentifier>
+      <affiliation>IT-Gruppe Geisteswissenschaften (ITG), Ludwig-Maximilians-Universität München</affiliation>
+    </contributor>
+    <contributor contributorType="ProjectManager">
+      <contributorName nameType="Personal">Mutter, Christina</contributorName>
+      <givenName>Christina</givenName>
+      <familyName>Mutter</familyName>
+      <nameIdentifier schemeURI="http://d-nb.info/gnd/" nameIdentifierScheme="GND">1170932207</nameIdentifier>
+      <nameIdentifier schemeURI="http://orcid.org/" nameIdentifierScheme="ORCID">0000-0003-4889-6611</nameIdentifier>
+      <affiliation affiliationIdentifier="http://isni.org/isni/000000040589340X" schemeURI="http://www.isni.org" affiliationIdentifierScheme="ISNI">Institut für Romanische Philologie, Ludwig-Maximilians-Universität München</affiliation>
+    </contributor>
+    <contributor contributorType="ProjectMember">
+      <contributorName nameType="Personal">Wiatr, Aleksander</contributorName>
+      <givenName>Aleksander</givenName>
+      <familyName>Wiatr</familyName>
+      <nameIdentifier schemeURI="http://d-nb.info/gnd/" nameIdentifierScheme="GND">1170932290</nameIdentifier>
+      <affiliation affiliationIdentifier="http://isni.org/isni/000000040589340X" affiliationIdentifierScheme="ISNI" schemeURI="http://www.isni.org">Institut für Romanische Philologie, Ludwig-Maximilians-Universität München</affiliation>
+    </contributor>
+    <contributor contributorType="ProjectMember">
+      <contributorName nameType="Personal">Zacherl, Florian</contributorName>
+      <givenName>Florian</givenName>
+      <familyName>Zacherl</familyName>
+      <nameIdentifier schemeURI="http://d-nb.info/gnd/" nameIdentifierScheme="GND">1170932363</nameIdentifier>
+      <nameIdentifier schemeURI="http://orcid.org/" nameIdentifierScheme="ORCID">0000-0001-8695-6983</nameIdentifier>
+      <affiliation>IT-Gruppe Geisteswissenschaften (ITG), Ludwig-Maximilians-Universität München</affiliation>
+    </contributor>
+    <contributor contributorType="HostingInstitution">
+      <contributorName nameType="Organizational" xml:lang="de">IT-Gruppe Geisteswissenschaften (ITG), Ludwig-Maximilians-Universität München</contributorName>
+    </contributor>
+  </contributors>
+  <dates>
+    <date dateType="Submitted">2019-09-20</date>
+    <date dateType="Collected">2018-07-01/2018-12-31</date>
+  </dates>
+  <language>de</language>
+  <resourceType resourceTypeGeneral="Dataset">Linguistic Data</resourceType>
+  <alternateIdentifiers>
+    <alternateIdentifier alternateIdentifierType="project-specific identifier"/>
+  </alternateIdentifiers>
+  <relatedIdentifiers>
+    <relatedIdentifier relatedIdentifierType="URL" relationType="IsIdenticalTo">https://www.verba-alpina.gwi.uni-muenchen.de/?api=1&amp;action=getRecord&amp;id=A12317&amp;version=182&amp;format=csv&amp;empty=0</relatedIdentifier>
+    <relatedIdentifier relatedIdentifierType="DOI" relationType="HasPart">10.5282/verba-alpina/G10595_v1</relatedIdentifier>
+    <relatedIdentifier relatedIdentifierType="DOI" relationType="HasPart">10.5282/verba-alpina/G10597_v1</relatedIdentifier>
+    <relatedIdentifier relatedIdentifierType="DOI" relationType="HasPart">10.5282/verba-alpina/S122775_v2</relatedIdentifier>
+    <relatedIdentifier relatedIdentifierType="DOI" relationType="HasPart">10.5282/verba-alpina/S123388_v2</relatedIdentifier>
+    <relatedIdentifier relatedIdentifierType="DOI" relationType="HasPart">10.5282/verba-alpina/S166775_v1</relatedIdentifier>
+  </relatedIdentifiers>
+  <sizes>
+    <size>1644B</size>
+  </sizes>
+  <formats>
+    <format>text/csv</format>
+  </formats>
+  <version>18/2</version>
+  <rightsList>
+    <rights xml:lang="en-US" schemeURI="https://spdx.org/licenses/" rightsIdentifierScheme="SPDX" rightsIdentifier="CC-BY-SA-4.0" rightsURI="http://creativecommons.org/licenses/by-sa/4.0/"/>
+  </rightsList>
+  <descriptions>
+    <description xml:lang="en" descriptionType="Abstract">Contains 5 VerbaAlpina datasets, which are related to the concept "MITTAGSRAST HALTEN".</description>
+  </descriptions>
+  <geoLocations>
+    <geoLocation>
+      <geoLocationPlace>Höslwang</geoLocationPlace>
+      <geoLocationPolygon>
+        <polygonPoint>
+          <pointLatitude>47.9231796264648</pointLatitude>
+          <pointLongitude>12.2860469818115</pointLongitude>
+        </polygonPoint>
+        <polygonPoint>
+          <pointLatitude>47.9231796264648</pointLatitude>
+          <pointLongitude>12.3512439727784</pointLongitude>
+        </polygonPoint>
+        <polygonPoint>
+          <pointLatitude>47.9707412719727</pointLatitude>
+          <pointLongitude>12.3512439727784</pointLongitude>
+        </polygonPoint>
+        <polygonPoint>
+          <pointLatitude>47.9707412719727</pointLatitude>
+          <pointLongitude>12.2860469818115</pointLongitude>
+        </polygonPoint>
+        <polygonPoint>
+          <pointLatitude>47.9231796264648</pointLatitude>
+          <pointLongitude>12.2860469818115</pointLongitude>
+        </polygonPoint>
+      </geoLocationPolygon>
+    </geoLocation>
+    <geoLocation>
+      <geoLocationPlace>Tržič</geoLocationPlace>
+      <geoLocationPolygon>
+        <polygonPoint>
+          <pointLatitude>46.3172988891602</pointLatitude>
+          <pointLongitude>14.2315464019776</pointLongitude>
+        </polygonPoint>
+        <polygonPoint>
+          <pointLatitude>46.3172988891602</pointLatitude>
+          <pointLongitude>14.4427299499512</pointLongitude>
+        </polygonPoint>
+        <polygonPoint>
+          <pointLatitude>46.4472694396973</pointLatitude>
+          <pointLongitude>14.4427299499512</pointLongitude>
+        </polygonPoint>
+        <polygonPoint>
+          <pointLatitude>46.4472694396973</pointLatitude>
+          <pointLongitude>14.2315464019776</pointLongitude>
+        </polygonPoint>
+        <polygonPoint>
+          <pointLatitude>46.3172988891602</pointLatitude>
+          <pointLongitude>14.2315464019776</pointLongitude>
+        </polygonPoint>
+      </geoLocationPolygon>
+    </geoLocation>
+    <geoLocation>
+      <geoLocationPlace>Davos</geoLocationPlace>
+      <geoLocationPolygon>
+        <polygonPoint>
+          <pointLatitude>46.6739883422853</pointLatitude>
+          <pointLongitude>9.72252082824707</pointLongitude>
+        </polygonPoint>
+        <polygonPoint>
+          <pointLatitude>46.6739883422853</pointLatitude>
+          <pointLongitude>9.96433830261236</pointLongitude>
+        </polygonPoint>
+        <polygonPoint>
+          <pointLatitude>46.8611373901368</pointLatitude>
+          <pointLongitude>9.96433830261236</pointLongitude>
+        </polygonPoint>
+        <polygonPoint>
+          <pointLatitude>46.8611373901368</pointLatitude>
+          <pointLongitude>9.72252082824707</pointLongitude>
+        </polygonPoint>
+        <polygonPoint>
+          <pointLatitude>46.6739883422853</pointLatitude>
+          <pointLongitude>9.72252082824707</pointLongitude>
+        </polygonPoint>
+      </geoLocationPolygon>
+    </geoLocation>
+    <geoLocation>
+      <geoLocationPlace>Außervillgraten</geoLocationPlace>
+      <geoLocationPolygon>
+        <polygonPoint>
+          <pointLatitude>46.7624397277833</pointLatitude>
+          <pointLongitude>12.3730258941651</pointLongitude>
+        </polygonPoint>
+        <polygonPoint>
+          <pointLatitude>46.7624397277833</pointLatitude>
+          <pointLongitude>12.5021944046021</pointLongitude>
+        </polygonPoint>
+        <polygonPoint>
+          <pointLatitude>46.8840141296387</pointLatitude>
+          <pointLongitude>12.5021944046021</pointLongitude>
+        </polygonPoint>
+        <polygonPoint>
+          <pointLatitude>46.8840141296387</pointLatitude>
+          <pointLongitude>12.3730258941651</pointLongitude>
+        </polygonPoint>
+        <polygonPoint>
+          <pointLatitude>46.7624397277833</pointLatitude>
+          <pointLongitude>12.3730258941651</pointLongitude>
+        </polygonPoint>
+      </geoLocationPolygon>
+    </geoLocation>
+  </geoLocations>
+  <fundingReferences>
+    <fundingReference>
+      <funderName>Deutsche Forschungsgemeinschaft (DFG)</funderName>
+      <funderIdentifier schemeURI="https://ror.org/" funderIdentifierType="ROR">https://ror.org/018mejw64</funderIdentifier>
+      <awardNumber awardURI="http://gepris.dfg.de/gepris/projekt/253900505">253900505</awardNumber>
+      <awardTitle>VERBA ALPINA. Der alpine Kulturraum im Spiegel seiner Mehrsprachigkeit</awardTitle>
+    </fundingReference>
+  </fundingReferences>
+</resource>

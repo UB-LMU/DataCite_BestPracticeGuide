@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://datacite.org/schema/kernel-4"
+	xsi:schemaLocation="https://datacite.org/schema/kernel-4 https://schema.datacite.org/meta/kernel-4/metadata.xsd">
+	<identifier identifierType="DOI">n.v.</identifier>
+	<titles>
+		<title 
+			xml:lang="de">
+				Kritische Ausgabe der Werke von Richard Strauss
+		</title>
+		<title 
+			xml:lang="en"
+			titleType="TranslatedTitle">
+				Critical edition of the works of Richard Strauss
+		</title>
+	</titles>
+	<creators>
+		<creator>
+			<creatorName nameType="Personal">Schick, Hartmut</creatorName>
+			<givenName>Hartmut</givenName>
+			<familyName>Schick</familyName>
+			<nameIdentifier 
+				schemeURI="https://d-nb.info/gnd/"
+				nameIdentifierScheme="GND"
+				valueURI="https://d-nb.info/gnd/132400952"> 
+				132400952
+			</nameIdentifier>
+			<affiliation
+				xml:lang="de">
+				Institut für Musikwissenschaft, Ludwig-Maximilians-Universität München
+			</affiliation>
+		</creator>
+	</creators>
+	<publisher
+		xml:lang="de">
+			Bayerische Akademie der Wissenschaften
+	</publisher>
+	<publicationYear>2016</publicationYear>
+	<resourceType resourceTypeGeneral="Collection">Critical editions of music and documents</resourceType>
+	<subjects>
+		<subject
+			xml:lang="de" 
+			subjectScheme="GND" 
+			schemeURI="https://d-nb.info/gnd/" 
+			valueURI="https://d-nb.info/gnd/11861911X"
+			classificationCode="11861911X">
+			Strauss, Richard
+		</subject>
+		<subject 
+			xml:lang="de"
+			subjectScheme="GND" 
+			schemeURI="https://d-nb.info/gnd/" 
+			valueURI="https://d-nb.info/gnd/4132033-5"
+			classificationCode="4132033-5">
+			Edition
+		</subject>
+		<subject 
+			xml:lang="de"
+			subjectScheme="GND" 
+			schemeURI="https://d-nb.info/gnd/" 
+			valueURI="https://d-nb.info/gnd/4165777-9"
+			classificationCode="4165777-9">
+			Kritische Augabe
+		</subject>
+		<subject 
+			xml:lang="de"
+			subjectScheme="GND" 
+			schemeURI="https://d-nb.info/gnd/" 
+			valueURI="https://d-nb.info/gnd/4411121-6"
+			classificationCode="4411121-6">
+			Online-Publizieren
+		</subject>
+		<subject 
+			xml:lang="de"
+			subjectScheme="GND" 
+			schemeURI="https://d-nb.info/gnd/" 
+			valueURI="https://d-nb.info/gnd/4040802-4"
+			classificationCode="4040802-4">
+			Musik
+		</subject>
+		<subject 
+			xml:lang="de" 
+			subjectScheme="GND" 
+			schemeURI="https://d-nb.info/gnd/" 
+			valueURI="https://d-nb.info/gnd/4008240-4"
+			classificationCode="4008240-4">
+			Brief
+		</subject>
+		<subject 
+			xml:lang="de"
+			subjectScheme="GND" 
+			schemeURI="https://d-nb.info/gnd/" 
+			valueURI="https://d-nb.info/gnd/4170833-7"
+			classificationCode="4170833-7">
+			Musikschrifttum
+		</subject>
+	</subjects>
+	<contributors>
+			<contributor contributorType="ProjectLeader">
+			<contributorName nameType="Personal">Schick, Hartmut</contributorName>
+			<givenName>Hartmut</givenName>
+			<familyName>Schick</familyName>
+			<nameIdentifier 
+				schemeURI="https://d-nb.info/gnd/"
+				nameIdentifierScheme="GND"
+				valueURI="https://d-nb.info/gnd/132400952"> 
+				132400952
+			</nameIdentifier>
+			<affiliation
+				affiliationIdentifier="https://ror.org/04wxnsj81"
+				affiliationIdentifierScheme="ROR"
+				schemeURI="https://ror.org/">
+				Ludwig-Maximilians-Universität München
+			</affiliation>
+			<affiliation
+				xml:lang="de">
+				Institut für Musikwissenschaft, Ludwig-Maximilians-Universität München
+			</affiliation>
+			</contributor>
+			<contributor contributorType="ProjectMember">
+			<contributorName nameType="Personal">Bolz, Sebastian</contributorName>
+			<givenName>Sebastian</givenName>
+			<familyName>Bolz</familyName>
+			<nameIdentifier 
+				nameIdentifierScheme="GND"
+				schemeURI="https://d-nb.info/gnd/"
+				valueURI="https://d-nb.info/gnd/1023826046"> 
+				1023826046   
+			</nameIdentifier>
+			<affiliation
+				affiliationIdentifier="https://ror.org/04wxnsj81"
+				affiliationIdentifierScheme="ROR"
+				schemeURI="https://ror.org/">
+				Ludwig-Maximilians-Universität München
+			</affiliation>
+			<affiliation
+				xml:lang="de">
+				Institut für Musikwissenschaft, Ludwig-Maximilians-Universität München
+			</affiliation>
+			</contributor>
+			<contributor contributorType="ProjectMember">
+			<contributorName nameType="Personal">Heine, Claudia</contributorName>
+			<givenName>Claudia</givenName>
+			<familyName>Heine</familyName>
+			<nameIdentifier 
+				nameIdentifierScheme="GND"
+				schemeURI="https://d-nb.info/gnd/"
+				valueURI="https://d-nb.info/gnd/106872109X"> 
+				106872109X   
+			</nameIdentifier>
+			<affiliation
+				affiliationIdentifier="https://ror.org/04wxnsj81"
+				affiliationIdentifierScheme="ROR"
+				schemeURI="https://ror.org/">
+				Ludwig-Maximilians-Universität München
+			</affiliation>
+			<affiliation
+				xml:lang="de">
+				Institut für Musikwissenschaft, Ludwig-Maximilians-Universität München
+			</affiliation>
+			</contributor>
+			<contributor contributorType="ProjectMember">
+			<contributorName nameType="Personal">Kech, Adrian</contributorName>
+			<givenName>Adrian</givenName>
+			<familyName>Kech</familyName>
+			<nameIdentifier 
+				nameIdentifierScheme="GND"
+				schemeURI="https://d-nb.info/gnd/"
+				valueURI="https://d-nb.info/gnd/1080206183"> 
+				1080206183   
+			</nameIdentifier>
+			<affiliation
+				affiliationIdentifier="https://ror.org/04wxnsj81"
+				affiliationIdentifierScheme="ROR"
+				schemeURI="https://ror.org/">
+				Ludwig-Maximilians-Universität München
+			</affiliation>
+			<affiliation
+				xml:lang="de">
+				Institut für Musikwissenschaft, Ludwig-Maximilians-Universität München
+			</affiliation>
+			</contributor>
+			<contributor contributorType="ProjectMember">
+			<contributorName nameType="Personal">Leipold, Dominik</contributorName>
+			<givenName>Dominik</givenName>
+			<familyName>Leipold</familyName>
+			<nameIdentifier 
+				nameIdentifierScheme="ORCID"
+				schemeURI="https://orcid.org/"
+				valueURI="https://orcid.org/0000-0003-4029-7008"> 
+				0000-0003-4029-7008
+			</nameIdentifier>
+			<nameIdentifier 
+				schemeURI="https://d-nb.info/gnd/"
+				nameIdentifierScheme="GND"
+				valueURI="https://d-nb.info/gnd/1156873509"> 
+				1156873509   
+			</nameIdentifier>
+			<affiliation
+				affiliationIdentifier="https://ror.org/04wxnsj81"
+				affiliationIdentifierScheme="ROR"
+				schemeURI="https://ror.org/">
+				Ludwig-Maximilians-Universität München
+			</affiliation>
+			<affiliation
+				xml:lang="de">
+				Institut für Musikwissenschaft, Ludwig-Maximilians-Universität München
+			</affiliation>
+			</contributor>
+			<contributor contributorType="ProjectMember">
+			<contributorName nameType="Personal">Pernpeintner, Andreas </contributorName>
+			<givenName>Andreas</givenName>
+			<familyName>Pernpeintner</familyName>
+			<nameIdentifier 
+				schemeURI="https://d-nb.info/gnd/"
+				nameIdentifierScheme="GND"
+				valueURI="https://d-nb.info/gnd/139634932"> 
+				139634932
+			</nameIdentifier>
+			<affiliation
+				affiliationIdentifier="https://ror.org/04wxnsj81"
+				affiliationIdentifierScheme="ROR"
+				schemeURI="https://ror.org/">
+				Ludwig-Maximilians-Universität München
+			</affiliation>
+			<affiliation
+				xml:lang="de">
+				Institut für Musikwissenschaft, Ludwig-Maximilians-Universität München
+			</affiliation>
+			</contributor>
+			<contributor contributorType="ProjectMember">
+			<contributorName nameType="Personal">Schenk, Stefan</contributorName>
+			<givenName>Stefan</givenName>
+			<familyName>Schenk</familyName>
+			<nameIdentifier 
+				nameIdentifierScheme="GND"
+				schemeURI="https://d-nb.info/gnd/"
+				valueURI="https://d-nb.info/gnd/135299357"> 
+				135299357
+			</nameIdentifier>
+			<affiliation
+                affiliationIdentifier="https://ror.org/04wxnsj81"
+				affiliationIdentifierScheme="ROR"
+                schemeURI="https://ror.org/">
+                Ludwig-Maximilians-Universität München
+            </affiliation>
+			<affiliation
+				xml:lang="de">
+				Institut für Musikwissenschaft, Ludwig-Maximilians-Universität München
+			</affiliation>
+			</contributor>
+			<contributor contributorType="DataCurator">
+			<contributorName nameType="Personal">Englmeier, Tobias</contributorName>
+			<givenName>Tobias</givenName>
+			<familyName>Englmeier</familyName>
+			<nameIdentifier 
+				nameIdentifierScheme="GND"
+				schemeURI="https://d-nb.info/gnd/"
+				valueURI="https://d-nb.info/gnd/1218497122"> 
+				135299357
+			</nameIdentifier>
+			<affiliation
+                affiliationIdentifier="https://ror.org/04wxnsj81"
+				affiliationIdentifierScheme="ROR"
+                schemeURI="https://ror.org/">
+                Ludwig-Maximilians-Universität München
+            </affiliation>
+			<affiliation
+				xml:lang="de">
+				IT-Gruppe Geisteswissenschaften, Ludwig-Maximilians-Universität München
+			</affiliation>
+			</contributor>
+			<contributor contributorType="HostingInstitution">
+			<contributorName nameType="Organizational">Bayerische Akademie der Wissenschaften</contributorName>
+				<nameIdentifier
+					nameIdentifierScheme="GND"
+					schemeURI="https://d-nb.info/gnd/"
+					valueURI="https://d-nb.info/gnd/2005521-3">
+					2005521-3
+				</nameIdentifier>
+				<nameIdentifier
+					nameIdentifierScheme="ROR"
+					schemeURI="https://ror.org/"
+					valueURI="https://ror.org/001rdaz60">
+					001rdaz60
+				</nameIdentifier>
+			</contributor>
+			<contributor contributorType="HostingInstitution">
+			<contributorName nameType="Organizational">IT-Gruppe Geisteswissenschaften</contributorName>
+				<nameIdentifier
+					nameIdentifierScheme="GND"
+					schemeURI="https://d-nb.info/gnd/1126763314"
+					valueURI="1126763314">
+				</nameIdentifier>
+			</contributor>
+	</contributors>
+	<dates>
+		<date dateType="Collected">2011/2036</date>
+		<date dateType="Created">2016</date>
+		<date dateType="Updated">2017</date>
+		<date dateType="Updated">2018</date>
+		<date dateType="Updated">2019</date>
+		<date dateType="Updated">2020</date>
+		<date dateType="Updated">2021</date>
+	</dates>
+	<language>de</language>
+	<relatedIdentifiers>
+		<relatedIdentifier relatedIdentifierType="URL" relationType="HasPart">http://richard-strauss-ausgabe.de/</relatedIdentifier>
+		<relatedIdentifier relatedIdentifierType="URL" relationType="IsDocumentedBy">http://www.musikwissenschaft.uni-muenchen.de/strauss_ausgabe/</relatedIdentifier>
+		<relatedIdentifier relatedIdentifierType="ISBN" relationType="HasPart">978-3-901974-04-5</relatedIdentifier>
+		<relatedIdentifier relatedIdentifierType="ISBN" relationType="HasPart">978-3-901974-05-2</relatedIdentifier>
+		<relatedIdentifier relatedIdentifierType="ISBN" relationType="HasPart">978-3-901974-07-6</relatedIdentifier>
+		<relatedIdentifier relatedIdentifierType="ISBN" relationType="HasPart">978-3-901974-08-3</relatedIdentifier>
+		<relatedIdentifier relatedIdentifierType="ISBN" relationType="HasPart">978-3-901974-15-1</relatedIdentifier>
+	</relatedIdentifiers>
+	<formats>
+		<format>XML</format>
+		<format>TEI</format>
+		<format>MEI</format>
+		<format>SVG</format>
+		<format>PDF</format>
+		<format>Git repository</format>
+	</formats>
+	<descriptions>
+		<description xml:lang="en" descriptionType="Abstract">
+        The “Kritische Ausgabe der Werke von Richard Strauss”, a long-term editorial project, has been under way at the Institut für Musikwissenschaft of the Ludwig-Maximilians-Universität Munich since 2011; it is directed by Prof. Dr Hartmut Schick and is supervised by a project committee and advisory board constituted by the Bayerische Akademie der Wissenschaften. The project is part of the so-called Akademienprogramm, financed jointly by Germany’s federal government and federal states. Collaborations are in place with the Richard-Strauss-Institut in Garmisch Partenkirchen – which, between 2009 and 2012, prepared the “Richard-Strauss-Quellenverzeichnis” (www.rsi-rsqv.de), funded by the Deutsche Forschungsgemeinschaft – with the IT-Gruppe Geisteswissenschaften at the LMU Munich, and the Richard-Strauss-Archiv at Garmisch Partenkirchen, run by the composer’s family.
+    	</description>
+    	<description xml:lang="de" descriptionType="Abstract">
+        Das Langzeit-Editionsprojekt „Kritische Ausgabe der Werke von Richard Strauss“ wird seit Februar 2011 unter der Leitung von Prof. Dr. Hartmut Schick am Institut für Musikwissenschaft der Ludwig-Maximilians-Universität München durchgeführt und von der Bayerischen Akademie der Wissenschaften durch einen Projektausschuss und einen Projektbeirat betreut. Es ist Bestandteil des von Bund und Ländern gemeinsam finanzierten Akademienprogramms. Kooperationspartner des Projekts sind das Richard Strauss-Institut in Garmisch-Partenkirchen mit seinem 2009–12 durchgeführten DFG-Projekt „Richard-Strauss-Quellenverzeichnis“ (www.rsi-rsqv.de), die IT-Gruppe Geisteswissenschaften der LMU München und das Richard-Strauss-Archiv der Familie des Komponisten in Garmisch-Partenkirchen.
+    	</description>
+   		<description xml:lang="en" descriptionType="Methods">
+        digital editing, software/application development
+    	</description>	
+	</descriptions>
+	<geoLocations>
+		<geoLocation>
+			<geoLocationPlace>München</geoLocationPlace>
+			<geoLocationPoint>
+				<pointLongitude>11.57549</pointLongitude>
+				<pointLatitude>48.13743</pointLatitude>
+			</geoLocationPoint>
+		</geoLocation>
+		<geoLocation>
+			<geoLocationPlace>Garmisch-Partenkirchen</geoLocationPlace>
+			<geoLocationPoint>
+				<pointLongitude>11.09576</pointLongitude>
+				<pointLatitude>47.49209</pointLatitude>
+			</geoLocationPoint>
+		</geoLocation>
+	</geoLocations>	
+	<fundingReferences>
+		<fundingReference>
+			<funderName>Bayerische Akademie der Wissenschaften</funderName>
+			<funderIdentifier funderIdentifierType="ISNI">0000 0004 0563 9700</funderIdentifier>
+		</fundingReference>
+		<fundingReference>
+			<funderName>Union der Deutschen Akademien der Wissenschaften</funderName>
+			<funderIdentifier funderIdentifierType="ISNI">0000 0001 0658 0964</funderIdentifier>
+			<awardNumber awardURI="https://agate.academy/id/PR.68">II.G.25</awardNumber>
+			<awardTitle>Musikwissenschaftliche Editionen</awardTitle>
+		</fundingReference>
+	</fundingReferences>
+</resource>

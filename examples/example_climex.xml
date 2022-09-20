@@ -1,0 +1,218 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://datacite.org/schema/kernel-4" xsi:schemaLocation="http://datacite.org/schema/kernel-4 http://schema.datacite.org/meta/kernel-4/metadata.xsd">
+<identifier identifierType="DOI">n.a.</identifier>
+  <creators>
+    <creator>
+      <creatorName nameType="Personal">Leduc, Martin</creatorName>
+      <givenName>Martin</givenName>
+      <familyName>Leduc</familyName>
+      <nameIdentifier nameIdentifierScheme="ORCID" schemeURI="http://orcid.org/">0000-0002-1596-3788</nameIdentifier>
+      <affiliation>Consortium Ouranos</affiliation>
+    </creator>
+    <creator>
+      <creatorName nameType="Personal">Giguère, Michele</creatorName>
+      <givenName>Michele</givenName>
+      <familyName>Giguère</familyName>
+      <nameIdentifier nameIdentifierScheme="ORCID" schemeURI="http://orcid.org/">0000-0002-1091-3140</nameIdentifier>
+      <affiliation>Consortium Ouranos</affiliation>
+    </creator>
+    <creator>
+      <creatorName nameType="Personal">Brietzke, Gilbert</creatorName>
+      <givenName>Gilbert</givenName>
+      <familyName>Brietzke</familyName>
+      <affiliation
+      xml:lang="en"
+      affiliationIdentifier="https://ror.org/05558nw16"
+      affiliationIdentifierScheme="ROR">
+      Leibniz Supercomputing Centre
+      </affiliation>
+    </creator>
+  </creators>
+  <titles>
+    <title>ClimEx Simulation: Total cloud fraction (Europe | September 2050 | kba)</title>
+    <title titleType="alternativeTitle">clt_EUR-11_CCCma-CanESM2_rcp85_r1-r1i1p1_OURANOS-CRCM5_kba_day_205009</title>
+  </titles>
+  <publisher>Leibniz Supercomputing Centre</publisher>
+  <publicationYear>2019</publicationYear>
+  <subjects>
+    <subject xml:lang="en" subjectScheme="dewey" classificationCode="550">Earth sciences</subject>
+    <subject xml:lang="en" subjectScheme="DFG" classificationCode="313">Atmospheric Science, Oceanography and Climate Research</subject>
+    <subject xml:lang="en" subjectScheme="Wikidata QID" schemeURI="https://www.wikidata.org/wiki/" classificationCode="Q5135703">Cloud fraction</subject>
+  </subjects>
+  <contributors>
+    <contributor contributorType="ProjectLeader">
+      <contributorName nameType="Personal">Ludwig, Ralf</contributorName>
+      <givenName>Ralf</givenName>
+      <familyName>Ludwig</familyName>
+      <nameIdentifier 
+        nameIdentifierScheme="ORCID" 
+        schemeURI="http://orcid.org/">
+          0000-0002-4225-4098
+      </nameIdentifier>
+      <affiliation
+        xml:lang="de"
+        affiliationIdentifier="https://ror.org/05591te55" 
+        affiliationIdentifierScheme="ROR">
+          Ludwig-Maximilians-Universität München
+      </affiliation>
+    </contributor>
+    <contributor contributorType="ProjectMember">
+      <contributorName nameType="Personal">Frigon, Anna</contributorName>
+      <givenName>Anne</givenName>
+      <familyName>Frigon</familyName>
+      <nameIdentifier nameIdentifierScheme="ORCID" schemeURI="http://orcid.org/">0000-0002-3621-214X</nameIdentifier>
+      <affiliation>Consortium Ouranos</affiliation>
+    </contributor>
+    <contributor contributorType="ProjectMember">
+      <contributorName nameType="Personal">Braun, Marco</contributorName>
+      <givenName>Marco</givenName>
+      <familyName>Braun</familyName>
+      <affiliation
+        xml:lang="de"
+        affiliationIdentifier="https://ror.org/05591te55" 
+        affiliationIdentifierScheme="ROR">
+          Ludwig-Maximilians-Universität München
+      </affiliation>
+    </contributor>
+    <contributor contributorType="ProjectMember">
+      <contributorName nameType="Personal">Brissette, Francois</contributorName>
+      <givenName>Francois</givenName>
+      <familyName>Brisette</familyName>
+      <affiliation xml:lang="fr">
+        École de technologie supérieure
+      </affiliation>
+    </contributor>
+    <contributor contributorType="ProjectMember">
+      <contributorName nameType="Personal">Komischke, Holger</contributorName>
+      <givenName>Holger</givenName>
+      <familyName>Komischke</familyName>
+      <affiliation xml:lang="de">
+        Bayerisches Landesamt für Umwelt
+      </affiliation>
+    </contributor>
+    <contributor contributorType="ProjectMember">
+      <contributorName nameType="Personal">Kranzlmueller, Dieter</contributorName>
+      <givenName>Dieter</givenName>
+      <familyName>Kranzlmueller</familyName>
+      <nameIdentifier nameIdentifierScheme="Scpopus Author ID" schemeURI="https://www.scopus.com/">26643233300</nameIdentifier>
+      <affiliation xml:lang="en">
+        Leibniz Supercomputing Centre
+      </affiliation>
+    </contributor>
+    <contributor contributorType="Reasearcher">
+      <contributorName nameType="Personal">Martel, Jean-Luc</contributorName>
+      <givenName>Jean-Luc</givenName>
+      <familyName>Martel</familyName>
+      <nameIdentifier nameIdentifierScheme="ORCID" schemeURI="http://orcid.org/">0000-0001-7142-6875</nameIdentifier>
+      <affiliation xml:lang="fr">
+        École de technologie supérieure
+      </affiliation>
+    </contributor>
+    <contributor contributorType="ProjectMember">
+      <contributorName nameType="Personal">Ricard, Simon</contributorName>
+      <givenName>Simon</givenName>
+      <familyName>Ricard</familyName>
+      <affiliation xml:lang="fr">
+        Ministère du Développement durable, de l'Environnement, de la Faune et des Parcs
+      </affiliation>
+    </contributor>
+    <contributor contributorType="Researcher">
+      <contributorName nameType="Personal">Schmid, Franz-Josef</contributorName>
+      <givenName>Franz-Josef</givenName>
+      <familyName>Schmid</familyName>
+      <affiliation
+          xml:lang="de"
+          affiliationIdentifier="https://ror.org/05591te55" 
+          affiliationIdentifierScheme="ROR">
+              Ludwig-Maximilians-Universität München
+      </affiliation>
+    </contributor>
+    <contributor contributorType="ProjectMember">
+      <contributorName nameType="Personal">Turcotte, Richard</contributorName>
+      <givenName>Richard</givenName>
+      <familyName>Turcotte</familyName>
+      <nameIdentifier nameIdentifierScheme="ORCID" schemeURI="http://orcid.org/">0000-0002-5907-435X</nameIdentifier>
+      <affiliation xml:lang="fr">
+        Ministère du Développement durable, de l'Environnement, de la Faune et des Parcs
+      </affiliation>
+    </contributor>
+    <contributor contributorType="Reasearcher">
+      <contributorName nameType="Personal">von Trentini, Fabian</contributorName>
+      <givenName>Fabian</givenName>
+      <familyName>von Trentini</familyName>
+      <nameIdentifier nameIdentifierScheme="ORCID" schemeURI="http://orcid.org/">0000-0001-9522-9323</nameIdentifier>
+      <affiliation
+        xml:lang="de"
+        affiliationIdentifier="https://ror.org/05591te55" 
+        affiliationIdentifierScheme="ROR">
+            Ludwig-Maximilians-Universität München
+    </affiliation>
+    </contributor>
+    <contributor contributorType="ProjectMember">
+      <contributorName nameType="Personal">Weismueller, Jens</contributorName>
+      <givenName>Jens</givenName>
+      <familyName>Weismueller</familyName>
+      <nameIdentifier nameIdentifierScheme="ORCID" schemeURI="http://orcid.org/">0000-0002-0252-5826</nameIdentifier>
+      <affiliation 
+      xml:lang="en">
+        Leibniz Supercomputing Centre
+      </affiliation>
+    </contributor>
+    <contributor contributorType="Reasearcher">
+      <contributorName nameType="Personal">Willkofer, Florian</contributorName>
+      <givenName>Florian</givenName>
+      <familyName>Willkofer</familyName>
+      <nameIdentifier nameIdentifierScheme="ORCID" schemeURI="http://orcid.org/">0000-0002-7575-0178</nameIdentifier>
+      <affiliation
+          xml:lang="de"
+          affiliationIdentifier="https://ror.org/05591te55" 
+          affiliationIdentifierScheme="ROR">
+              Ludwig-Maximilians-Universität München
+      </affiliation>
+    </contributor>
+    <contributor contributorType="Reasearcher">
+      <contributorName nameType="Personal">Wood, Raul R.</contributorName>
+      <givenName>Raul R.</givenName>
+      <familyName>Wood</familyName>
+      <nameIdentifier nameIdentifierScheme="ORCID" schemeURI="http://orcid.org/">0000-0003-4172-7719</nameIdentifier>
+      <affiliation
+          xml:lang="de"
+          affiliationIdentifier="https://ror.org/05591te55" 
+          affiliationIdentifierScheme="ROR">
+              Ludwig-Maximilians-Universität München
+      </affiliation>
+    </contributor>
+  </contributors>
+  <dates>
+    <date dateType="Created">2016</date>
+    <date dateType="Other">2050-09-01T00:00:00</date>
+  </dates>
+ <language>en</language>
+  <resourceType resourceTypeGeneral="Dataset">Dataset/Regional Climate Simulation</resourceType>
+  <relatedIdentifiers>
+    <relatedIdentifier relatedIdentifierType="DOI" relationType="IsDescribedBy">10.1175/JAMC-D-18-0021.1</relatedIdentifier>  
+  </relatedIdentifiers>
+  <sizes>
+    <size>6197732 B</size>
+  </sizes>
+  <formats>
+    <format>application/tar</format>
+    <format>application/netcdf</format>
+    <format>text/plain</format>
+  </formats>
+  <descriptions>
+    <description xml:lang="en" descriptionType="Abstract">
+      The ClimEx project is based on a longstanding collaboration between Bavaria and Québec to address common issues related to climate    change impacts, notably in hydrology. In the scope of this project, a 50-member ensemble of climate-change simulations was produced using the Canadian Regional Climate Model (CRCM5) driven by the CanESM2 global model from 1950 to 2100 under RCP8.5. The 50 simulations differ by slight perturbations in the initial conditions of CanESM2, thus allowing to explore independent trajectories of the natural climate variability and to study extreme events with return periods of hundreds of years. Dynamical downscaling with CRCM5 was performed over two regional domains, namely Europe and northeastern North America, which are defined using a 12-km resolution grid mesh. Model results (over 50 variables) for each domain were outputted on an analysis grid of 280x280 points with an archival time period that varies between one hour (for precipitation only), three hours (e.g., surface-air temperature) and one day (e.g., daily maximum wind speed).This data product includes a time series for the following variable * Total cloud fraction (clt,)measured in % (percentage) with the following time resolution: day
+  </description>
+  </descriptions>
+  <geoLocations>
+    <geoLocation>
+      <geoLocationPlace>Europe</geoLocationPlace>
+    </geoLocation>
+  </geoLocations>
+  <fundingReferences>
+    <fundingReference>
+      <funderName>Bavarian State Ministry for the Environment and Consumer Protection</funderName>
+    </fundingReference>
+  </fundingReferences>
+</resource>

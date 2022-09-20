@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource xmlns="http://datacite.org/schema/kernel-4" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://datacite.org/schema/kernel-4 http://schema.datacite.org/meta/kernel-4-4/metadata.xsd">
+<identifier identifierType="DOI">10.4135/978-93-5479-014-0</identifier>
+<titles>
+	<title xml:lang="en">Discourses on Corruption. Interdisciplinary and Intercultural Perspectives</title>
+</titles>
+<creators>
+	<creator>
+		<creatorName nameType="Personal">Kannabirān, Kalpana</creatorName>
+		<givenName>Kalpana</givenName>
+		<familyName>Kannabirān</familyName>
+		<nameIdentifier nameIdentifierScheme="GND" schemeURI="http://d-nb.info/gnd/">142317144</nameIdentifier>
+		<affiliation xml:lang="en">Council for Social Development, Hyderabad, Andhra Pradesh, India</affiliation>
+	</creator>
+	<creator>
+		<creatorName nameType="Personal"> Hollstein, Bettina</creatorName>
+		<givenName>Bettina</givenName>
+		<familyName>Hollstein</familyName>
+		<nameIdentifier nameIdentifierScheme="GND" schemeURI="http://d-nb.info/gnd/">134241797</nameIdentifier>
+		<nameIdentifier nameIdentifierScheme="ORCID" schemeURI="https://orcid.org/">0000-0002-0631-9683</nameIdentifier>
+		<affiliation xml:lang="en" affiliationIdentifier="https://www.wikidata.org/wiki/Q1912132" affiliationIdentifierScheme="Wikidata QID">Max Weber Centre for Advanced Cultural and Social Studies at the University of Erfurt</affiliation>
+	</creator>
+	<creator>
+		<creatorName nameType="Personal"> Hoffmann, Florian</creatorName>
+		<givenName>Florian</givenName>
+		<familyName>Hoffmann</familyName>
+		<nameIdentifier nameIdentifierScheme="GND" schemeURI="http://d-nb.info/gnd/">1103673335</nameIdentifier>
+		<nameIdentifier nameIdentifierScheme="ORCID" schemeURI="https://orcid.org/">0000-0002-9270-1319</nameIdentifier>
+		<affiliation xml:lang="pt" affiliationIdentifier="https://ror.org/01dg47b60" affiliationIdentifierScheme="ROR">Pontifícia Universidade Católica do Rio de Janeiro</affiliation>
+	</creator>
+</creators>
+<publisher xml:lang="en">SAGE Publications India Pvt Ltd</publisher>
+<publicationYear>2022</publicationYear>
+<resourceType resourceTypeGeneral="Text">Book</resourceType>
+<subjects>
+        <subject subjectScheme="DDC" xml:lang="en" classificationCode="302">Social interaction</subject>
+        <subject subjectScheme="DDC" xml:lang="en" classificationCode="321">Systems of governments & states</subject>
+        <subject subjectScheme="DDC" xml:lang="en" classificationCode="330">Economics</subject>
+        <subject subjectScheme="DDC" xml:lang="en" classificationCode="340">Law</subject>
+        <subject subjectScheme="GND" schemeURI="https://d-nb.info/gnd/" xml:lang="de" valueURI="4032524-6">Korruption</subject>
+        <subject subjectScheme="wikidata" schemeURI="https://www.wikidata.org/wiki/" xml:lang="en" valueURI="Q366">corruption</subject>
+        <subject subjectScheme="GND" schemeURI="https://d-nb.info/gnd/" xml:lang="de" valueURI="4129503-1">Politische Ethik</subject>
+        <subject subjectScheme="wikidata" schemeURI="https://www.wikidata.org/wiki/" xml:lang="en" valueURI="Q2101492">political ethics</subject>
+        <subject subjectScheme="GND" schemeURI="https://d-nb.info/gnd/" xml:lang="de" valueURI="4130460-3">Kapitaltheorie</subject>
+        <subject subjectScheme="GND" schemeURI="https://d-nb.info/gnd/" xml:lang="de" valueURI="4510173-5">Soziales Kapital</subject>
+        <subject subjectScheme="wikidata" schemeURI="https://www.wikidata.org/wiki/" xml:lang="en" valueURI="Q214693">social capital</subject>
+        <subject subjectScheme="GND" schemeURI="https://d-nb.info/gnd/" xml:lang="de" valueURI="7505160-6">Politische Korruption</subject>
+        <subject subjectScheme="wikidata" schemeURI="https://www.wikidata.org/wiki/" xml:lang="en" valueURI="Q10858400">political corruption</subject>
+        <subject subjectScheme="wikidata" schemeURI="https://www.wikidata.org/wiki/" xml:lang="en" valueURI="Q85033220">Economic ethics</subject>
+        <subject subjectScheme="GND" schemeURI="https://d-nb.info/gnd/" xml:lang="de" valueURI="4029577-1">Kapitalismus</subject>
+        <subject subjectScheme="wikidata" schemeURI="https://www.wikidata.org/wiki/" xml:lang="en" valueURI="Q6206">capitalism</subject>
+	<subject schemeURI="http://www.geonames.org/" xml:lang="en" valueURI="https://www.geonames.org/1269750/" classificationCode="1269750">Republic of India</subject>
+	<subject schemeURI="http://www.geonames.org/" xml:lang="en" valueURI="https://www.geonames.org/3469034/" classificationCode="3469034">Federative Republic of Brazil</subject>
+	<subject schemeURI="http://www.geonames.org/" xml:lang="en" valueURI="https://www.geonames.org/2658434/" classificationCode="2658434">Switzerland</subject>
+</subjects>
+<contributors>
+	<contributor contributorType="ProjectLeader">
+		<contributorName>Kannabirān, Kalpana</contributorName>
+		<givenName>Kalpana</givenName>
+		<familyName>Kannabirān</familyName>
+		<nameIdentifier nameIdentifierScheme="GND" schemeURI="http://d-nb.info/gnd/">142317144</nameIdentifier>
+		<affiliation xml:lang="en">Council for Social Development, Hyderabad, Andhra Pradesh, India</affiliation>
+	</contributor>
+	<contributor contributorType="ProjectLeader">
+		<contributorName> Hollstein, Bettina</contributorName>
+		<givenName>Bettina</givenName>
+		<familyName>Hollstein</familyName>
+		<nameIdentifier nameIdentifierScheme="GND" schemeURI="http://d-nb.info/gnd/">134241797</nameIdentifier>
+		<nameIdentifier nameIdentifierScheme="ORCID" schemeURI="https://orcid.org/">0000-0002-0631-9683</nameIdentifier>
+		<affiliation xml:lang="en" affiliationIdentifier="https://www.wikidata.org/wiki/Q1912132" affiliationIdentifierScheme="Wikidata QID">Max Weber Centre for Advanced Cultural and Social Studies at the University of Erfurt</affiliation>
+	</contributor>
+	<contributor contributorType="ProjectLeader">
+		<contributorName> Hoffmann, Florian</contributorName>
+		<givenName>Florian</givenName>
+		<familyName>Hoffmann</familyName>
+		<nameIdentifier nameIdentifierScheme="GND" schemeURI="http://d-nb.info/gnd/">1103673335</nameIdentifier>
+		<nameIdentifier nameIdentifierScheme="ORCID" schemeURI="https://orcid.org/">0000-0002-9270-1319</nameIdentifier>
+		<affiliation xml:lang="pt" affiliationIdentifier="https://ror.org/01dg47b60" affiliationIdentifierScheme="ROR">Pontifícia Universidade Católica do Rio de Janeiro</affiliation>
+	</contributor>
+	<contributor contributorType="HostingInstitution">
+		<contributorName>Max Weber Stiftung - Deutsche Geisteswissenschaftliche Institute im Ausland</contributorName>
+		<nameIdentifier schemeURI="https://ror.org/">https://ror.org/02esxtn62</nameIdentifier>
+	</contributor>
+	<contributor contributorType="RightsHolder">
+		<contributorName>SAGE Publications India Pvt Ltd</contributorName>
+	</contributor>
+</contributors>
+<dates>
+	<date dateType="Created">2022</date>
+</dates>
+<relatedIdentifiers>
+	<relatedIdentifier relatedIdentifierType="URL" relationType="isDescribedBy">https://micasmp.hypotheses.org/68481</relatedIdentifier>
+	<relatedIdentifier relatedIdentifierType="URL" relationType="isPartOf">https://perspectivia.net/receive/pnet_mods_00005017</relatedIdentifier>
+	<relatedIdentifier relatedIdentifierType="URL" relationType="HasMetadata" relatedMetadataScheme="mods" schemeURI="https://www.loc.gov/standards/mods/v3/mods-3-7.xsd">https://perspectivia.net/receive/pnet_mods_00005018?XSL.Transformer=mods</relatedIdentifier>
+</relatedIdentifiers>
+<descriptions>
+	<description xml:lang="en" descriptionType="Abstract">Corruption, often described as all that is rotten in the modern society, has become an increasingly dominant theme in contemporary political discourse, one that is related to specific practices, concepts and evaluations that vary across regions, cultures, spheres of action and disciplines. This volume, through case studies, investigates corruption in the Global South (especially India and Brazil) and West (especially Switzerland) to gain a more nuanced view of the phenomenon. The chapters in this volume are organized into two loosely structured and overlapping parts: the first part consisting of Chapters 2-5 covers conceptual questions related to corruption discourses from different perspectives such as economic ethics, social capital theory and literature; the second part consisting of Chapters 6-11 details the complexity and diversity of corruption practices within and between countries and regions, providing different interpretative frameworks, which in turn flow into discourses on corruption.</description>
+</descriptions>
+<geoLocations>
+	<geoLocation>
+		<geoLocationPlace>Republic of India</geoLocationPlace>
+		<geoLocationBox>
+			<westBoundLongitude>78.398438</westBoundLongitude>
+			<eastBoundLongitude>78.398438</eastBoundLongitude>
+			<southBoundLatitude>22.350076</southBoundLatitude>
+			<northBoundLatitude>22.350076</northBoundLatitude>
+		</geoLocationBox>
+	</geoLocation>
+	<geoLocation>
+		<geoLocationPlace>Federative Republic of Brazil</geoLocationPlace>
+		<geoLocationBox>
+			<westBoundLongitude>51.328125</westBoundLongitude>
+            <eastBoundLongitude>51.328125</eastBoundLongitude>
+			<southBoundLatitude>9.658653</southBoundLatitude>
+            <northBoundLatitude>9.658653</northBoundLatitude>
+		</geoLocationBox>
+	</geoLocation>
+	<geoLocation>
+		<geoLocationPlace>Switzerland</geoLocationPlace>
+		<geoLocationBox>
+			<westBoundLongitude>8.228760</westBoundLongitude>
+			<eastBoundLongitude>8.228760</eastBoundLongitude>
+			<southBoundLatitude>46.837650</southBoundLatitude>
+			<northBoundLatitude>46.837650</northBoundLatitude>
+		</geoLocationBox>
+	</geoLocation>
+</geoLocations>
+<language>en</language>
+<alternateIdentifiers>
+	<alternateIdentifier lternateIdentifierType="ISBN">978-93-5479-015-7</alternateIdentifier>
+	<alternateIdentifier alternateIdentifierType="LCCN">1021918493</alternateIdentifier>
+	<alternateIdentifier alternateIdentifierType="URL">https://perspectivia.net/receive/pnet_mods_00005018</alternateIdentifier>
+</alternateIdentifiers>
+<sizes>
+	<size>2.5 MB</size>
+</sizes>
+<formats>
+	<format>text/pdf</format>
+</formats>
+<rightsList>
+	<rights xml:lang="en" schemeURI="https://spdx.org/licenses/" rightsIdentifierScheme="SPDX" rightsIdentifier="CC-BY-NC-SA-4.0" rightsURI="https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode">CC BY-NC-SA 4.0</rights>
+</rightsList>
+<fundingReferences>
+	<fundingReference>
+		<funderName>German Federal Ministry of Education and Research (BMBF)</funderName>
+		<funderIdentifier funderIdentifierType="ROR">https://ror.org/018mejw64</funderIdentifier>
+	</fundingReference>
+</fundingReferences>
+</resource>
