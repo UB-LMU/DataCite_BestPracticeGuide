@@ -5,7 +5,7 @@ Authors:
 
 * Stephan Lücke (VerbaAlpina, ITG) 
 
-* Julian Schulz (ITG) 
+* Julian Schulz (MWS) 
 
 * Martin Spenger (UB LMU Munich) 
 
