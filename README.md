@@ -1,19 +1,32 @@
 # DataCite_BestPracticeGuide
 
 Authors:
-* Sonja Kümmet (UB LMU Munich) 
+* Christiane Bayer, IT-Gruppe Geisteswissenschaften (LMU)
 
-* Stephan Lücke (VerbaAlpina, ITG) 
+* Andreas Frech, Universitätsbibliothek der LMU
 
-* Julian Schulz (MWS) 
+* Vanessa Gabriel, Universitätsbibliothek der LMU
 
-* Martin Spenger (UB LMU Munich) 
+* Sonja Kümmet, Universitätsbibliothek der LMU
 
-* Tobias Weber (LRZ)
+* Stephan Lücke, VerbaAlpina und IT-Gruppe Geisteswissenschaften (LMU)
+
+* Johannes Munke, Leibniz Supercomputing Centre
+
+* Markus Putnings, Universitätsbibliothek der FAU
+
+* Jürgen Rohrwild, Universitätsbibliothek der FAU 
+
+* Julian Schulz, Max Weber Stiftung - Deutsche Geisteswissenschaftliche Institute im Ausland
+
+* Martin Spenger, Universitätsbibliothek der LMU
+
+* Tobias Weber, Leibniz Supercomputing Centre
 
 This repository includes the DataCite Best Practice Guide and examples from various projects. A publication accompanying the guide is available with [Korpus im Text](http://www.kit.gwi.uni-muenchen.de/?p=51272)
 
+Recent version:
+Version: 2.0 / 20.09.2022
 
+Previous version:
 Version: 1.0 / 15.11.2019
-
-
