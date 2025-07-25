@@ -1,0 +1,56 @@
+cff-version: 1.2.0
+title: >-
+  DataCite Best Practice Guide. Version 4.0 (19.05.2025)
+message: >-
+  If you use this software, please cite it using the
+  metadata from this file.
+type: software
+authors:
+  - given-names: Christiane
+    family-names: Bayer
+    orcid: 'https://orcid.org/0000-0003-3074-4222'
+  - given-names: Andreas
+    family-names: Frech
+    orcid: 'https://orcid.org/0000-0002-1458-1163'
+  - given-names: Vanessa
+    family-names: Gabriel
+    orcid: 'https://orcid.org/0000-0002-2058-5160'
+  - given-names: Sonja
+    family-names: Kümmet
+    orcid: 'https://orcid.org/0000-0002-8954-0200'
+  - given-names: Stephan
+    family-names: Lücke
+    orcid: 'https://orcid.org/0000-0002-5853-1918'
+  - given-names: Laura
+    family-names: Meier
+    orcid: 'https://orcid.org/0000-0003-1368-2306'
+  - given-names: Johannes
+    family-names: Munke
+    orcid: 'https://orcid.org/0000-0002-5031-9170'
+  - given-names: Markus
+    family-names: Putnings
+    orcid: 'https://orcid.org/0000-0002-6014-9048'
+  - given-names: Jürgen
+    family-names: Rohrwild
+    orcid: 'https://orcid.org/0000-0002-1167-0339'
+  - given-names: Julian
+    family-names: Schulz
+    orcid: 'https://orcid.org/0000-0003-4374-2680'
+  - given-names: Martin
+    family-names: Spenger
+    orcid: 'https://orcid.org/0000-0002-8841-5985'
+  - given-names: Tobias
+    family-names: Weber
+    orcid: 'https://orcid.org/0000-0003-1815-7041'
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.3559799
+repository-code: >-
+  https://github.com/UB-LMU/DataCite_BestPracticeGuide
+abstract: >-
+  This repository organises a text as a guideline for the use of the official DataCite 
+  Metadata Schema documentation. It is meant for researchers, IT and library support staff. 
+keywords:
+  - Metadata 
+  - DataCite
+license: CC-BY-SA-4.0
