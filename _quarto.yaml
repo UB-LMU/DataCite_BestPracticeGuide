@@ -1,0 +1,73 @@
+project:
+  type: website
+
+website:
+  title: "DataCite Best Practice Guide"
+  favicon: images/favicon.ico
+  navbar:
+    search: false
+    pinned: true
+    background: "#063970"
+  page-navigation: true
+
+format:
+  html:
+    pagetitle: "DataCite Best Practice Guide"
+    output-file: index.html
+    toc: true
+    toc-title: "Contents"
+    toc-location: right-body
+    toc-expand: 2
+    code-block-bg: "#f8f8f8"
+    code-block-border-left: "#9e9e9e"
+    highlight-style: tango
+    other-links:
+      - text: Published versions on Zenodo (with DOI)
+        href: https://doi.org/10.5281/zenodo.3559799
+      - text: DataCite Metadata Generator
+        href: https://dhvlab.gwi.uni-muenchen.de/datacite-generator/
+    code-links:
+      - text: GitHub Repository
+        icon: github
+        href: https://github.com/UB-LMU/DataCite_BestPracticeGuide
+
+  pdf:
+    title: DataCite Best Practice Guide
+    subtitle: Version 4.0 (19.05.2025)
+    output-file: datacite-best-practice-guide.pdf
+    toc: true
+    toc-title: "Contents"
+    number-sections: false
+    colorlinks: true
+    pdf-engine: xelatex
+    code-block-bg: "#f8f8f8"
+    code-block-border-left: "#9e9e9e"
+    highlight-style: tango
+
+metadata:
+  author:
+   - name: Christiane Bayer
+     orcid: 0000-0003-3074-4222
+   - name: Andreas Frech
+     orcid: 0000-0002-1458-1163
+   - name: Vanessa Gabriel
+     orcid: 0000-0002-2058-5160
+   - name: Sonja Kümmet
+     orcid: 0000-0002-8954-0200
+   - name: Stephan Lücke
+     orcid: 0000-0002-5853-1918
+   - name: Laura Meier
+     orcid: 0000-0003-1368-2306
+   - name: Johannes Munke
+     orcid: 0000-0002-5031-9170
+   - name: Markus Putnings
+     orcid: 0000-0002-6014-9048
+   - name: Jürgen Rohrwild
+     orcid: 0000-0002-1167-0339
+   - name: Julian Schulz
+     orcid: 0000-0003-4374-2680
+   - name: Martin Spenger
+     orcid: 0000-0002-8841-5985
+   - name: Tobias Weber
+     orcid: 0000-0003-1815-7041
+  license: CC BY-SA 4.0

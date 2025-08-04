@@ -1,31 +1,3 @@
----
-title: "DataCite Best Practice Guide"
-subtitle: "Version 4.0 (19.05.2025)"
-author:
-   - Christiane Bayer
-   - Andreas Frech
-   - Vanessa Gabriel
-   - Sonja Kümmet
-   - Stephan Lücke
-   - Laura Meier
-   - Johannes Munke
-   - Markus Putnings
-   - Jürgen Rohrwild
-   - Julian Schulz
-   - Martin Spenger
-   - Tobias Weber
-format:
-  pdf:
-    toc: true
-    toc-title: "Contents"
-    number-sections: false
-    colorlinks: true
-    pdf-engine: xelatex
-    code-block-bg: "#f8f8f8"
-    code-block-border-left: "9e9e9e"
-    highlight-style: tango
----
-
 # Authors
 
 **Christiane Bayer**, IT-Gruppe Geisteswissenschaften (LMU) \
@@ -72,7 +44,7 @@ The second part, [Best Practice for specific fields](#b.-best-practice-for-speci
 
 The third part, [Examples](#c.-examples), is a compilation of DataCite examples.
 
-## [A. General Best Practice](#a.-general-best-practice-1)
+### [A. General Best Practice](#a.-general-best-practice-1)
 
 * [What do the metadata describe?](#what-do-the-metadata-describe)
 * [What is the language of the metadata?](#what-is-the-language-of-the-metadata)
@@ -80,7 +52,7 @@ The third part, [Examples](#c.-examples), is a compilation of DataCite examples.
 * [How should I specify a person?](#how-should-i-specify-a-person)
 * [How should I handle different versions of research data?](#how-should-i-handle-different-versions-of-the-same-research-data)
 
-## [B. Best Practice for specific fields](#b.-best-practice-for-specific-fields-1)
+### [B. Best Practice for specific fields](#b.-best-practice-for-specific-fields-1)
 
 * [1 identifier [m]](#identifier-m)
 * [2 creator [m]](#creator-m)
@@ -108,7 +80,7 @@ Mandatory fields are indicated by the tag **[m]**, recommended fields by **[r]**
 These fields improve discovery, make long-term management of the datasets easier for the hosting institution and are helpful for future (re-)users of the dataset. The benefits of providing additional information outweigh the effort, as most of the information is already available to researchers like providing a short abstract in the [_description_](#description-m).  
 
 
-## [C. Examples](#examples)
+### [C. Examples](#c.-examples-1)
 
 * [Digital encyclopedia: "Bayerisches Musiker-Lexikon Online"](#digital-encyclopedia-bayerisches-musiker-lexikon-online)
 * [Meteorological project: "ClimEx"](#meteorological-project-climex) 
@@ -1094,7 +1066,7 @@ Article = A, Journal = B -->
 	</relatedItem>
 </relatedItems>
 ```
-## Examples
+## C. Examples
 
 ### Digital encyclopedia: "Bayerisches Musiker-Lexikon Online"
 The Digital Encyclopedia of Bavarian Musicians (Bayerisches Musiker-Lexikon Online, short BMLO) refers as a musicological model project. The BMLO offers a digital biographical dictionary focussing on music science, furthermore it enriches the presented personalities of Bavarian history of music by implementing further information, gathered from biographical literature, archives, libraries and digital collections. In this way, the BMLO constitutes the core of an interconnected, virtual cluster for history of music. Currently, 24621 out of a total of 27818 records is presented on the web. As parts of this semantic network should also be mentioned the Munich Dictionary of Musik (Münchner Musiklexikon, short MUK), which serves since 2010 as a encyclopedia for music corporations with a linkage to Munich, as well as LOCI, a geographic database for music, culture and history, founded in 2012.
