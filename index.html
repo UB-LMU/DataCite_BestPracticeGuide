@@ -1,0 +1,1960 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.7.31">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Christiane Bayer">
+<meta name="author" content="Andreas Frech">
+<meta name="author" content="Vanessa Gabriel">
+<meta name="author" content="Sonja Kümmet">
+<meta name="author" content="Stephan Lücke">
+<meta name="author" content="Laura Meier">
+<meta name="author" content="Johannes Munke">
+<meta name="author" content="Markus Putnings">
+<meta name="author" content="Jürgen Rohrwild">
+<meta name="author" content="Julian Schulz">
+<meta name="author" content="Martin Spenger">
+<meta name="author" content="Tobias Weber">
+
+<title>DataCite Best Practice Guide</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./images/favicon.ico" rel="icon">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-af5ec82acda093b5ee751184164e9432.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-88ae874e9181e59dd7301c8ecca0d6d4.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+</head>
+
+<body class="nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">DataCite Best Practice Guide</span>
+    </a>
+  </div>
+        <div class="quarto-navbar-tools tools-end">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active" data-toc-expanded="2">
+    <h2 id="toc-title">Contents</h2>
+   
+  <ul>
+  <li><a href="#authors" id="toc-authors" class="nav-link active" data-scroll-target="#authors">Authors</a></li>
+  <li><a href="#datacite-best-practice-guide" id="toc-datacite-best-practice-guide" class="nav-link" data-scroll-target="#datacite-best-practice-guide">DataCite Best Practice Guide</a>
+  <ul class="collapse">
+  <li><a href="#overview" id="toc-overview" class="nav-link" data-scroll-target="#overview">Overview</a>
+  <ul class="collapse">
+  <li><a href="#a.-general-best-practice" id="toc-a.-general-best-practice" class="nav-link" data-scroll-target="#a.-general-best-practice">A. General Best Practice</a></li>
+  <li><a href="#b.-best-practice-for-specific-fields" id="toc-b.-best-practice-for-specific-fields" class="nav-link" data-scroll-target="#b.-best-practice-for-specific-fields">B. Best Practice for specific fields</a></li>
+  <li><a href="#c.-examples" id="toc-c.-examples" class="nav-link" data-scroll-target="#c.-examples">C. Examples</a></li>
+  </ul></li>
+  <li><a href="#a.-general-best-practice-1" id="toc-a.-general-best-practice-1" class="nav-link" data-scroll-target="#a.-general-best-practice-1">A. General Best Practice</a>
+  <ul class="collapse">
+  <li><a href="#what-do-the-metadata-describe" id="toc-what-do-the-metadata-describe" class="nav-link" data-scroll-target="#what-do-the-metadata-describe">What do the metadata describe?</a></li>
+  <li><a href="#what-is-the-language-of-the-metadata" id="toc-what-is-the-language-of-the-metadata" class="nav-link" data-scroll-target="#what-is-the-language-of-the-metadata">What is the language of the metadata?</a></li>
+  <li><a href="#how-should-i-specify-a-person" id="toc-how-should-i-specify-a-person" class="nav-link" data-scroll-target="#how-should-i-specify-a-person">How should I specify a person?</a></li>
+  <li><a href="#how-should-i-specify-an-institution" id="toc-how-should-i-specify-an-institution" class="nav-link" data-scroll-target="#how-should-i-specify-an-institution">How should I specify an institution?</a></li>
+  <li><a href="#how-should-i-handle-different-versions-of-the-same-research-data" id="toc-how-should-i-handle-different-versions-of-the-same-research-data" class="nav-link" data-scroll-target="#how-should-i-handle-different-versions-of-the-same-research-data">How should I handle different versions of the same research data?</a></li>
+  </ul></li>
+  <li><a href="#b.-best-practice-for-specific-fields-1" id="toc-b.-best-practice-for-specific-fields-1" class="nav-link" data-scroll-target="#b.-best-practice-for-specific-fields-1">B. Best practice for specific fields</a>
+  <ul class="collapse">
+  <li><a href="#identifier-m" id="toc-identifier-m" class="nav-link" data-scroll-target="#identifier-m">1 identifier [m]</a></li>
+  <li><a href="#creator-m" id="toc-creator-m" class="nav-link" data-scroll-target="#creator-m">2 creator [m]</a></li>
+  <li><a href="#title-m" id="toc-title-m" class="nav-link" data-scroll-target="#title-m">3 title [m]</a></li>
+  <li><a href="#publisher-m" id="toc-publisher-m" class="nav-link" data-scroll-target="#publisher-m">4 publisher [m]</a></li>
+  <li><a href="#publicationyear-m" id="toc-publicationyear-m" class="nav-link" data-scroll-target="#publicationyear-m">5 publicationYear [m]</a></li>
+  <li><a href="#subject-m" id="toc-subject-m" class="nav-link" data-scroll-target="#subject-m">6 subject [m]</a></li>
+  <li><a href="#contributor-r" id="toc-contributor-r" class="nav-link" data-scroll-target="#contributor-r">7 contributor [r]</a></li>
+  <li><a href="#date-r" id="toc-date-r" class="nav-link" data-scroll-target="#date-r">8 date [r]</a></li>
+  <li><a href="#language-o" id="toc-language-o" class="nav-link" data-scroll-target="#language-o">9 language [o]</a></li>
+  <li><a href="#resourcetype-m" id="toc-resourcetype-m" class="nav-link" data-scroll-target="#resourcetype-m">10 resourceType [m]</a></li>
+  <li><a href="#alternateidentifier-o" id="toc-alternateidentifier-o" class="nav-link" data-scroll-target="#alternateidentifier-o">11 alternateIdentifier [o]</a></li>
+  <li><a href="#relatedidentifier-r" id="toc-relatedidentifier-r" class="nav-link" data-scroll-target="#relatedidentifier-r">12 relatedIdentifier [r]</a></li>
+  <li><a href="#size-r" id="toc-size-r" class="nav-link" data-scroll-target="#size-r">13 size [r]</a></li>
+  <li><a href="#format-o" id="toc-format-o" class="nav-link" data-scroll-target="#format-o">14 format [o]</a></li>
+  <li><a href="#version-o" id="toc-version-o" class="nav-link" data-scroll-target="#version-o">15 version [o]</a></li>
+  <li><a href="#rights-m" id="toc-rights-m" class="nav-link" data-scroll-target="#rights-m">16 rights [m]</a></li>
+  <li><a href="#description-m" id="toc-description-m" class="nav-link" data-scroll-target="#description-m">17 description [m]</a></li>
+  <li><a href="#geolocation-r" id="toc-geolocation-r" class="nav-link" data-scroll-target="#geolocation-r">18 geoLocation [r]</a></li>
+  <li><a href="#fundingreference-o" id="toc-fundingreference-o" class="nav-link" data-scroll-target="#fundingreference-o">19 fundingReference [o]</a></li>
+  <li><a href="#relateditem-o" id="toc-relateditem-o" class="nav-link" data-scroll-target="#relateditem-o">20 relatedItem [o]</a></li>
+  </ul></li>
+  <li><a href="#c.-examples-1" id="toc-c.-examples-1" class="nav-link" data-scroll-target="#c.-examples-1">C. Examples</a>
+  <ul class="collapse">
+  <li><a href="#digital-encyclopedia-bayerisches-musiker-lexikon-online" id="toc-digital-encyclopedia-bayerisches-musiker-lexikon-online" class="nav-link" data-scroll-target="#digital-encyclopedia-bayerisches-musiker-lexikon-online">Digital encyclopedia: “Bayerisches Musiker-Lexikon Online”</a></li>
+  <li><a href="#meteorological-project-climex" id="toc-meteorological-project-climex" class="nav-link" data-scroll-target="#meteorological-project-climex">Meteorological project: “ClimEx”</a></li>
+  <li><a href="#volume-as-part-of-a-series-discourses-on-corruption" id="toc-volume-as-part-of-a-series-discourses-on-corruption" class="nav-link" data-scroll-target="#volume-as-part-of-a-series-discourses-on-corruption">Volume as part of a series: “Discourses on Corruption”</a></li>
+  <li><a href="#article-in-a-conference-proceeding-high-energy-physics" id="toc-article-in-a-conference-proceeding-high-energy-physics" class="nav-link" data-scroll-target="#article-in-a-conference-proceeding-high-energy-physics">Article in a conference proceeding: “High-Energy Physics”</a></li>
+  <li><a href="#critical-editon-digital-print-richard-strauss-kritische-werkausgabe" id="toc-critical-editon-digital-print-richard-strauss-kritische-werkausgabe" class="nav-link" data-scroll-target="#critical-editon-digital-print-richard-strauss-kritische-werkausgabe">Critical editon (digital &amp; print): “Richard Strauss Kritische Werkausgabe”</a></li>
+  <li><a href="#digital-lexicographical-information-system-verbaalpina" id="toc-digital-lexicographical-information-system-verbaalpina" class="nav-link" data-scroll-target="#digital-lexicographical-information-system-verbaalpina">Digital lexicographical information system: “VerbaAlpina”</a></li>
+  </ul></li>
+  </ul></li>
+  </ul>
+<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="datacite-best-practice-guide.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div><div class="quarto-other-links"><h2>Other Links</h2><ul><li><a href="https://doi.org/10.5281/zenodo.3559799"><i class="bi bi-link-45deg"></i>Published versions on Zenodo (with DOI)</a></li><li><a href="https://dhvlab.gwi.uni-muenchen.de/datacite-generator/"><i class="bi bi-link-45deg"></i>DataCite Metadata Generator</a></li></ul></div><div class="quarto-code-links"><h2>Code Links</h2><ul><li><a href="https://github.com/UB-LMU/DataCite_BestPracticeGuide"><i class="bi bi-github"></i>GitHub Repository</a></li></ul></div></nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Authors</div>
+    <div class="quarto-title-meta-contents">
+             <p>Christiane Bayer <a href="https://orcid.org/0000-0003-3074-4222" class="quarto-title-author-orcid"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg=="></a></p>
+             <p>Andreas Frech <a href="https://orcid.org/0000-0002-1458-1163" class="quarto-title-author-orcid"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg=="></a></p>
+             <p>Vanessa Gabriel <a href="https://orcid.org/0000-0002-2058-5160" class="quarto-title-author-orcid"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg=="></a></p>
+             <p>Sonja Kümmet <a href="https://orcid.org/0000-0002-8954-0200" class="quarto-title-author-orcid"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg=="></a></p>
+             <p>Stephan Lücke <a href="https://orcid.org/0000-0002-5853-1918" class="quarto-title-author-orcid"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg=="></a></p>
+             <p>Laura Meier <a href="https://orcid.org/0000-0003-1368-2306" class="quarto-title-author-orcid"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg=="></a></p>
+             <p>Johannes Munke <a href="https://orcid.org/0000-0002-5031-9170" class="quarto-title-author-orcid"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg=="></a></p>
+             <p>Markus Putnings <a href="https://orcid.org/0000-0002-6014-9048" class="quarto-title-author-orcid"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg=="></a></p>
+             <p>Jürgen Rohrwild <a href="https://orcid.org/0000-0002-1167-0339" class="quarto-title-author-orcid"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg=="></a></p>
+             <p>Julian Schulz <a href="https://orcid.org/0000-0003-4374-2680" class="quarto-title-author-orcid"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg=="></a></p>
+             <p>Martin Spenger <a href="https://orcid.org/0000-0002-8841-5985" class="quarto-title-author-orcid"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg=="></a></p>
+             <p>Tobias Weber <a href="https://orcid.org/0000-0003-1815-7041" class="quarto-title-author-orcid"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg=="></a></p>
+          </div>
+  </div>
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+<nav id="TOC-body" role="doc-toc">
+    <h2 id="toc-title">Contents</h2>
+   
+  <ul>
+  <li><a href="#authors" id="toc-authors">Authors</a></li>
+  <li><a href="#datacite-best-practice-guide" id="toc-datacite-best-practice-guide">DataCite Best Practice Guide</a>
+  <ul>
+  <li><a href="#overview" id="toc-overview">Overview</a>
+  <ul>
+  <li><a href="#a.-general-best-practice" id="toc-a.-general-best-practice">A. General Best Practice</a></li>
+  <li><a href="#b.-best-practice-for-specific-fields" id="toc-b.-best-practice-for-specific-fields">B. Best Practice for specific fields</a></li>
+  <li><a href="#c.-examples" id="toc-c.-examples">C. Examples</a></li>
+  </ul></li>
+  <li><a href="#a.-general-best-practice-1" id="toc-a.-general-best-practice-1">A. General Best Practice</a>
+  <ul>
+  <li><a href="#what-do-the-metadata-describe" id="toc-what-do-the-metadata-describe">What do the metadata describe?</a></li>
+  <li><a href="#what-is-the-language-of-the-metadata" id="toc-what-is-the-language-of-the-metadata">What is the language of the metadata?</a></li>
+  <li><a href="#how-should-i-specify-a-person" id="toc-how-should-i-specify-a-person">How should I specify a person?</a></li>
+  <li><a href="#how-should-i-specify-an-institution" id="toc-how-should-i-specify-an-institution">How should I specify an institution?</a></li>
+  <li><a href="#how-should-i-handle-different-versions-of-the-same-research-data" id="toc-how-should-i-handle-different-versions-of-the-same-research-data">How should I handle different versions of the same research data?</a></li>
+  </ul></li>
+  <li><a href="#b.-best-practice-for-specific-fields-1" id="toc-b.-best-practice-for-specific-fields-1">B. Best practice for specific fields</a>
+  <ul>
+  <li><a href="#identifier-m" id="toc-identifier-m">1 identifier [m]</a></li>
+  <li><a href="#creator-m" id="toc-creator-m">2 creator [m]</a></li>
+  <li><a href="#title-m" id="toc-title-m">3 title [m]</a></li>
+  <li><a href="#publisher-m" id="toc-publisher-m">4 publisher [m]</a></li>
+  <li><a href="#publicationyear-m" id="toc-publicationyear-m">5 publicationYear [m]</a></li>
+  <li><a href="#subject-m" id="toc-subject-m">6 subject [m]</a></li>
+  <li><a href="#contributor-r" id="toc-contributor-r">7 contributor [r]</a></li>
+  <li><a href="#date-r" id="toc-date-r">8 date [r]</a></li>
+  <li><a href="#language-o" id="toc-language-o">9 language [o]</a></li>
+  <li><a href="#resourcetype-m" id="toc-resourcetype-m">10 resourceType [m]</a></li>
+  <li><a href="#alternateidentifier-o" id="toc-alternateidentifier-o">11 alternateIdentifier [o]</a></li>
+  <li><a href="#relatedidentifier-r" id="toc-relatedidentifier-r">12 relatedIdentifier [r]</a></li>
+  <li><a href="#size-r" id="toc-size-r">13 size [r]</a></li>
+  <li><a href="#format-o" id="toc-format-o">14 format [o]</a></li>
+  <li><a href="#version-o" id="toc-version-o">15 version [o]</a></li>
+  <li><a href="#rights-m" id="toc-rights-m">16 rights [m]</a></li>
+  <li><a href="#description-m" id="toc-description-m">17 description [m]</a></li>
+  <li><a href="#geolocation-r" id="toc-geolocation-r">18 geoLocation [r]</a></li>
+  <li><a href="#fundingreference-o" id="toc-fundingreference-o">19 fundingReference [o]</a></li>
+  <li><a href="#relateditem-o" id="toc-relateditem-o">20 relatedItem [o]</a></li>
+  </ul></li>
+  <li><a href="#c.-examples-1" id="toc-c.-examples-1">C. Examples</a>
+  <ul>
+  <li><a href="#digital-encyclopedia-bayerisches-musiker-lexikon-online" id="toc-digital-encyclopedia-bayerisches-musiker-lexikon-online">Digital encyclopedia: “Bayerisches Musiker-Lexikon Online”</a></li>
+  <li><a href="#meteorological-project-climex" id="toc-meteorological-project-climex">Meteorological project: “ClimEx”</a></li>
+  <li><a href="#volume-as-part-of-a-series-discourses-on-corruption" id="toc-volume-as-part-of-a-series-discourses-on-corruption">Volume as part of a series: “Discourses on Corruption”</a></li>
+  <li><a href="#article-in-a-conference-proceeding-high-energy-physics" id="toc-article-in-a-conference-proceeding-high-energy-physics">Article in a conference proceeding: “High-Energy Physics”</a></li>
+  <li><a href="#critical-editon-digital-print-richard-strauss-kritische-werkausgabe" id="toc-critical-editon-digital-print-richard-strauss-kritische-werkausgabe">Critical editon (digital &amp; print): “Richard Strauss Kritische Werkausgabe”</a></li>
+  <li><a href="#digital-lexicographical-information-system-verbaalpina" id="toc-digital-lexicographical-information-system-verbaalpina">Digital lexicographical information system: “VerbaAlpina”</a></li>
+  </ul></li>
+  </ul></li>
+  </ul>
+</nav>
+<section id="authors" class="level1">
+<h1>Authors</h1>
+<p><strong>Christiane Bayer</strong>, IT-Gruppe Geisteswissenschaften (LMU)<br>
+(<a href="https://orcid.org/0000-0003-3074-4222">ORCID: 0000-0003-3074-4222</a>, v2)<br>
+<strong>Andreas Frech</strong>, Universitätsbibliothek der LMU<br>
+(<a href="https://orcid.org/0000-0002-1458-1163">ORCID: 0000-0002-1458-1163</a>, v2+v3+v4)<br>
+<strong>Vanessa Gabriel</strong>, Universitätsbibliothek der LMU<br>
+(<a href="https://orcid.org/0000-0002-2058-5160">ORCID: 0000-0002-2058-5160</a>, v2+v3)<br>
+<strong>Sonja Kümmet</strong>, Universitätsbibliothek der LMU<br>
+(<a href="https://orcid.org/0000-0002-8954-0200">ORCID: 0000-0002-8954-0200</a>, v1)<br>
+<strong>Stephan Lücke</strong>, IT-Gruppe Geisteswissenschaften (LMU)<br>
+(<a href="https://orcid.org/0000-0002-5853-1918">ORCID: 0000-0002-5853-1918</a>, v1+v2)<br>
+<strong>Laura Meier</strong>, Universitätsbibliothek der LMU<br>
+(<a href="https://orcid.org/0000-0003-1368-2306">ORCID: 0000-0003-1368-2306</a>, v4)<br>
+<strong>Johannes Munke</strong>, Leibniz Supercomputing Centre<br>
+(<a href="https://orcid.org/0000-0002-5031-9170">ORCID: 0000-0002-5031-9170</a>, v2)<br>
+<strong>Markus Putnings</strong>, Universitätsbibliothek der FAU<br>
+(<a href="https://orcid.org/0000-0002-6014-9048">ORCID: 0000-0002-6014-9048</a>, v2)<br>
+<strong>Jürgen Rohrwild</strong>, Universitätsbibliothek der FAU<br>
+(<a href="https://orcid.org/0000-0002-1167-0339">ORCID: 0000-0002-1167-0339</a>, v2+v3+v4)<br>
+<strong>Julian Schulz</strong>, Max Weber Stiftung - Deutsche Geisteswissenschaftliche Institute im Ausland<br>
+(<a href="https://orcid.org/0000-0003-4374-2680">ORCID: 0000-0003-4374-2680</a>, v1+v2)<br>
+<strong>Martin Spenger</strong>, Universitätsbibliothek der LMU<br>
+(<a href="https://orcid.org/0000-0002-8841-5985">ORCID: 0000-0002-8841-5985</a>, v1+v2+v3+v4)<br>
+<strong>Tobias Weber</strong>, Leibniz Supercomputing Centre<br>
+(<a href="https://orcid.org/0000-0003-1815-7041">ORCID: 0000-0003-1815-7041</a>, v1)<br>
+</p>
+<p>If you have any questions about this DataCite Best Practice Guide, please contact <a href="mailto:forschungsdaten@ub.uni-muenchen.de">forschungsdaten@ub.uni-muenchen.de</a> or <a href="mailto:ub-fdm@fau.de">ub-fdm@fau.de</a>.</p>
+</section>
+<section id="datacite-best-practice-guide" class="level1">
+<h1>DataCite Best Practice Guide</h1>
+<p>The <a href="https://schema.datacite.org">DataCite Metadata Schema [external link]</a> has become a de facto standard for describing research data. Despite all of its efforts to standardize metadata allocation, this schema offers a great deal of leeway and alternatives in detail. For example, it is optional to clearly identify languages used in the metadata either via ISO 639-1, ISO 639-2, ISO 639-2/B (language codes commonly used by libraries) or ISO 639-3 language tags. The value of metadata increases with its consistency, which is achieved through compliance with standards. One of the aims of the Best Practice Guide presented here is therefore to limit the choices provided by DataCite by specifying a preference, and in this way to ensure as much consistency as possible.</p>
+<p>This document is a guideline for the use of the official <a href="https://schema.datacite.org">DataCite Metadata Schema documentation [external link]</a>, <a href="https://doi.org/10.14454/mzv1-5b55">version 4.6 [external link]</a>. A more convenient support documentation with better navigation can be found here as a HTML version <a href="https://datacite-metadata-schema.readthedocs.io">DataCite Metadata Schema Documentation [external link]</a>. It is meant for researchers, IT and library support staff. Further information on the schema can be found on the <a href="https://support.datacite.org/docs/datacite-metadata-schema">DataCite support site [external link]</a>.</p>
+<p>To create a DataCite XML file, we recommend to you to use the <a href="https://dhvlab.gwi.uni-muenchen.de/datacite-generator/">DataCite Metadata Generator [external link]</a>. This tool is kept in sync with this guideline, safe for transmission times inbetween versions. If you want to create metadata for research data on a scale that is too large for manual procedures, please contact one of the institutions named above.</p>
+<section id="overview" class="level2">
+<h2 class="anchored" data-anchor-id="overview">Overview</h2>
+<p>The first part, <a href="#a.-general-best-practice">General Best Practice</a>, is a selection of recommendations and obligations when using DataCite in general and was written in an FAQ-style (Frequently Asked Questions).</p>
+<p>The second part, <a href="#b.-best-practice-for-specific-fields">Best Practice for specific fields</a>, gives more details for each of the 20 metadata fields of the DataCite metadata standard.</p>
+<p>The third part, <a href="#c.-examples">Examples</a>, is a compilation of DataCite examples.</p>
+<section id="a.-general-best-practice" class="level3">
+<h3 class="anchored" data-anchor-id="a.-general-best-practice"><a href="#a.-general-best-practice-1">A. General Best Practice</a></h3>
+<ul>
+<li><a href="#what-do-the-metadata-describe">What do the metadata describe?</a></li>
+<li><a href="#what-is-the-language-of-the-metadata">What is the language of the metadata?</a></li>
+<li><a href="#how-should-i-specify-an-institution">How should I specify an institution?</a></li>
+<li><a href="#how-should-i-specify-a-person">How should I specify a person?</a></li>
+<li><a href="#how-should-i-handle-different-versions-of-the-same-research-data">How should I handle different versions of research data?</a></li>
+</ul>
+</section>
+<section id="b.-best-practice-for-specific-fields" class="level3">
+<h3 class="anchored" data-anchor-id="b.-best-practice-for-specific-fields"><a href="#b.-best-practice-for-specific-fields-1">B. Best Practice for specific fields</a></h3>
+<ul>
+<li><a href="#identifier-m">1 identifier [m]</a></li>
+<li><a href="#creator-m">2 creator [m]</a></li>
+<li><a href="#title-m">3 title [m]</a></li>
+<li><a href="#publisher-m">4 publisher [m]</a></li>
+<li><a href="#publicationyear-m">5 publicationYear [m]</a></li>
+<li><a href="#subject-m">6 subject [m]*</a></li>
+<li><a href="#contributor-r">7 contributor [r]</a></li>
+<li><a href="#date-r">8 date [r]</a></li>
+<li><a href="#language-o">9 language [o]</a></li>
+<li><a href="#resourcetype-m">10 resourceType [m]</a></li>
+<li><a href="#alternateidentifier-o">11 alternateIdentifier [o]</a></li>
+<li><a href="#relatedidentifier-r">12 relatedIdentifier [r]</a></li>
+<li><a href="#size-r">13 size [r]*</a></li>
+<li><a href="#format-o">14 format [o]</a></li>
+<li><a href="#version-o">15 version [o]</a></li>
+<li><a href="#rights-m">16 rights [m]*</a></li>
+<li><a href="#description-m">17 description [m]*</a></li>
+<li><a href="#geolocation-r">18 geoLocation [r]</a></li>
+<li><a href="#fundingreference-o">19 fundingReference [o]</a></li>
+<li><a href="#relateditem-o">20 relatedItem [o]</a></li>
+</ul>
+<p>Mandatory fields are indicated by the tag <strong>[m]</strong>, recommended fields by <strong>[r]</strong> and optional fields by <strong>[o]</strong>. Note: This guide deviates from the <a href="https://doi.org/10.14454/csba-e454">DataCite Metadata Schema 4.6 [external link]</a> in the assessment of recommend and optional properties and assigns different levels of obligation to some of them. They are indicated by an * in the list above.</p>
+<p>These fields improve discovery, make long-term management of the datasets easier for the hosting institution and are helpful for future (re-)users of the dataset. The benefits of providing additional information outweigh the effort, as most of the information is already available to researchers like providing a short abstract in the <a href="#description-m"><em>description</em></a>.</p>
+</section>
+<section id="c.-examples" class="level3">
+<h3 class="anchored" data-anchor-id="c.-examples"><a href="#c.-examples-1">C. Examples</a></h3>
+<ul>
+<li><a href="#digital-encyclopedia-bayerisches-musiker-lexikon-online">Digital encyclopedia: “Bayerisches Musiker-Lexikon Online”</a></li>
+<li><a href="#meteorological-project-climex">Meteorological project: “ClimEx”</a></li>
+<li><a href="#volume-as-part-of-a-series-discourses-on-corruption">Volume as part of a series: “Discourses on Corruption”</a></li>
+<li><a href="#article-in-a-conference-proceeding-high-energy-physics">Article in a conference proceeding: “High-Energy Physics”</a></li>
+<li><a href="#critical-editon-digital-print-richard-strauss-kritische-werkausgabe">Critical editon (digital &amp; print): “Richard Strauss Kritische Werkausgabe”</a></li>
+<li><a href="#digital-lexicographical-information-system-verbaalpina">Digital lexicographical information system: “VerbaAlpina”</a></li>
+</ul>
+</section>
+</section>
+<section id="a.-general-best-practice-1" class="level2">
+<h2 class="anchored" data-anchor-id="a.-general-best-practice-1">A. General Best Practice</h2>
+<section id="what-do-the-metadata-describe" class="level3">
+<h3 class="anchored" data-anchor-id="what-do-the-metadata-describe">What do the metadata describe?</h3>
+<p>Unless otherwise specified all information in the metadata concerns the research data (also denoted as “resource”), neither the project in whose context the data have been created or collected nor the metadata themselves.</p>
+</section>
+<section id="what-is-the-language-of-the-metadata" class="level3">
+<h3 class="anchored" data-anchor-id="what-is-the-language-of-the-metadata">What is the language of the metadata?</h3>
+<ul>
+<li>The default language of the metadata is English. If another language is used, the same information must additionally be specified in English.</li>
+<li>Where language variations are possible (e.g.&nbsp;title, description, affiliations), the language should be specified by <em>xml:lang</em> attributes:</li>
+</ul>
+<div class="sourceCode" id="cb1"><pre class="sourceCode xml code-with-copy"><code class="sourceCode xml"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>&lt;<span class="kw">title</span><span class="ot"> xml:lang=</span><span class="st">"de"</span>&gt;</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>    Bayerisches Musiker-Lexikon Online (BMLO)</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>&lt;/<span class="kw">title</span>&gt;</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>&lt;<span class="kw">title</span><span class="ot"> xml:lang=</span><span class="st">"en"</span><span class="ot"> titleType=</span><span class="st">"TranslatedTitle"</span>&gt;</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>    Digital Encyclopedia of Bavarian Musicians</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>&lt;/<span class="kw">title</span>&gt;</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<ul>
+<li>Proper nouns do not need to be translated.</li>
+<li>Use standardized data (e.g.&nbsp;controlled vocabularies) whenever possible. This might allow data aggregators to display the information in the language most suitable to the use case at hand.</li>
+<li>Recommendation: use either the two-letter language codes from ISO 639-1 or the three-letter language codes from ISO 639-2 (listed on <a href="https://en.wikipedia.org/wiki/List_of_ISO_639_language_codes">Wikipedia [external link]</a>). Be advised: the three-letter codes are used in library systems. If you use a different standard (i.e.&nbsp;<a href="https://en.wikipedia.org/wiki/IETF_language_tag">BCP 47 [external link]</a>), pay attention to be consistent and do not alternate between standards. In any case, DataCite expects a language code confirming to this regular expression pattern <code>[a-zA-Z]{1,8}(-[a-zA-Z0-9]{1,8})*</code>, which works for most common language codes.</li>
+</ul>
+</section>
+<section id="how-should-i-specify-a-person" class="level3">
+<h3 class="anchored" data-anchor-id="how-should-i-specify-a-person">How should I specify a person?</h3>
+<ul>
+<li>A person should be identified by name, persistent ID and affiliation.</li>
+<li>It is recommended to not use titles/academic degrees in names as they are subject to change.</li>
+<li>State the name in the order “family name, given name”. For example:</li>
+</ul>
+<div class="sourceCode" id="cb2"><pre class="sourceCode xml code-with-copy"><code class="sourceCode xml"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>&lt;<span class="kw">creatorName</span><span class="ot"> nameType=</span><span class="st">"Personal"</span>&gt;Krefeld, Thomas&lt;/<span class="kw">creatorName</span>&gt;</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<ul>
+<li>Recommendation: Additionally, separate family name and given name, each in a specific subfield:</li>
+</ul>
+<div class="sourceCode" id="cb3"><pre class="sourceCode xml code-with-copy"><code class="sourceCode xml"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>&lt;<span class="kw">givenName</span>&gt;Thomas&lt;/<span class="kw">givenName</span>&gt;</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>&lt;<span class="kw">familyName</span>&gt;Krefeld&lt;/<span class="kw">familyName</span>&gt;</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<ul>
+<li>Add a persistent identifier for persons, preferably a <a href="https://www.dnb.de/DE/Professionell/Standardisierung/GND/gnd_node.html">GND-ID (Gemeinsame Normdatei) [external link]</a> or an <a href="https://orcid.org/">ORCID-ID [external link]</a> (Open Researcher and Contributor ID). This will make attributions robust to changes of names or affiliations:
+<ul>
+<li>Recommendation for GND-ID entries:
+<ul>
+<li>GND-ID entries can be conveniently searched for on <a href="http://gnd.eurospider.com/s">WebGND [external link]</a> or <a href="https://lobid.org/gnd">lobid-gnd [external link]</a>; for further search options see the <a href="https://gnd.network/Webs/gnd/DE/Entdecken/entdecken_node.html">GND website [external link]</a>.</li>
+<li>Only use individualized GND entries that clearly identify a person (usually by year of birth and/or profession).</li>
+</ul></li>
+</ul></li>
+</ul>
+<div class="sourceCode" id="cb4"><pre class="sourceCode xml code-with-copy"><code class="sourceCode xml"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co">&lt;!-- GND entry --&gt;</span> </span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>&lt;<span class="kw">nameIdentifier</span></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="ot">    schemeURI=</span><span class="st">"https://d-nb.info/gnd/"</span></span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a><span class="ot">    nameIdentifierScheme=</span><span class="st">"GND"</span>&gt;</span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>        123778689</span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>&lt;/<span class="kw">nameIdentifier</span>&gt;</span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>        </span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a><span class="co">&lt;!-- ORCID entry --&gt;</span>        </span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a>&lt;<span class="kw">nameIdentifier</span></span>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a><span class="ot">    schemeURI=</span><span class="st">"http://orcid.org/"</span></span>
+<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a><span class="ot">    nameIdentifierScheme=</span><span class="st">"ORCID"</span>&gt;</span>
+<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a>        0000-0001-9657-6052</span>
+<span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a>&lt;/<span class="kw">nameIdentifier</span>&gt;</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<ul>
+<li>It is also recommended to indicate the affiliation to an institution (Note: An affiliation is an institution, not a project).
+<ul>
+<li>See: <a href="#how-should-i-specify-an-institution">How should I specify an institution</a></li>
+<li>If a person has multiple affiliations:
+<ul>
+<li>It is recommended to state only one institution (the context of the resource determines the affiliation).</li>
+<li>If unavoidable, multiple affiliations can be specified in the order of importance for the dataset published.</li>
+</ul></li>
+</ul></li>
+</ul>
+</section>
+<section id="how-should-i-specify-an-institution" class="level3">
+<h3 class="anchored" data-anchor-id="how-should-i-specify-an-institution">How should I specify an institution?</h3>
+<ul>
+<li>Institutions may mainly be enterend in <em>affiliaton</em> or <em>fundingReference</em>.</li>
+<li>Follow the policy of the institution.</li>
+<li>State the name of the institution as specific as possible (e.g.&nbsp;start with the chair/group, not with the university). If the name of the institution has changed use the name as it was at the time of creation of the resource.</li>
+<li>Start with the more specific organizational units first and end with the most generic unit, separated by semicolon:</li>
+</ul>
+<div class="sourceCode" id="cb5"><pre class="sourceCode xml code-with-copy"><code class="sourceCode xml"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>&lt;<span class="kw">affiliation</span><span class="ot"> xml:lang=</span><span class="st">"de"</span>&gt;</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>        Institut für Romanische Philologie; </span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>        Ludwig-Maximilians-Universität München    </span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>&lt;/<span class="kw">affiliation</span>&gt;</span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>&lt;<span class="kw">affiliation</span></span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a><span class="ot">    xml:lang=</span><span class="st">"de"</span></span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a><span class="ot">    affiliationIdentifier=</span><span class="st">"https://ror.org/05591te55"</span> </span>
+<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a><span class="ot">    affiliationIdentifierScheme=</span><span class="st">"ROR"</span>&gt;</span>
+<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a>        Ludwig-Maximilians-Universität München</span>
+<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a>&lt;/<span class="kw">affiliation</span>&gt;</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<ul>
+<li>If there is no policy or multiple names in multiple languages are given, use the English name.</li>
+<li>Always specify the language in which the name is given using a <em>xml:lang</em> tag.</li>
+</ul>
+<div class="sourceCode" id="cb6"><pre class="sourceCode xml code-with-copy"><code class="sourceCode xml"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>&lt;<span class="kw">publisher</span><span class="ot"> xml:lang=</span><span class="st">"en"</span>&gt;Leibniz Supercomputing Centre&lt;/<span class="kw">publisher</span>&gt;</span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>&lt;<span class="kw">publisher</span><span class="ot"> xml:lang=</span><span class="st">"de"</span>&gt;Leibniz-Rechenzentrum&lt;/<span class="kw">publisher</span>&gt;        </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<ul>
+<li>Affiliations are to be specified as of the time of creation of the resource.</li>
+<li>Add a persistent identifier (PID) for the institution, preferably a <a href="https://ror.org/">ROR-ID [external link]</a> (Research Organization Registry); if there is no entry in ROR, use a <a href="http://www.isni.org/search">ISNI-ID [external link]</a> (International Standard Name Identifier) or GND-ID.</li>
+<li>For <a href="#fundingreference-o">research funding</a> organizations it is recommended to additionally provide the <a href="https://www.crossref.org/services/funder-registry/">CrossRef Funder Registry ID [external link]</a>.</li>
+</ul>
+<div class="sourceCode" id="cb7"><pre class="sourceCode xml code-with-copy"><code class="sourceCode xml"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>&lt;<span class="kw">fundingReference</span>&gt;</span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">funderName</span>&gt;Deutsche Forschungsgemeinschaft (DFG)&lt;/<span class="kw">funderName</span>&gt;</span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">funderIdentifier</span></span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a><span class="ot">        funderIdentifierType=</span><span class="st">"Crossref Funder ID"</span>&gt;</span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>            http://dx.doi.org/10.13039/501100001659</span>
+<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a>    &lt;/<span class="kw">funderIdentifier</span>&gt;</span>
+<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a>&lt;/<span class="kw">fundingReference</span>&gt;</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="how-should-i-handle-different-versions-of-the-same-research-data" class="level3">
+<h3 class="anchored" data-anchor-id="how-should-i-handle-different-versions-of-the-same-research-data">How should I handle different versions of the same research data?</h3>
+<p>Metadata can be updated without releasing a new version of the research data, but not vice versa; if the research data change, you need to update the metadata to reflect these changes.</p>
+<p>If you want to publish several versions of the research data, but also want to have a point of reference for all of these publications together, we recommend to use a form of <a href="https://help.zenodo.org/#versioning">DOI-versioning [external link]</a>:</p>
+<ul>
+<li>Specify a set of metadata that is valid for all versions.</li>
+<li>Specify a set of metadata for each version.</li>
+<li>Update all these metadata with the according references (e.g.&nbsp;include <em>isNewVersionOf</em> in the metadata of the new version, see <a href="#relatedidentifier-r"><em>relatedIdentifier</em></a> for details).</li>
+</ul>
+</section>
+</section>
+<section id="b.-best-practice-for-specific-fields-1" class="level2">
+<h2 class="anchored" data-anchor-id="b.-best-practice-for-specific-fields-1">B. Best practice for specific fields</h2>
+<section id="identifier-m" class="level3">
+<h3 class="anchored" data-anchor-id="identifier-m">1 identifier [m]</h3>
+<p><a href="https://datacite-metadata-schema.readthedocs.io/en/4.6/properties/identifier/">DataCite documentation [external link]</a></p>
+<ul>
+<li>This field can be omitted on submission: it is mandatory according to the DataCite standard, but it will be set by the data publisher.</li>
+<li>The assigned Digital Object Identifier (DOI) will be provided to you by the data publisher.</li>
+</ul>
+<p><strong>Example</strong></p>
+<div class="sourceCode" id="cb8"><pre class="sourceCode xml code-with-copy"><code class="sourceCode xml"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>&lt;<span class="kw">identifier</span><span class="ot"> identifierType=</span><span class="st">"DOI"</span>&gt;10.5282/ubm/data.158&lt;/<span class="kw">identifier</span>&gt;             </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="creator-m" class="level3">
+<h3 class="anchored" data-anchor-id="creator-m">2 creator [m]</h3>
+<p><a href="https://datacite-metadata-schema.readthedocs.io/en/4.6/properties/creator/">DataCite documentation [external link]</a></p>
+<ul>
+<li>This field is mandatory.</li>
+<li>Consult sections on <a href="#how-should-i-specify-a-person">how to specify a person</a> and <a href="#how-should-i-specify-an-institution">how to specify a institution</a>.</li>
+<li>Always prefer natural persons over institutions.</li>
+<li>You can use the <em>xml:lang</em> attribute to provide the language of the <em>creatorName</em>. This may be helpful, if an institution uses different names in different languages.</li>
+</ul>
+<p><strong>Example</strong></p>
+<div class="sourceCode" id="cb9"><pre class="sourceCode xml code-with-copy"><code class="sourceCode xml"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>&lt;<span class="kw">creators</span>&gt;</span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">creator</span>&gt;</span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>        &lt;<span class="kw">creatorName</span><span class="ot"> nameType=</span><span class="st">"Personal"</span>&gt;Krefeld, Thomas&lt;/<span class="kw">creatorName</span>&gt;</span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>        &lt;<span class="kw">givenName</span>&gt;Thomas&lt;/<span class="kw">givenName</span>&gt;</span>
+<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a>        &lt;<span class="kw">familyName</span>&gt;Krefeld&lt;/<span class="kw">familyName</span>&gt;</span>
+<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a>         &lt;<span class="kw">nameIdentifier</span></span>
+<span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a><span class="ot">            schemeURI=</span><span class="st">"http://orcid.org/"</span></span>
+<span id="cb9-8"><a href="#cb9-8" aria-hidden="true" tabindex="-1"></a><span class="ot">            nameIdentifierScheme=</span><span class="st">"ORCID"</span>&gt;</span>
+<span id="cb9-9"><a href="#cb9-9" aria-hidden="true" tabindex="-1"></a>                0000-0001-9657-6052</span>
+<span id="cb9-10"><a href="#cb9-10" aria-hidden="true" tabindex="-1"></a>        &lt;/<span class="kw">nameIdentifier</span>&gt;</span>
+<span id="cb9-11"><a href="#cb9-11" aria-hidden="true" tabindex="-1"></a>        &lt;<span class="kw">nameIdentifier</span></span>
+<span id="cb9-12"><a href="#cb9-12" aria-hidden="true" tabindex="-1"></a><span class="ot">            schemeURI=</span><span class="st">"https://d-nb.info/gnd/"</span></span>
+<span id="cb9-13"><a href="#cb9-13" aria-hidden="true" tabindex="-1"></a><span class="ot">            nameIdentifierScheme=</span><span class="st">"GND"</span>&gt;</span>
+<span id="cb9-14"><a href="#cb9-14" aria-hidden="true" tabindex="-1"></a>                123778689</span>
+<span id="cb9-15"><a href="#cb9-15" aria-hidden="true" tabindex="-1"></a>        &lt;/<span class="kw">nameIdentifier</span>&gt;</span>
+<span id="cb9-16"><a href="#cb9-16" aria-hidden="true" tabindex="-1"></a>        &lt;<span class="kw">affiliation</span></span>
+<span id="cb9-17"><a href="#cb9-17" aria-hidden="true" tabindex="-1"></a><span class="ot">            xml:lang=</span><span class="st">"de"</span>&gt;</span>
+<span id="cb9-18"><a href="#cb9-18" aria-hidden="true" tabindex="-1"></a>                Institut für Romanische Philologie,</span>
+<span id="cb9-19"><a href="#cb9-19" aria-hidden="true" tabindex="-1"></a>                Ludwig-Maximilians-Universität München</span>
+<span id="cb9-20"><a href="#cb9-20" aria-hidden="true" tabindex="-1"></a>        &lt;/<span class="kw">affiliation</span>&gt;</span>
+<span id="cb9-21"><a href="#cb9-21" aria-hidden="true" tabindex="-1"></a>    &lt;/<span class="kw">creator</span>&gt;</span>
+<span id="cb9-22"><a href="#cb9-22" aria-hidden="true" tabindex="-1"></a>&lt;/<span class="kw">creators</span>&gt;</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="title-m" class="level3">
+<h3 class="anchored" data-anchor-id="title-m">3 title [m]</h3>
+<p><a href="https://datacite-metadata-schema.readthedocs.io/en/4.6/properties/title/">DataCite documentation [external link]</a></p>
+<ul>
+<li>This field is mandatory.</li>
+<li>Be as specific as you would be in the context of a journal publication.</li>
+<li>It is recommended to avoid filenames (e.g.&nbsp;“survey.csv”) or generic descriptions (e.g.&nbsp;“survey data”) as a title.</li>
+<li>The main title is specified without a <em>titleType</em>.</li>
+<li>The language of every title must be specified (see section on <a href="#what-is-the-language-of-the-metadata">metadata language</a> for the use of <em>xml:lang</em> attribute).</li>
+<li>If the main title is not specified in English, a title of type “TranslatedTitle” must be given in English.</li>
+<li>Title types “AlternativeTitle” and “Subtitle” are supported but not recommended. “Other” must not be used as a title type.</li>
+</ul>
+<p><strong>Example</strong></p>
+<div class="sourceCode" id="cb10"><pre class="sourceCode xml code-with-copy"><code class="sourceCode xml"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>&lt;<span class="kw">titles</span>&gt;</span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">title</span><span class="ot"> xml:lang=</span><span class="st">"de"</span>&gt;</span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>            Bayerisches Musiker-Lexikon Online (BMLO)</span>
+<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a>    &lt;/<span class="kw">title</span>&gt;</span>
+<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">title</span></span>
+<span id="cb10-6"><a href="#cb10-6" aria-hidden="true" tabindex="-1"></a><span class="ot">        xml:lang=</span><span class="st">"en"</span></span>
+<span id="cb10-7"><a href="#cb10-7" aria-hidden="true" tabindex="-1"></a><span class="ot">        titleType=</span><span class="st">"TranslatedTitle"</span>&gt;</span>
+<span id="cb10-8"><a href="#cb10-8" aria-hidden="true" tabindex="-1"></a>            Digital Encyclopedia of Bavarian Musicians</span>
+<span id="cb10-9"><a href="#cb10-9" aria-hidden="true" tabindex="-1"></a>    &lt;/<span class="kw">title</span>&gt;</span>
+<span id="cb10-10"><a href="#cb10-10" aria-hidden="true" tabindex="-1"></a>&lt;/<span class="kw">titles</span>&gt;</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="publisher-m" class="level3">
+<h3 class="anchored" data-anchor-id="publisher-m">4 publisher [m]</h3>
+<p><a href="https://datacite-metadata-schema.readthedocs.io/en/4.6/properties/publisher/">DataCite documentation [external link]</a></p>
+<ul>
+<li>This field is mandatory.</li>
+<li>The language of the publisher name must be specified (see section on <a href="#what-is-the-language-of-the-metadata">metadata language</a> for the use of <em>xml:lang</em> attribute).</li>
+<li>If possible, the attibutes <em>publisherIdentifier</em>, <em>publisherIdentifierScheme</em> and <em>schemeURI</em> should be used.</li>
+<li>This field can be omitted on submission: it is mandatory according to the DataCite standard, but it will be set by the data publisher, i.e.&nbsp;the institution that hosts the (meta)data.</li>
+</ul>
+<p><strong>Example</strong></p>
+<div class="sourceCode" id="cb11"><pre class="sourceCode xml code-with-copy"><code class="sourceCode xml"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>&lt;<span class="kw">publisher</span></span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a><span class="ot">    xml:lang=</span><span class="st">"de"</span><span class="ot"> publisherIdentifier=</span><span class="st">"https://ror.org/05591te55"</span> </span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a><span class="ot">    publisherIdentifierScheme=</span><span class="st">"ROR"</span><span class="ot"> schemeURI=</span><span class="st">"https://ror.org/"</span>&gt;</span>
+<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a>        Universitätsbibliothek der Ludwig-Maximilians-Universität München</span>
+<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a>&lt;/<span class="kw">publisher</span>&gt;</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="publicationyear-m" class="level3">
+<h3 class="anchored" data-anchor-id="publicationyear-m">5 publicationYear [m]</h3>
+<p><a href="https://datacite-metadata-schema.readthedocs.io/en/4.6/properties/publicationyear/">DataCite documentation [external link]</a></p>
+<ul>
+<li>This field is mandatory.</li>
+<li>This field can be omitted on submission: it is mandatory according to the DataCite standard, but it will be set by the data publisher.</li>
+</ul>
+<p><strong>Example</strong></p>
+<div class="sourceCode" id="cb12"><pre class="sourceCode xml code-with-copy"><code class="sourceCode xml"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>&lt;<span class="kw">publicationYear</span>&gt;2019&lt;/<span class="kw">publicationYear</span>&gt;</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="subject-m" class="level3">
+<h3 class="anchored" data-anchor-id="subject-m">6 subject [m]</h3>
+<p><a href="https://datacite-metadata-schema.readthedocs.io/en/4.6/properties/subject/">DataCite documentation [external link]</a></p>
+<ul>
+<li>This field is mandatory, in the DataCite standard it is only recommended.</li>
+</ul>
+<section id="mandatory-subject-annotations" class="level4">
+<h4 class="anchored" data-anchor-id="mandatory-subject-annotations">Mandatory subject annotations</h4>
+<ul>
+<li>The following subject annotations are mandatory (must occur at least once):</li>
+</ul>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Type of Subject</th>
+<th>Standard</th>
+<th>Type of standard</th>
+<th>Usage hint</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Discipline</td>
+<td>DDC</td>
+<td>Classification</td>
+<td>Use the English term for the discipline and include the three digit DDC notation via the <em>classificationCode</em> attribute (<a href="https://www.oclc.org/content/dam/oclc/dewey/resources/summaries/deweysummaries.pdf">Canonical Source [external link]</a>).</td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Keywords</td>
+<td>Wikidata QID and GND</td>
+<td>Keyword</td>
+<td>Wikidata and GND terms are both mandatory, including redundancy (if an appropriate entry does not exist contact the responsible Institution). Use <a href="https://www.wikidata.org">Wikidata-Search [external link]</a> and <a href="http://swb.bsz-bw.de/DB=2.104/LNG=EN/">GND-Search [external link]</a> to find the appropriate identifiers.</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>It is also mandatory to include at least the <em>valueURI</em> or the <em>classificationCode</em> attribute.</li>
+<li>It is recommended to inculde a <em>xml:lang</em> attribute for the <em>subject</em>.</li>
+<li>To improve machine-readablility we recommend using <strong>both</strong> <em>valueURI</em> and <em>classificationCode</em>.</li>
+</ul>
+<p><strong>Example</strong></p>
+<div class="sourceCode" id="cb13"><pre class="sourceCode xml code-with-copy"><code class="sourceCode xml"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>&lt;<span class="kw">subjects</span>&gt;</span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a><span class="co">&lt;!-- discipline specification using Dewey Decimal Classification (DDC) --&gt;</span>  </span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">subject</span> </span>
+<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a><span class="ot">        xml:lang=</span><span class="st">"en"</span></span>
+<span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a><span class="ot">        subjectScheme=</span><span class="st">"DDC"</span> </span>
+<span id="cb13-6"><a href="#cb13-6" aria-hidden="true" tabindex="-1"></a><span class="ot">        classificationCode=</span><span class="st">"521"</span>&gt;</span>
+<span id="cb13-7"><a href="#cb13-7" aria-hidden="true" tabindex="-1"></a>            Celestial mechanics</span>
+<span id="cb13-8"><a href="#cb13-8" aria-hidden="true" tabindex="-1"></a>    &lt;/<span class="kw">subject</span>&gt;</span>
+<span id="cb13-9"><a href="#cb13-9" aria-hidden="true" tabindex="-1"></a><span class="co">&lt;!-- keywords --&gt;</span>   </span>
+<span id="cb13-10"><a href="#cb13-10" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">subject</span> </span>
+<span id="cb13-11"><a href="#cb13-11" aria-hidden="true" tabindex="-1"></a><span class="ot">        xml:lang=</span><span class="st">"en"</span></span>
+<span id="cb13-12"><a href="#cb13-12" aria-hidden="true" tabindex="-1"></a><span class="ot">        subjectScheme=</span><span class="st">"Wikidata QID"</span> </span>
+<span id="cb13-13"><a href="#cb13-13" aria-hidden="true" tabindex="-1"></a><span class="ot">        schemeURI=</span><span class="st">"https://www.wikidata.org/wiki/"</span> </span>
+<span id="cb13-14"><a href="#cb13-14" aria-hidden="true" tabindex="-1"></a><span class="ot">        valueURI=</span><span class="st">"https://www.wikidata.org/wiki/Q223776"</span> </span>
+<span id="cb13-15"><a href="#cb13-15" aria-hidden="true" tabindex="-1"></a><span class="ot">        classificationCode=</span><span class="st">"Q223776"</span>&gt;</span>
+<span id="cb13-16"><a href="#cb13-16" aria-hidden="true" tabindex="-1"></a>            gravity assist </span>
+<span id="cb13-17"><a href="#cb13-17" aria-hidden="true" tabindex="-1"></a>    &lt;/<span class="kw">subject</span>&gt;</span>
+<span id="cb13-18"><a href="#cb13-18" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">subject</span> </span>
+<span id="cb13-19"><a href="#cb13-19" aria-hidden="true" tabindex="-1"></a><span class="ot">        xml:lang=</span><span class="st">"en"</span></span>
+<span id="cb13-20"><a href="#cb13-20" aria-hidden="true" tabindex="-1"></a><span class="ot">        subjectScheme=</span><span class="st">"GND"</span> </span>
+<span id="cb13-21"><a href="#cb13-21" aria-hidden="true" tabindex="-1"></a><span class="ot">        schemeURI=</span><span class="st">"https://d-nb.info/gnd/"</span> </span>
+<span id="cb13-22"><a href="#cb13-22" aria-hidden="true" tabindex="-1"></a><span class="ot">        valueURI=</span><span class="st">"https://d-nb.info/gnd/1135686874"</span> </span>
+<span id="cb13-23"><a href="#cb13-23" aria-hidden="true" tabindex="-1"></a><span class="ot">        classificationCode=</span><span class="st">"1135686874"</span>&gt;</span>
+<span id="cb13-24"><a href="#cb13-24" aria-hidden="true" tabindex="-1"></a>            Gravity Assist</span>
+<span id="cb13-25"><a href="#cb13-25" aria-hidden="true" tabindex="-1"></a>    &lt;/<span class="kw">subject</span>&gt;</span>
+<span id="cb13-26"><a href="#cb13-26" aria-hidden="true" tabindex="-1"></a>&lt;/<span class="kw">subjects</span>&gt;</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>There should be no overlap between the discipline specifier(s) and the keywords.</p>
+</section>
+<section id="geotagging" class="level4">
+<h4 class="anchored" data-anchor-id="geotagging">Geotagging</h4>
+<p>Specifying the location via subject is mandatory, if applicable to the resource:</p>
+<ul>
+<li>Canonical source for geonames is the <a href="http://www.geonames.org/export/web-services.html">GeoNames Service [external link]</a> (a registration for API access is necessary).</li>
+<li>See <a href="#geolocation-r"><em>geoLocation</em> section</a> for a more detailed specification.</li>
+</ul>
+</section>
+<section id="additional-subject-annotations" class="level4">
+<h4 class="anchored" data-anchor-id="additional-subject-annotations">Additional subject annotations</h4>
+<ul>
+<li>Additional subjects may be added.</li>
+<li>Specify the language of the subject.</li>
+<li>It is recommended to always qualify subjects by URL or scheme name. A good starting point to research existing schemes is <a href="http://www.bartoc.org/">BARTOC.org [external link]</a> - Basic Register of Thesauri, Ontologies &amp; Classifications. Unqualified subjects (not controlled by a controlled vocabulary, ontology or any other standard for the subject terms) are often useless for research data aggregators due to ambiguities.</li>
+</ul>
+<p><strong>Example</strong></p>
+<p>For this example a complete DataCite metadata file is available, see <a href="#digital-lexicographical-information-system-verbaalpina">VerbaAlpina</a>.</p>
+<div class="sourceCode" id="cb14"><pre class="sourceCode xml code-with-copy"><code class="sourceCode xml"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a>&lt;<span class="kw">subjects</span>&gt;</span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a><span class="co">&lt;!-- mandatory--&gt;</span></span>
+<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">subject</span> </span>
+<span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a><span class="ot">        xml:lang=</span><span class="st">"en"</span></span>
+<span id="cb14-5"><a href="#cb14-5" aria-hidden="true" tabindex="-1"></a><span class="ot">        subjectScheme=</span><span class="st">"DDC"</span></span>
+<span id="cb14-6"><a href="#cb14-6" aria-hidden="true" tabindex="-1"></a><span class="ot">        classificationCode=</span><span class="st">"410"</span>&gt;   </span>
+<span id="cb14-7"><a href="#cb14-7" aria-hidden="true" tabindex="-1"></a>            Linguistics</span>
+<span id="cb14-8"><a href="#cb14-8" aria-hidden="true" tabindex="-1"></a>    &lt;/<span class="kw">subject</span>&gt;</span>
+<span id="cb14-9"><a href="#cb14-9" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">subject</span> </span>
+<span id="cb14-10"><a href="#cb14-10" aria-hidden="true" tabindex="-1"></a><span class="ot">        xml:lang=</span><span class="st">"en"</span></span>
+<span id="cb14-11"><a href="#cb14-11" aria-hidden="true" tabindex="-1"></a><span class="ot">        subjectScheme=</span><span class="st">"DDC"</span>    </span>
+<span id="cb14-12"><a href="#cb14-12" aria-hidden="true" tabindex="-1"></a><span class="ot">        classificationCode=</span><span class="st">"004"</span>&gt;</span>
+<span id="cb14-13"><a href="#cb14-13" aria-hidden="true" tabindex="-1"></a>            Data processing computer science</span>
+<span id="cb14-14"><a href="#cb14-14" aria-hidden="true" tabindex="-1"></a>    &lt;/<span class="kw">subject</span>&gt;</span>
+<span id="cb14-15"><a href="#cb14-15" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">subject</span></span>
+<span id="cb14-16"><a href="#cb14-16" aria-hidden="true" tabindex="-1"></a><span class="ot">        xml:lang=</span><span class="st">"de"</span></span>
+<span id="cb14-17"><a href="#cb14-17" aria-hidden="true" tabindex="-1"></a><span class="ot">        subjectScheme=</span><span class="st">"GND"</span>        </span>
+<span id="cb14-18"><a href="#cb14-18" aria-hidden="true" tabindex="-1"></a><span class="ot">        schemeURI=</span><span class="st">"https://d-nb.info/gnd/"</span></span>
+<span id="cb14-19"><a href="#cb14-19" aria-hidden="true" tabindex="-1"></a><span class="ot">        valueURI=</span><span class="st">"https://d-nb.info/gnd/4740815-7"</span></span>
+<span id="cb14-20"><a href="#cb14-20" aria-hidden="true" tabindex="-1"></a><span class="ot">        classificationCode</span> <span class="ot">=</span><span class="st">"4740815-7"</span>&gt;</span>
+<span id="cb14-21"><a href="#cb14-21" aria-hidden="true" tabindex="-1"></a>            Chalet </span>
+<span id="cb14-22"><a href="#cb14-22" aria-hidden="true" tabindex="-1"></a>    &lt;/<span class="kw">subject</span>&gt;</span>
+<span id="cb14-23"><a href="#cb14-23" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">subject</span></span>
+<span id="cb14-24"><a href="#cb14-24" aria-hidden="true" tabindex="-1"></a><span class="ot">        xml:lang=</span><span class="st">"en"</span></span>
+<span id="cb14-25"><a href="#cb14-25" aria-hidden="true" tabindex="-1"></a><span class="ot">        subjectScheme=</span><span class="st">"wikidata"</span>        </span>
+<span id="cb14-26"><a href="#cb14-26" aria-hidden="true" tabindex="-1"></a><span class="ot">        schemeURI=</span><span class="st">"https://www.wikidata.org/wiki/"</span></span>
+<span id="cb14-27"><a href="#cb14-27" aria-hidden="true" tabindex="-1"></a><span class="ot">        valueURI=</span><span class="st">"https://www.wikidata.org/wiki/Q136689"</span></span>
+<span id="cb14-28"><a href="#cb14-28" aria-hidden="true" tabindex="-1"></a><span class="ot">        classificationCode=</span><span class="st">"Q136689"</span>&gt;</span>
+<span id="cb14-29"><a href="#cb14-29" aria-hidden="true" tabindex="-1"></a>            chalet</span>
+<span id="cb14-30"><a href="#cb14-30" aria-hidden="true" tabindex="-1"></a>    &lt;/<span class="kw">subject</span>&gt;</span>
+<span id="cb14-31"><a href="#cb14-31" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">subject</span></span>
+<span id="cb14-32"><a href="#cb14-32" aria-hidden="true" tabindex="-1"></a><span class="ot">        xml:lang=</span><span class="st">"fr"</span></span>
+<span id="cb14-33"><a href="#cb14-33" aria-hidden="true" tabindex="-1"></a><span class="ot">        subjectScheme=</span><span class="st">"wikidata"</span>        </span>
+<span id="cb14-34"><a href="#cb14-34" aria-hidden="true" tabindex="-1"></a><span class="ot">        schemeURI=</span><span class="st">"https://www.wikidata.org/wiki/"</span></span>
+<span id="cb14-35"><a href="#cb14-35" aria-hidden="true" tabindex="-1"></a><span class="ot">        valueURI=</span><span class="st">"https://www.wikidata.org/wiki/Lexeme:L643765"</span></span>
+<span id="cb14-36"><a href="#cb14-36" aria-hidden="true" tabindex="-1"></a><span class="ot">        classificationCode=</span><span class="st">"L643765"</span>&gt;</span>
+<span id="cb14-37"><a href="#cb14-37" aria-hidden="true" tabindex="-1"></a>            chalet</span>
+<span id="cb14-38"><a href="#cb14-38" aria-hidden="true" tabindex="-1"></a>    &lt;/<span class="kw">subject</span>&gt;</span>
+<span id="cb14-39"><a href="#cb14-39" aria-hidden="true" tabindex="-1"></a>    <span class="co">&lt;!-- optional--&gt;</span></span>
+<span id="cb14-40"><a href="#cb14-40" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">subject</span></span>
+<span id="cb14-41"><a href="#cb14-41" aria-hidden="true" tabindex="-1"></a><span class="ot">        xml:lang=</span><span class="st">"en"</span></span>
+<span id="cb14-42"><a href="#cb14-42" aria-hidden="true" tabindex="-1"></a><span class="ot">        subjectScheme=</span><span class="st">"Glottocode"</span>        </span>
+<span id="cb14-43"><a href="#cb14-43" aria-hidden="true" tabindex="-1"></a><span class="ot">        schemeURI=</span><span class="st">"https://glottolog.org/resource/languoid/id/"</span></span>
+<span id="cb14-44"><a href="#cb14-44" aria-hidden="true" tabindex="-1"></a><span class="ot">        valueURI=</span><span class="st">"https://glottolog.org/resource/languoid/id/high1286"</span></span>
+<span id="cb14-45"><a href="#cb14-45" aria-hidden="true" tabindex="-1"></a><span class="ot">        classificationCode=</span><span class="st">"high1286"</span>&gt;</span>
+<span id="cb14-46"><a href="#cb14-46" aria-hidden="true" tabindex="-1"></a>            High German</span>
+<span id="cb14-47"><a href="#cb14-47" aria-hidden="true" tabindex="-1"></a>    &lt;/<span class="kw">subject</span>&gt;</span>
+<span id="cb14-48"><a href="#cb14-48" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">subject</span></span>
+<span id="cb14-49"><a href="#cb14-49" aria-hidden="true" tabindex="-1"></a><span class="ot">        xml:lang=</span><span class="st">"de"</span></span>
+<span id="cb14-50"><a href="#cb14-50" aria-hidden="true" tabindex="-1"></a><span class="ot">        subjectScheme=</span><span class="st">"geonames"</span>        </span>
+<span id="cb14-51"><a href="#cb14-51" aria-hidden="true" tabindex="-1"></a><span class="ot">        schemeURI=</span><span class="st">"http://www.geonames.org/"</span></span>
+<span id="cb14-52"><a href="#cb14-52" aria-hidden="true" tabindex="-1"></a><span class="ot">        valueURI=</span><span class="st">"http://www.geonames.org/2764958"</span></span>
+<span id="cb14-53"><a href="#cb14-53" aria-hidden="true" tabindex="-1"></a><span class="ot">        classificationCode=</span><span class="st">"2764958"</span>&gt;</span>
+<span id="cb14-54"><a href="#cb14-54" aria-hidden="true" tabindex="-1"></a>            Hall in Tirol</span>
+<span id="cb14-55"><a href="#cb14-55" aria-hidden="true" tabindex="-1"></a>    &lt;/<span class="kw">subject</span>&gt;</span>
+<span id="cb14-56"><a href="#cb14-56" aria-hidden="true" tabindex="-1"></a>&lt;/<span class="kw">subjects</span>&gt;</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+</section>
+<section id="contributor-r" class="level3">
+<h3 class="anchored" data-anchor-id="contributor-r">7 contributor [r]</h3>
+<p><a href="https://datacite-metadata-schema.readthedocs.io/en/4.6/properties/contributor/">DataCite documentation [external link]</a></p>
+<ul>
+<li>This field is recommended if the data are published with a free license.</li>
+<li>If the license specified via the <a href="#rights-m"><em>rights</em></a> field restricts the usage in a way that possibly necessitates interaction with the rights holder, a <em>contributor</em> of type “RightsHolder” must be specified. Examples of free licenses are CC-0, CC-BY, or CC-SA; non-free licenses are for example CC-NC or CC-ND.</li>
+<li>Consult the sections on <a href="#how-should-i-specify-a-person">how to specify a person</a> and <a href="#how-should-i-specify-an-institution">how to specify a institution</a>.</li>
+<li>If contributors change over versions, the version metadata should only include the actual contributors of the updated version. A metadata set representing all versions of the dataset (including links to the versions) can include all contributors with the dates of participation, see <a href="#how-should-i-handle-different-versions-of-the-same-research-data">how to handle different versions of the research data</a>.</li>
+<li>Duplicate mentions between <em>creator</em> and <em>contributor</em> are unproblematic.</li>
+<li>If a person has multiple roles, it is recommended to identify the most important role of that person and select only one.</li>
+<li>Be as specific as possible (a “ProjectLeader” is also considered to be a “ProjectMember”, but “ProjectLeader” carries more information). Use generic role descriptions only when nothing else fits.</li>
+<li>If suitable use the <em>xml:lang</em> attribute to indicate the language of the <em>contributorName</em>.</li>
+<li>The following roles are recommended:</li>
+</ul>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Option</th>
+<th>Description from DataCite standard (<em>italics</em>) and usage hints</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>ContactPerson</td>
+<td><em>Person with knowledge of how to access, troubleshoot, or otherwise field issues related to the resource.</em></td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>DataCollector</td>
+<td><em>Person/institution responsible for finding, gathering/collecting data under the guidelines of the author(s) or Principal Investigator (PI).</em></td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>DataCurator</td>
+<td><em>Person tasked with reviewing, enhancing, cleaning, or standardizing metadata and the associated data submitted for storage, use, and maintenance within a data centre or repository.</em></td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>DataManager</td>
+<td>Person or organization responsible for digital maintainance of the finished resource, e.g.&nbsp;migration to new hardware, software and security updates for servers, access rights management.</td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Distributor</td>
+<td>Institution responsible for dissemination of electronic or printed copies of the resource. The distributor is not neccessarily also a hosting institution of a digital resource, e.g., if server hosting is outsourced but the distributor still organizes access to the resource.</td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Editor</td>
+<td><em>A person who oversees the details related to the publication format of the resource.</em></td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>HostingInstitution</td>
+<td><em>Typically, the organisation allowing the resource to be available on the internet through the provision of its hardware/software/operating support.</em></td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>ProjectLeader</td>
+<td><em>Person officially designated as head of project team or sub-project team instrumental in the work necessary to development of the resource.</em></td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>ProjectManager</td>
+<td><em>Person officially designated as manager of a project. Project may consist of one or many project teams and sub-teams.</em></td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>ProjectMember</td>
+<td><em>Person on the membership list of a designated project/project team.</em> All persons with a contract in the context of the project which produced the resource.</td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Researcher</td>
+<td><em>A person involved in analyzing data or the results of an experiment or formal study. May indicate an intern or assistant to one of the authors who helped with research but who was not so “key” as to be listed as an author.</em></td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>ResearchGroup</td>
+<td><em>Typically refers to a group of individuals within a lab, department or division that has a specifically defined focus of activity.</em></td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>RightsHolder</td>
+<td><em>Person or institution owning or managing property rights, including intellectual property rights over the resource.</em> Mandatory for non-free licenses; person or institution that owns the rights listed in field <a href="#rights-m">Rights</a>.</td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Sponsor</td>
+<td><em>Organization or person that issued a contract or under the auspices of which a work has been printed, published, developed, etc.</em></td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Supervisor</td>
+<td><em>Designated administrator over one or more groups/teams working to produce a resource, or over one or more steps of a development process.</em> We recommmed using this role for PhD advisors of the creators, who did not particiate as creators or in other roles themselves.</td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Translator</td>
+<td><em>A person, organization, or automated system responsible for converting the content of a resource from one language into another, preserving its meaning and intended message.</em></td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>WorkPackage- &nbsp;Leader</td>
+<td><em>The Work Package Leader is responsible for ensuring the comprehensive contents, versioning, and availability of the Work Package during the development of the resource.</em></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Example</strong></p>
+<div class="sourceCode" id="cb15"><pre class="sourceCode xml code-with-copy"><code class="sourceCode xml"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>&lt;<span class="kw">contributors</span>&gt;</span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">contributor</span><span class="ot"> contributorType=</span><span class="st">"ProjectLeader"</span>&gt;</span>
+<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a>        &lt;<span class="kw">contributorName</span><span class="ot"> nameType=</span><span class="st">"Personal"</span>&gt;Ludwig, Ralf&lt;/<span class="kw">contributorName</span>&gt;</span>
+<span id="cb15-4"><a href="#cb15-4" aria-hidden="true" tabindex="-1"></a>        &lt;<span class="kw">givenName</span>&gt;Ralf&lt;/<span class="kw">givenName</span>&gt;</span>
+<span id="cb15-5"><a href="#cb15-5" aria-hidden="true" tabindex="-1"></a>        &lt;<span class="kw">familyName</span>&gt;Ludwig&lt;/<span class="kw">familyName</span>&gt;</span>
+<span id="cb15-6"><a href="#cb15-6" aria-hidden="true" tabindex="-1"></a>        &lt;<span class="kw">nameIdentifier</span></span>
+<span id="cb15-7"><a href="#cb15-7" aria-hidden="true" tabindex="-1"></a><span class="ot">            nameIdentifierScheme=</span><span class="st">"ORCID"</span></span>
+<span id="cb15-8"><a href="#cb15-8" aria-hidden="true" tabindex="-1"></a><span class="ot">            schemeURI=</span><span class="st">"http://orcid.org/"</span>&gt;</span>
+<span id="cb15-9"><a href="#cb15-9" aria-hidden="true" tabindex="-1"></a>                0000-0002-4225-4098</span>
+<span id="cb15-10"><a href="#cb15-10" aria-hidden="true" tabindex="-1"></a>        &lt;/<span class="kw">nameIdentifier</span>&gt;</span>
+<span id="cb15-11"><a href="#cb15-11" aria-hidden="true" tabindex="-1"></a>        &lt;<span class="kw">affiliation</span><span class="ot"> xml:lang=</span><span class="st">"de"</span>&gt;</span>
+<span id="cb15-12"><a href="#cb15-12" aria-hidden="true" tabindex="-1"></a>            Department für Geographie, </span>
+<span id="cb15-13"><a href="#cb15-13" aria-hidden="true" tabindex="-1"></a>            Ludwig-Maximilians-Universität München</span>
+<span id="cb15-14"><a href="#cb15-14" aria-hidden="true" tabindex="-1"></a>        &lt;/<span class="kw">affiliation</span>&gt;</span>
+<span id="cb15-15"><a href="#cb15-15" aria-hidden="true" tabindex="-1"></a>    &lt;/<span class="kw">contributor</span>&gt;</span>
+<span id="cb15-16"><a href="#cb15-16" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">contributor</span><span class="ot"> contributorType=</span><span class="st">"RightsHolder"</span>&gt;</span>
+<span id="cb15-17"><a href="#cb15-17" aria-hidden="true" tabindex="-1"></a>        &lt;<span class="kw">contributorName</span><span class="ot"> nameType=</span><span class="st">"Personal"</span>&gt;</span>
+<span id="cb15-18"><a href="#cb15-18" aria-hidden="true" tabindex="-1"></a>            Štědronská, Markéta</span>
+<span id="cb15-19"><a href="#cb15-19" aria-hidden="true" tabindex="-1"></a>        &lt;/<span class="kw">contributorName</span>&gt;</span>
+<span id="cb15-20"><a href="#cb15-20" aria-hidden="true" tabindex="-1"></a>        &lt;<span class="kw">givenName</span>&gt;Markéta&lt;/<span class="kw">givenName</span>&gt;</span>
+<span id="cb15-21"><a href="#cb15-21" aria-hidden="true" tabindex="-1"></a>        &lt;<span class="kw">familyName</span>&gt;Štědronská&lt;/<span class="kw">familyName</span>&gt;</span>
+<span id="cb15-22"><a href="#cb15-22" aria-hidden="true" tabindex="-1"></a>        &lt;<span class="kw">nameIdentifier</span></span>
+<span id="cb15-23"><a href="#cb15-23" aria-hidden="true" tabindex="-1"></a><span class="ot">            nameIdentifierScheme=</span><span class="st">"GND"</span></span>
+<span id="cb15-24"><a href="#cb15-24" aria-hidden="true" tabindex="-1"></a><span class="ot">            schemeURI=</span><span class="st">"https://d-nb.info/gnd/"</span>&gt;</span>
+<span id="cb15-25"><a href="#cb15-25" aria-hidden="true" tabindex="-1"></a>                141321350</span>
+<span id="cb15-26"><a href="#cb15-26" aria-hidden="true" tabindex="-1"></a>        &lt;/<span class="kw">nameIdentifier</span>&gt;</span>
+<span id="cb15-27"><a href="#cb15-27" aria-hidden="true" tabindex="-1"></a>        &lt;<span class="kw">affiliation</span><span class="ot"> xml:lang=</span><span class="st">"de"</span>&gt;</span>
+<span id="cb15-28"><a href="#cb15-28" aria-hidden="true" tabindex="-1"></a>            Institut für Musikwissenschaft, Universität Wien</span>
+<span id="cb15-29"><a href="#cb15-29" aria-hidden="true" tabindex="-1"></a>        &lt;/<span class="kw">affiliation</span>&gt;</span>
+<span id="cb15-30"><a href="#cb15-30" aria-hidden="true" tabindex="-1"></a>    &lt;/<span class="kw">contributor</span>&gt;</span>
+<span id="cb15-31"><a href="#cb15-31" aria-hidden="true" tabindex="-1"></a>&lt;/<span class="kw">contributors</span>&gt;</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="date-r" class="level3">
+<h3 class="anchored" data-anchor-id="date-r">8 date [r]</h3>
+<p><a href="https://datacite-metadata-schema.readthedocs.io/en/4.6/properties/date/">DataCite documentation [external link]</a></p>
+<ul>
+<li>This field is recommended.</li>
+<li>It is recommended to provide date and time according to the <a href="https://www.w3.org/TR/NOTE-datetime">W3C time and data formats [external link]</a>. If the time is specified always include the time zone.<br>
+</li>
+<li>Time periods can be specified by specifying the start date and the end date separated by a slash (/).</li>
+<li>The following types should be filled-out by the data producer:
+<ul>
+<li><strong>Collected</strong>: time range when the resource was arranged (not necessarily identical to the time range when the resource was created).</li>
+<li><strong>Covered</strong>: date range that the resource content applies to or covers. (Example: A text corpus of newspaper articles about a historic event will <em>cover</em> a time span (associated with the event). The corpus can be <em>collected</em> over a different time span.)</li>
+<li><strong>Created</strong>: first version of a resource; must not be identical with updated.</li>
+<li><strong>Updated</strong>: for a more recent version of the resource; must not be identical with created.</li>
+</ul></li>
+<li>The following types are set by the publisher:
+<ul>
+<li><strong>Submitted</strong>: point in time when the data were recieved by the data publisher.</li>
+<li><strong>Accepted</strong>: point in time when the data publisher accepts the data for publication.</li>
+<li><strong>Issued</strong>: long format of the field <a href="#publicationyear-m"><em>publicationYear</em></a>, point in time when a publisher publishes the data; should be set.</li>
+<li><strong>Available</strong>: only use in the context of embargo periods (this is not recommended).</li>
+<li><strong>Withdrawn</strong>: point in time when the publisher retracts the data publication.</li>
+</ul></li>
+<li>For dates describing the period the resource covers use “Other” for <em>dateType</em> and add “coverage” as a description under <em>datesInformation</em>, see example below.</li>
+<li>It is recommended to use the free text attribute <em>dateInformation</em> for disambiguation, if multiple dates with the same type are specified.</li>
+<li>“Copyrighted” as a <em>dateType</em> should not be used.</li>
+</ul>
+<p><strong>Example</strong></p>
+<div class="sourceCode" id="cb16"><pre class="sourceCode xml code-with-copy"><code class="sourceCode xml"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a>&lt;<span class="kw">dates</span>&gt;</span>
+<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">date</span><span class="ot"> dateType=</span><span class="st">"Created"</span>&gt;2016&lt;/<span class="kw">date</span>&gt;</span>
+<span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">date</span></span>
+<span id="cb16-4"><a href="#cb16-4" aria-hidden="true" tabindex="-1"></a><span class="ot">        dateType=</span><span class="st">"Other"</span></span>
+<span id="cb16-5"><a href="#cb16-5" aria-hidden="true" tabindex="-1"></a><span class="ot">        dateInformation=</span><span class="st">"coverage"</span>&gt;</span>
+<span id="cb16-6"><a href="#cb16-6" aria-hidden="true" tabindex="-1"></a>            2050-09-01T00:00:00+01:00/2050-09-30T23:59:59+01:00</span>
+<span id="cb16-7"><a href="#cb16-7" aria-hidden="true" tabindex="-1"></a>    &lt;/<span class="kw">date</span>&gt;</span>
+<span id="cb16-8"><a href="#cb16-8" aria-hidden="true" tabindex="-1"></a>&lt;/<span class="kw">dates</span>&gt;</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="language-o" class="level3">
+<h3 class="anchored" data-anchor-id="language-o">9 language [o]</h3>
+<p><a href="https://datacite-metadata-schema.readthedocs.io/en/4.6/properties/language/">DataCite documentation [external link]</a></p>
+<ul>
+<li>This field is optional.</li>
+<li>The field describes the main language of the <strong>resource</strong>, not of the metadata.</li>
+<li>Recommendation: use either the two-letter language codes from ISO 639-1 or the three-letter language codes from ISO 639-2 (listed on <a href="https://en.wikipedia.org/wiki/List_of_ISO_639_language_codes">Wikipedia [external link]</a>). Be advised: the three-letter codes are used in library systems.</li>
+</ul>
+<p><strong>Example</strong></p>
+<div class="sourceCode" id="cb17"><pre class="sourceCode xml code-with-copy"><code class="sourceCode xml"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a>&lt;<span class="kw">language</span>&gt;en&lt;/<span class="kw">language</span>&gt;</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="resourcetype-m" class="level3">
+<h3 class="anchored" data-anchor-id="resourcetype-m">10 resourceType [m]</h3>
+<p><a href="https://datacite-metadata-schema.readthedocs.io/en/4.6/properties/resourcetype/">DataCite documentation [external link]</a></p>
+<ul>
+<li>This field is mandatory.</li>
+<li>DateCite allows various resource types.</li>
+<li>There are three goups of resources described by the metadata: Objects and instruments, discursive text, and research data.</li>
+</ul>
+<p>Decision tree to pick the right <em>resourceTypeGeneral</em>:</p>
+<ol type="1">
+<li><p>If you describe a physical object (biological sample, fragment of a meteorite) or an instrument (a book scanner, a microscope) use “PhysicalObject” and “Instrument”, respectively. If not, proceed with 2.</p></li>
+<li><p>Decide if the resource is data or discursive text (e.g.&nbsp;journal article or analytical text). If it is discursive text, choose one of the following:</p>
+<ul>
+<li>Book</li>
+<li>BookChapter</li>
+<li>ConferencePaper</li>
+<li>ConferenceProceeding</li>
+<li>DataPaper</li>
+<li>Dissertation</li>
+<li>Journal</li>
+<li>JournalArticle</li>
+<li>OutputManagementPlan [Note: A data management plan is a special form of output management plan]</li>
+<li>PeerReview</li>
+<li>Preprint</li>
+<li>Report</li>
+<li>Standard</li>
+<li>StudyRegistration</li>
+</ul>
+<p>If not: Proceed with 3.</p></li>
+<li><p>If the data submission contains heterogeneous data, consider publishing it in separate data publications or (less preferred) use “Collection”. If the data are homogeneous, proceed with 4.</p></li>
+<li><p>If the data are movies, images or sound files use “Audiovisual”, “Image” or “Sound”, respectively. If not, proceed with 5.</p></li>
+<li><p>If the data are a digital, interactive representations of some real-world phenomena (e.g.&nbsp;trained models in the context of machine learning) use “Model”. If not, proceed with 6.</p></li>
+<li><p>If the data are descriptions of a workflow (e.g.&nbsp;in the common workflow language), use “Workflow”. If not, proceed with 7.</p></li>
+<li><p>If the data are an interactive resource like a virtual notebook use “ComputationalNotebook”. If not, proceed with 8.</p></li>
+<li><p>If the data are source code files (incl.&nbsp;configuration and built artefacts), use “Software”. If not, proceed with 9.</p></li>
+<li><p>If the data have a fixed structure (e.g.&nbsp;table-like), use “Dataset”. If not, proceed with 10.</p></li>
+<li><p>If the data are text files, use “Text”. If not, proceed with 11.</p></li>
+<li><p>Check if one of the following types is applicable:</p>
+<ul>
+<li>Award (Use this one if, for example, the resource is an entry in a Current Research Information System (CRIS) that details a Leibniz Prize awarded to a staff member.)</li>
+<li>Event (For example, for a conference or an award ceremony.)</li>
+<li>InteractiveResource (This type can be used for interactive tutorials in a learning management system or for certain websites.)</li>
+<li>Project (If, for example, a project is funded by DFG the corresponding <a href="https://gepris.dfg.de/gepris/OCTOPUS">GEPRIS [external link]</a> entry would be assigned the <em>resourceTypeGeneral</em> <em>Project</em>.)</li>
+<li>Service (For example, if a university IT center offers access to an LLM running on its servers, this would be a “Service”. Note that the LLM code itself would be “Software”)</li>
+</ul>
+<p>If not, proceed with 12.</p></li>
+<li><p>Use “Other”.</p></li>
+</ol>
+<p><strong>Note</strong>: Only items with the <em>resourceTypeGeneral</em> “Dataset” will be included in the Google Dataset Search. All other types are currently not supported.</p>
+<p><strong>Examples</strong></p>
+<div class="sourceCode" id="cb18"><pre class="sourceCode xml code-with-copy"><code class="sourceCode xml"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a>&lt;<span class="kw">resourceType</span><span class="ot"> resourceTypeGeneral=</span><span class="st">"Dataset"</span>&gt;</span>
+<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a>    Regional Climate Measurements</span>
+<span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a>&lt;/<span class="kw">resourceType</span>&gt;</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb19"><pre class="sourceCode xml code-with-copy"><code class="sourceCode xml"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a>&lt;<span class="kw">resourceType</span><span class="ot"> resourceTypeGeneral=</span><span class="st">"OutputManagementPlan"</span>&gt;</span>
+<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a>    Data Management Plan </span>
+<span id="cb19-3"><a href="#cb19-3" aria-hidden="true" tabindex="-1"></a>&lt;/<span class="kw">resourceType</span>&gt;</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="alternateidentifier-o" class="level3">
+<h3 class="anchored" data-anchor-id="alternateidentifier-o">11 alternateIdentifier [o]</h3>
+<p><a href="https://datacite-metadata-schema.readthedocs.io/en/4.6/properties/alternateidentifier/">DataCite documentation [external link]</a></p>
+<ul>
+<li>This field is optional.</li>
+<li>These alternate IDs additionally identify the resource, meaning that it can also be found via these identifiers and distinguished from other resources by this ID.</li>
+<li>The <em>alternateIdentifier</em> can be a persistent, globally unique ID. However, the field may also be used for identifiers, which are only unique and specific in the context of the research project (e.g.&nbsp;local identifiers or workspace identifiers) but not globally. Examples for alternate identifiers are sequence numbers, time stamps or database numbers. Contrary, the global identifier in field <a href="#identifier-m"><em>identifier</em></a> <strong>must</strong> be a DOI.</li>
+<li>The attribute <em>alternateIdentifierType</em> must be used to specifiy the type of the identifer.</li>
+</ul>
+<p><strong>Recommendation for <em>alternateIdentifierType</em>:</strong></p>
+<p>For common global identifers, just specify the name of the identifier or its acronym. Examples of such identifiers are: ARK, arXiv, bibcode, CSTR, DOI, EAN13, EISSN, ePIC, Handle, IGSN, ISBN, ISSN, ISTC, LISSN, LSID, PMID, PURL, RRID, UPC, URL, URN, and w3id.</p>
+<p>For other identifiers we recommend to first give the origin of the ID:</p>
+<ul>
+<li>project-specific identifier: an ID that has meaning inside the project that created the data.</li>
+<li>application-specific identifier: an ID that has meaning in the context of an application that is used to process the data.</li>
+<li>institution-specific identifier: an ID that has meaning in the context of the institution that provides, funded or created the data.</li>
+</ul>
+<p>and then add, separated by a slash (/), the name of the identifer, if known. This way, even if the name of the ID is relatively obscure, the broader context of the ID can still be identified.</p>
+<p><strong>Example</strong></p>
+<p>Each VerbaAlpina dataset is assigned an <a href="https://doi.org/10.5282/verba-alpina?urlappend=%3Fpage_id%3D12180%26db%3Dxxx%26single%3DL91">internal ID [external link]</a> (a project-specific identifier) as well as a persistent <a href="https://discover.ub.uni-muenchen.de/catalog/68fd5294-9077-3983-a20e-7f25c074c4c7">LMU-UB ID [external link]</a> (in short lmUB - an institution-specific identifier) by the data repository.</p>
+<div class="sourceCode" id="cb20"><pre class="sourceCode xml code-with-copy"><code class="sourceCode xml"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a>&lt;<span class="kw">alternateIdentifiers</span>&gt;</span>
+<span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">alternateIdentifier</span> </span>
+<span id="cb20-3"><a href="#cb20-3" aria-hidden="true" tabindex="-1"></a><span class="ot">        alternateIdentifierType=</span><span class="st">"institution-specific identifier/lmUB"</span>&gt;</span>
+<span id="cb20-4"><a href="#cb20-4" aria-hidden="true" tabindex="-1"></a>            68fd5294-9077-3983-a20e-7f25c074c4c7</span>
+<span id="cb20-5"><a href="#cb20-5" aria-hidden="true" tabindex="-1"></a>    &lt;/<span class="kw">alternateIdentifier</span>&gt;</span>
+<span id="cb20-6"><a href="#cb20-6" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">alternateIdentifier</span> </span>
+<span id="cb20-7"><a href="#cb20-7" aria-hidden="true" tabindex="-1"></a><span class="ot">        alternateIdentifierType=</span><span class="st">"project-specific identifier/VA-ID"</span>&gt;</span>
+<span id="cb20-8"><a href="#cb20-8" aria-hidden="true" tabindex="-1"></a>            L91_v8</span>
+<span id="cb20-9"><a href="#cb20-9" aria-hidden="true" tabindex="-1"></a>    &lt;/<span class="kw">alternateIdentifier</span>&gt;</span>
+<span id="cb20-10"><a href="#cb20-10" aria-hidden="true" tabindex="-1"></a>&lt;/<span class="kw">alternateIdentifiers</span>&gt;</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="relatedidentifier-r" class="level3">
+<h3 class="anchored" data-anchor-id="relatedidentifier-r">12 relatedIdentifier [r]</h3>
+<p><a href="https://datacite-metadata-schema.readthedocs.io/en/4.6/properties/relatedidentifier/">DataCite documentation [external link]</a></p>
+<p>Note that DataCite provides two separate elements to establish relationships between resources: <em>relatedIdentifier</em> and <a href="#relateditem-o"><em>relatedItem</em></a>.</p>
+<p>The <em>relatedIdentifier</em> element should be used for machine-readable identifiers (like DOI, PubMed ID or ISBN). This identifier points to additional information on the related resource. It is recommended as it facilitates automated discovery of the described resource.</p>
+<p>The element <a href="#relateditem-oa"><em>relatedItem</em></a> can be used for information on a related object that does not have an identifier (e.g.&nbsp;conference contributions or book series). It is also useful if an identifier exists but one wants to provide additional, more specific information on the related resource, e.g.&nbsp;to provide the page number, volume and title of a journal.</p>
+<ul>
+<li>This field is recommended.</li>
+<li>If possible, relations of the described resource should be mirrored in the metadata of the related resource. For example, make sure that a paper referencing a dataset includes the identifier of the dataset in its metadata and vice versa. This also applies to all reciprocal <em>relationTypes</em> (e.g.&nbsp;“IsNewVersionOf” and “IsPreviousVersionOf”).</li>
+<li>The <em>relatedIdentifierType</em> must be taken from a <a href="https://datacite-metadata-schema.readthedocs.io/en/4.6/appendices/appendix-1/relatedIdentifierType/">fixed list [external link]</a>: ARK, arXiv, bibcode, CSTR, DOI, EAN13, EISSN, Handle, IGSN, ISBN, ISSN, ISTC, LISSN, LSID, PMID, PURL, RRID, UPC, URL, URN, w3id.</li>
+<li>The publisher may curate the list of <em>relatedIdentifiers</em> (e.g.&nbsp;adding relevant related resources over time on a best effort basis).</li>
+<li>The relations are always specified from the perspective of the described resource (refered to as resource A in the examples). The related resource is called resource B in the examples. For detailed definitions of all relationTypes see the <a href="https://datacite-metadata-schema.readthedocs.io/en/4.6/appendices/appendix-1/relationType/">DataCite schema documentation [external link]</a></li>
+</ul>
+<p><img src="images/DataCite_relatedIdentifier.JPG" class="img-fluid"></p>
+<ul>
+<li>Only use these <em>relationTypes</em>:</li>
+</ul>
+<section id="relationtypes" class="level4 landscape">
+<h4 class="anchored" data-anchor-id="relationtypes">relationTypes</h4>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 12%">
+<col style="width: 14%">
+<col style="width: 17%">
+<col style="width: 56%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Relation categories</th>
+<th>Usage</th>
+<th>relationType</th>
+<th>Guidance / Example</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Versions</td>
+<td>Use to differentiate specific and unspecific versions of a resource</td>
+<td>HasVersion (IsVersionOf); IsNewVersionOf (IsPreviousVersionOf); IsVariantFormOf (IsOriginalFormOf); IsIdenticalTo; Obsoletes (IsObsoletedBy)</td>
+<td>Be as specific as possible. Use “NewVersion” and “PreviousVersion” if A is the predecessor or successor of B; use of “Obsolets” and “IsObsoletedBy” is recommended for standards, legal regulations, etc. If the version is unspecific use “HasVersion” and “IsVersionOf”.</td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Hierarchy</td>
+<td>Use to create hierarchical relationships</td>
+<td>IsPartOf (HasPart)</td>
+<td>“HasPart” indicates A includes the part B; “IsPart” indicates A is a portion of B. Example: a container “HasPart” a dataset.</td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Provenance</td>
+<td>Use to refer to source materials (for software also see below)</td>
+<td>HasTranslation (IsTranslationOf); IsSourceOf; IsDerivedFrom; Continues (IsContinuedBy); Collects (IsCollectedBy)</td>
+<td>Examples: A book in English (resource A) “IsTranslationOf” a work written in Spanish (resource B). Volume 2 of a book series (resource A) “Continues” volume 1 (resource B). A dataset (resource A) “IsSourceOf” a diagram (resource B). An Instrument (resource A), e.g.&nbsp;a microscope, “Collects” an image set (resource B); a PhysicalObject (resource A) “isCollectedBy” an Instrument (resource B).</td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Complemen-tary (for software see below)</td>
+<td>Use for resources that build on or complement each other</td>
+<td>IsSourceOf; IsDerivedFrom; Continues (IsContinuedBy); IsSupplementTo (IsSupplementedBy)</td>
+<td>Examples: Volume 2 of a book series (resource A) “Continues” volume 1 (resource B). A computer notebook (resource A) “IsSupplementTo” an article (resource B).</td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Bibliographic</td>
+<td>Use to relate published texts/ material</td>
+<td>IsPublishedIn; References (IsReferencedBy); Cites (IsCitedBy)</td>
+<td>Examples: An article (resource A) “IsPublishedIn” an edited volume (resource B), e.g., conference proceedings. A presentation (resource A) “References” a dataset (resource B) when discussing a plot.</td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Additional information</td>
+<td>Use for resources that provide further information on the described resource</td>
+<td>Documents (IsDocumentedBy); HasMetadata (IsMetadataFor); Describes (IsDescribedBy); Reviews (IsReviewedBy)</td>
+<td>A digtital representation of a painting (resource A) “HasMetadata” in Europeana (Resource B). An article (resource A) “isDescribedBy” a PubMed entry (resource B).</td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Software specific</td>
+<td>Requires can be used to indicate software dependencies. Compiles relates software code and compiler.</td>
+<td>Requires (IsRequiredBy); Compiles (IsCompiledBy)</td>
+<td>A piece of code (resource A) “Requires” a software library (resource B).</td>
+</tr>
+</tbody>
+</table>
+</section>
+<p><strong>Example 1 (DOI)</strong></p>
+<p>The ClimEx Project “IsDescribedBy” an article in the Journal of Applied Meteorology and Climatology. The article’s DOI is <a href="https://doi.org/10.1175/JAMC-D-18-0021.1">10.1175/JAMC-D-18-0021.1</a>. For the full DataCite metadata for this example see <a href="#meteorological-project-climex">ClimEx</a> below.</p>
+<div class="sourceCode" id="cb21"><pre class="sourceCode xml code-with-copy"><code class="sourceCode xml"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a>&lt;<span class="kw">relatedIdentifiers</span>&gt;</span>
+<span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">relatedIdentifier</span> </span>
+<span id="cb21-3"><a href="#cb21-3" aria-hidden="true" tabindex="-1"></a><span class="ot">        relatedIdentifierType=</span><span class="st">"DOI"</span> </span>
+<span id="cb21-4"><a href="#cb21-4" aria-hidden="true" tabindex="-1"></a><span class="ot">        relationType=</span><span class="st">"IsDescribedBy"</span>&gt;</span>
+<span id="cb21-5"><a href="#cb21-5" aria-hidden="true" tabindex="-1"></a>            10.1175/JAMC-D-18-0021.1             </span>
+<span id="cb21-6"><a href="#cb21-6" aria-hidden="true" tabindex="-1"></a>    &lt;/<span class="kw">relatedIdentifier</span>&gt;</span>
+<span id="cb21-7"><a href="#cb21-7" aria-hidden="true" tabindex="-1"></a>&lt;/<span class="kw">relatedIdentifiers</span>&gt;</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><strong>Example 2 (PubMed)</strong></p>
+<p>PubMed provides a description and additional information on an article published in the journal Nature. The article “IsDescribedBy” a PubMed entry.</p>
+<div class="sourceCode" id="cb22"><pre class="sourceCode xml code-with-copy"><code class="sourceCode xml"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a>&lt;<span class="kw">relatedIdentifiers</span>&gt;</span>
+<span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">relatedIdentifier</span> </span>
+<span id="cb22-3"><a href="#cb22-3" aria-hidden="true" tabindex="-1"></a><span class="ot">        relatedIdentifierType=</span><span class="st">"PMID"</span> </span>
+<span id="cb22-4"><a href="#cb22-4" aria-hidden="true" tabindex="-1"></a><span class="ot">        relationType=</span><span class="st">"IsDescribedBy"</span>&gt;</span>
+<span id="cb22-5"><a href="#cb22-5" aria-hidden="true" tabindex="-1"></a>            34552256 </span>
+<span id="cb22-6"><a href="#cb22-6" aria-hidden="true" tabindex="-1"></a>    &lt;/<span class="kw">relatedIdentifier</span>&gt;</span>
+<span id="cb22-7"><a href="#cb22-7" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">relatedIdentifier</span></span>
+<span id="cb22-8"><a href="#cb22-8" aria-hidden="true" tabindex="-1"></a><span class="ot">        relatedIdentifierType=</span><span class="st">"arXiv"</span></span>
+<span id="cb22-9"><a href="#cb22-9" aria-hidden="true" tabindex="-1"></a><span class="ot">        relationType=</span><span class="st">"IsNewVersionOf"</span>&gt;</span>
+<span id="cb22-10"><a href="#cb22-10" aria-hidden="true" tabindex="-1"></a>            arXiv:2107.02222          </span>
+<span id="cb22-11"><a href="#cb22-11" aria-hidden="true" tabindex="-1"></a>    &lt;/<span class="kw">relatedIdentifier</span>&gt;</span>
+<span id="cb22-12"><a href="#cb22-12" aria-hidden="true" tabindex="-1"></a>&lt;/<span class="kw">relatedIdentifiers</span>&gt;</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><strong>Example 3 (Wikidata)</strong></p>
+<p>Wikidata provides metadata for the BMLO project and dataset. Thus, BMLO “HasMetadata” in Wikidata under <a href="https://www.wikidata.org/wiki/Q47191">Q-ID 47191</a>.</p>
+<div class="sourceCode" id="cb23"><pre class="sourceCode xml code-with-copy"><code class="sourceCode xml"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a>&lt;<span class="kw">relatedIdentifiers</span>&gt;</span>
+<span id="cb23-2"><a href="#cb23-2" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">relatedIdentifier</span></span>
+<span id="cb23-3"><a href="#cb23-3" aria-hidden="true" tabindex="-1"></a><span class="ot">        relatedIdentifierType=</span><span class="st">"URL"</span> </span>
+<span id="cb23-4"><a href="#cb23-4" aria-hidden="true" tabindex="-1"></a><span class="ot">        relationType=</span><span class="st">"HasMetadata"</span></span>
+<span id="cb23-5"><a href="#cb23-5" aria-hidden="true" tabindex="-1"></a><span class="ot">        subjectScheme=</span><span class="st">"wikidata"</span>        </span>
+<span id="cb23-6"><a href="#cb23-6" aria-hidden="true" tabindex="-1"></a><span class="ot">        schemeURI=</span><span class="st">"https://www.wikidata.org/wiki/"</span>&gt;</span>
+<span id="cb23-7"><a href="#cb23-7" aria-hidden="true" tabindex="-1"></a>            Q47191</span>
+<span id="cb23-8"><a href="#cb23-8" aria-hidden="true" tabindex="-1"></a>    &lt;/<span class="kw">relatedIdentifier</span>&gt;</span>
+<span id="cb23-9"><a href="#cb23-9" aria-hidden="true" tabindex="-1"></a>&lt;/<span class="kw">relatedIdentifiers</span>&gt;</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><strong>Example 4 (Pangaea)</strong></p>
+<p>Pangaea publishes datasets in the field of Earth &amp; Environmental Science. Pangaea shows the sources that were used during the creation of the research dataset, similar to a list of references. For the full DataCite metadata for this example see <a href="https://commons.datacite.org/doi.org/10.1594/pangaea.941445">DataCite Search</a>.</p>
+<div class="sourceCode" id="cb24"><pre class="sourceCode xml code-with-copy"><code class="sourceCode xml"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a>&lt;<span class="kw">relatedIdentifiers</span>&gt;</span>
+<span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">relatedIdentifier</span> </span>
+<span id="cb24-3"><a href="#cb24-3" aria-hidden="true" tabindex="-1"></a><span class="ot">        relationType=</span><span class="st">"References"</span> </span>
+<span id="cb24-4"><a href="#cb24-4" aria-hidden="true" tabindex="-1"></a><span class="ot">        relatedIdentifierType=</span><span class="st">"DOI"</span>&gt;</span>
+<span id="cb24-5"><a href="#cb24-5" aria-hidden="true" tabindex="-1"></a>            10.1016/0034-6667(75)90049-4</span>
+<span id="cb24-6"><a href="#cb24-6" aria-hidden="true" tabindex="-1"></a>        &lt;/<span class="kw">relatedIdentifier</span>&gt;  </span>
+<span id="cb24-7"><a href="#cb24-7" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">relatedIdentifier</span> </span>
+<span id="cb24-8"><a href="#cb24-8" aria-hidden="true" tabindex="-1"></a><span class="ot">        relationType=</span><span class="st">"References"</span> </span>
+<span id="cb24-9"><a href="#cb24-9" aria-hidden="true" tabindex="-1"></a><span class="ot">        relatedIdentifierType=</span><span class="st">"DOI"</span>&gt;</span>
+<span id="cb24-10"><a href="#cb24-10" aria-hidden="true" tabindex="-1"></a>            10.1016/j.revpalbo.2020.104236</span>
+<span id="cb24-11"><a href="#cb24-11" aria-hidden="true" tabindex="-1"></a>        &lt;/<span class="kw">relatedIdentifier</span>&gt;  </span>
+<span id="cb24-12"><a href="#cb24-12" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">relatedIdentifier</span> </span>
+<span id="cb24-13"><a href="#cb24-13" aria-hidden="true" tabindex="-1"></a><span class="ot">        relationType=</span><span class="st">"References"</span> </span>
+<span id="cb24-14"><a href="#cb24-14" aria-hidden="true" tabindex="-1"></a><span class="ot">        relatedIdentifierType=</span><span class="st">"DOI"</span>&gt;</span>
+<span id="cb24-15"><a href="#cb24-15" aria-hidden="true" tabindex="-1"></a>            10.1016/j.revpalbo.2019.02.004</span>
+<span id="cb24-16"><a href="#cb24-16" aria-hidden="true" tabindex="-1"></a>        &lt;/<span class="kw">relatedIdentifier</span>&gt;  </span>
+<span id="cb24-17"><a href="#cb24-17" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">relatedIdentifier</span> </span>
+<span id="cb24-18"><a href="#cb24-18" aria-hidden="true" tabindex="-1"></a><span class="ot">        relationType=</span><span class="st">"References"</span> </span>
+<span id="cb24-19"><a href="#cb24-19" aria-hidden="true" tabindex="-1"></a><span class="ot">        relatedIdentifierType=</span><span class="st">"DOI"</span>&gt;</span>
+<span id="cb24-20"><a href="#cb24-20" aria-hidden="true" tabindex="-1"></a>            10.1080/01916122.2014.940472</span>
+<span id="cb24-21"><a href="#cb24-21" aria-hidden="true" tabindex="-1"></a>        &lt;/<span class="kw">relatedIdentifier</span>&gt;  </span>
+<span id="cb24-22"><a href="#cb24-22" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">relatedIdentifier</span> </span>
+<span id="cb24-23"><a href="#cb24-23" aria-hidden="true" tabindex="-1"></a><span class="ot">        relationType=</span><span class="st">"References"</span></span>
+<span id="cb24-24"><a href="#cb24-24" aria-hidden="true" tabindex="-1"></a><span class="ot">        relatedIdentifierType=</span><span class="st">"DOI"</span>&gt;</span>
+<span id="cb24-25"><a href="#cb24-25" aria-hidden="true" tabindex="-1"></a>            10.1191/095968398671104653</span>
+<span id="cb24-26"><a href="#cb24-26" aria-hidden="true" tabindex="-1"></a>        &lt;/<span class="kw">relatedIdentifier</span>&gt;  </span>
+<span id="cb24-27"><a href="#cb24-27" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">relatedIdentifier</span> </span>
+<span id="cb24-28"><a href="#cb24-28" aria-hidden="true" tabindex="-1"></a><span class="ot">        relationType=</span><span class="st">"References"</span> </span>
+<span id="cb24-29"><a href="#cb24-29" aria-hidden="true" tabindex="-1"></a><span class="ot">        relatedIdentifierType=</span><span class="st">"Handle"</span>&gt;</span>
+<span id="cb24-30"><a href="#cb24-30" aria-hidden="true" tabindex="-1"></a>            1885/144170</span>
+<span id="cb24-31"><a href="#cb24-31" aria-hidden="true" tabindex="-1"></a>        &lt;/<span class="kw">relatedIdentifier</span>&gt;</span>
+<span id="cb24-32"><a href="#cb24-32" aria-hidden="true" tabindex="-1"></a>&lt;/<span class="kw">relatedIdentifiers</span>&gt;</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="size-r" class="level3">
+<h3 class="anchored" data-anchor-id="size-r">13 size [r]</h3>
+<p><a href="https://datacite-metadata-schema.readthedocs.io/en/4.6/properties/size/">DataCite documentation [external link]</a></p>
+<ul>
+<li>This field is recommended, whereas it is optional in the DataCite standard.</li>
+<li>This field is repeatable. Thus, different measures for the size / volume of the dataset can be given.<br>
+</li>
+<li>If you make use of this field, always specify the size in Bytes (denoted by ‘B’ - note that a lower case ‘b’ stands for bit). Prefered are: kB, MB, GB, TB etc. Separate number and unit with one space. The decimal separator must be the decimal point, e.g., <em>7.23 GB</em>.</li>
+<li>If the data are compressed, specify the size of the compressed file/archive.</li>
+<li>If the data consist of several units (without using an archival software), specify their combined sizes.</li>
+<li>Further information on the data size (e.g.&nbsp;runtime of an audio file or number of images) can be given in a separate <em>size</em> field as free text. Note that such information can also be given in the <a href="#description-m"><em>description</em></a>.</li>
+</ul>
+<p><strong>Example</strong></p>
+<div class="sourceCode" id="cb25"><pre class="sourceCode xml code-with-copy"><code class="sourceCode xml"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a>&lt;<span class="kw">sizes</span>&gt;</span>
+<span id="cb25-2"><a href="#cb25-2" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">size</span>&gt;7.23 GB&lt;/<span class="kw">size</span>&gt;</span>
+<span id="cb25-3"><a href="#cb25-3" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">size</span>&gt;34 min (length audio file)&lt;/<span class="kw">size</span>&gt;</span>
+<span id="cb25-4"><a href="#cb25-4" aria-hidden="true" tabindex="-1"></a>&lt;/<span class="kw">sizes</span>&gt;</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="format-o" class="level3">
+<h3 class="anchored" data-anchor-id="format-o">14 format [o]</h3>
+<p><a href="https://datacite-metadata-schema.readthedocs.io/en/4.6/properties/format/">DataCite documentation [external link]</a></p>
+<ul>
+<li>This field is optional.</li>
+<li>Use MIME type format as specified in <a href="https://tools.ietf.org/html/rfc2046">RFC 2646 [external link]</a>, possible values should be taken from <a href="https://www.iana.org/assignments/media-types/media-types.xhtml">the IANA list of Media Types [external link]</a>.</li>
+</ul>
+<p>Specify in this order (skip if it does not apply):</p>
+<ol type="1">
+<li>If files are compressed, append the MIME type of the compressed file to the MIME type of the uncompressed file using a “+” sign (e.g.&nbsp;text/xml+zip).</li>
+<li>If files are in an archive, specify the MIME type of the archive format, for example “application/tar”. This information is useful to determine in advance which software tools are needed to access the archived files.</li>
+<li>Specify each MIME type in a separate field in alphabetical order, do not repeat MIME types.</li>
+</ol>
+<p><strong>Example</strong></p>
+<div class="sourceCode" id="cb26"><pre class="sourceCode xml code-with-copy"><code class="sourceCode xml"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a>&lt;<span class="kw">formats</span>&gt;</span>
+<span id="cb26-2"><a href="#cb26-2" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">format</span>&gt;application/tar+gzip&lt;/<span class="kw">format</span>&gt;</span>
+<span id="cb26-3"><a href="#cb26-3" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">format</span>&gt;application/netcdf&lt;/<span class="kw">format</span>&gt;</span>
+<span id="cb26-4"><a href="#cb26-4" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">format</span>&gt;text/plain&lt;/<span class="kw">format</span>&gt;</span>
+<span id="cb26-5"><a href="#cb26-5" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">format</span>&gt;text/csv&lt;/<span class="kw">format</span>&gt;</span>
+<span id="cb26-6"><a href="#cb26-6" aria-hidden="true" tabindex="-1"></a>&lt;/<span class="kw">formats</span>&gt;</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="version-o" class="level3">
+<h3 class="anchored" data-anchor-id="version-o">15 version [o]</h3>
+<p><a href="https://datacite-metadata-schema.readthedocs.io/en/4.6/properties/version/">DataCite documentation [external link]</a></p>
+<ul>
+<li>This field is optional.</li>
+<li>Note that this field refers to the <strong>version of the resource</strong>, not the version of the metadata.</li>
+<li>The versioning information is set according to the policies of the data provider (data publishers do not change/use this field).</li>
+<li>It is recommended to use <a href="https://semver.org/">semantic versioning [external link]</a>. Up to three labels are supported (Major, Minor, Patch). Depending on the resource, only one or two labels might be needed.</li>
+</ul>
+<p><strong>Example 1 (two labels - Major.Minor)</strong></p>
+<div class="sourceCode" id="cb27"><pre class="sourceCode xml code-with-copy"><code class="sourceCode xml"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a>&lt;<span class="kw">version</span>&gt;4.2&lt;/<span class="kw">version</span>&gt;</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><strong>Example 2 (three labels - Major.Minor.Patch)</strong></p>
+<div class="sourceCode" id="cb28"><pre class="sourceCode xml code-with-copy"><code class="sourceCode xml"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a>&lt;<span class="kw">version</span>&gt;4.2.1&lt;/<span class="kw">version</span>&gt;</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="rights-m" class="level3">
+<h3 class="anchored" data-anchor-id="rights-m">16 rights [m]</h3>
+<p><a href="https://datacite-metadata-schema.readthedocs.io/en/4.6/properties/rights/">DataCite documentation [external link]</a></p>
+<ul>
+<li>This field is mandatory, whereas the DataCite standard specifies it as optional.</li>
+<li>If applicable, <em>rightsURI</em> must be set.</li>
+<li>To avoid inconsistencies only assign a single license to the described dataset or the described software code.</li>
+<li>It is not recommended to publish both research data and software code as part of a single publication (consider two separate publications, see <a href="#resourcetype-m"><em>resourceType</em></a>).</li>
+</ul>
+<p>Guidance for using a license:</p>
+<ul>
+<li>Recommendation: <a href="https://creativecommons.org/">Creative Commons (CC) [external link]</a> as license for data and <a href="http://www.apache.org/licenses/LICENSE-2.0">Apache 2.0 license [external link]</a> for software.</li>
+<li>Use the standardized short identifier list provided by <a href="https://spdx.org/license-list/">SPDX [external link]</a> to specify the license in the <em>rightsIdentifier</em> attribute.</li>
+<li>You should not use CC licenses with the NC or ND limitation to ensure reusability (although submissions with these limitations are accepted).</li>
+<li>For further license options consult <a href="https://choosealicense.com/">Choose a license [external link]</a> or the <a href="https://creativecommons.org/choose/">CC license helper [external link]</a>.</li>
+</ul>
+<p><strong>Example 1 (Dataset)</strong></p>
+<div class="sourceCode" id="cb29"><pre class="sourceCode xml code-with-copy"><code class="sourceCode xml"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a>&lt;<span class="kw">rightsList</span>&gt;</span>
+<span id="cb29-2"><a href="#cb29-2" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">rights</span></span>
+<span id="cb29-3"><a href="#cb29-3" aria-hidden="true" tabindex="-1"></a><span class="ot">        xml:lang=</span><span class="st">"en-US"</span></span>
+<span id="cb29-4"><a href="#cb29-4" aria-hidden="true" tabindex="-1"></a><span class="ot">        schemeURI=</span><span class="st">"https://spdx.org/licenses/"</span></span>
+<span id="cb29-5"><a href="#cb29-5" aria-hidden="true" tabindex="-1"></a><span class="ot">        rightsIdentifierScheme=</span><span class="st">"SPDX"</span></span>
+<span id="cb29-6"><a href="#cb29-6" aria-hidden="true" tabindex="-1"></a><span class="ot">        rightsIdentifier=</span><span class="st">"CC0-1.0"</span></span>
+<span id="cb29-7"><a href="#cb29-7" aria-hidden="true" tabindex="-1"></a><span class="ot">        rightsURI=</span><span class="st">"http://creativecommons.org/publicdomain/zero/1.0/"</span>&gt;</span>
+<span id="cb29-8"><a href="#cb29-8" aria-hidden="true" tabindex="-1"></a>            CC0 1.0</span>
+<span id="cb29-9"><a href="#cb29-9" aria-hidden="true" tabindex="-1"></a>    &lt;/<span class="kw">rights</span>&gt;</span>
+<span id="cb29-10"><a href="#cb29-10" aria-hidden="true" tabindex="-1"></a>&lt;/<span class="kw">rightsList</span>&gt;</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><strong>Example 2 (Software)</strong></p>
+<div class="sourceCode" id="cb30"><pre class="sourceCode xml code-with-copy"><code class="sourceCode xml"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a>&lt;<span class="kw">rightsList</span>&gt;</span>
+<span id="cb30-2"><a href="#cb30-2" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">rights</span></span>
+<span id="cb30-3"><a href="#cb30-3" aria-hidden="true" tabindex="-1"></a><span class="ot">        xml:lang=</span><span class="st">"en-US"</span></span>
+<span id="cb30-4"><a href="#cb30-4" aria-hidden="true" tabindex="-1"></a><span class="ot">        schemeURI=</span><span class="st">"https://spdx.org/licenses/"</span></span>
+<span id="cb30-5"><a href="#cb30-5" aria-hidden="true" tabindex="-1"></a><span class="ot">        rightsIdentifierScheme=</span><span class="st">"SPDX"</span></span>
+<span id="cb30-6"><a href="#cb30-6" aria-hidden="true" tabindex="-1"></a><span class="ot">        rightsIdentifier=</span><span class="st">"Apache-2.0"</span></span>
+<span id="cb30-7"><a href="#cb30-7" aria-hidden="true" tabindex="-1"></a><span class="ot">        rightsURI=</span><span class="st">"https://www.apache.org/licenses/LICENSE-2.0"</span>&gt;</span>
+<span id="cb30-8"><a href="#cb30-8" aria-hidden="true" tabindex="-1"></a>            Apache License 2.0</span>
+<span id="cb30-9"><a href="#cb30-9" aria-hidden="true" tabindex="-1"></a>    &lt;/<span class="kw">rights</span>&gt;</span>
+<span id="cb30-10"><a href="#cb30-10" aria-hidden="true" tabindex="-1"></a>&lt;/<span class="kw">rightsList</span>&gt;</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="description-m" class="level3">
+<h3 class="anchored" data-anchor-id="description-m">17 description [m]</h3>
+<p><a href="https://datacite-metadata-schema.readthedocs.io/en/4.6/properties/description/">DataCite documentation [external link]</a></p>
+<ul>
+<li>This field is mandatory, whereas the DataCite standard only recommends it: There has to be at least one entry of type “Abstract” in English.</li>
+<li>Always specify the used language (<em>xml:lang</em> attribute) of each description.</li>
+<li>If there are descriptions in more than one language, the content may be different (no literal translation required).</li>
+<li>Each description has a limit of 300 words.</li>
+<li>Description of <em>descriptionType</em> “Methods” is optional. Best practice: use keywords from <a href="https://gitlab.lrz.de/RDMMUC/datacite/blob/master/Description_Methods.md">this controlled list</a>, separated by comma.</li>
+<li>Description of <em>descriptionType</em> “TechnicalInfo” is optional. Best practice: use keywords from <a href="https://gitlab.lrz.de/RDMMUC/datacite/blob/master/Description_TechnicalInfo.md">this controlled list</a>, separated by comma. Additionally, data producers could consider creating a README file and link it via the <a href="#12-relatedidentifier-r"><em>relatedIdentifier</em></a> field.</li>
+<li>These types are not recommended:
+<ul>
+<li>SeriesInformation (If needed, information on series title, volume, issue, or page number should be provided via the <a href="#relateditem-o"><em>relatedItem</em></a> field.)</li>
+<li>TableOfContents</li>
+<li>Other</li>
+</ul></li>
+</ul>
+<p><strong>Example</strong></p>
+<div class="sourceCode" id="cb31"><pre class="sourceCode xml code-with-copy"><code class="sourceCode xml"><span id="cb31-1"><a href="#cb31-1" aria-hidden="true" tabindex="-1"></a>&lt;<span class="kw">descriptions</span>&gt;</span>
+<span id="cb31-2"><a href="#cb31-2" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">description</span><span class="ot"> xml:lang=</span><span class="st">"en"</span><span class="ot"> descriptionType=</span><span class="st">"Abstract"</span>&gt;</span>
+<span id="cb31-3"><a href="#cb31-3" aria-hidden="true" tabindex="-1"></a>        The “Kritische Ausgabe der Werke von Richard Strauss”, a </span>
+<span id="cb31-4"><a href="#cb31-4" aria-hidden="true" tabindex="-1"></a>        long-term editorial project, has been under way at the  </span>
+<span id="cb31-5"><a href="#cb31-5" aria-hidden="true" tabindex="-1"></a>        Institut für Musikwissenschaft of the Ludwig-Maximilians- </span>
+<span id="cb31-6"><a href="#cb31-6" aria-hidden="true" tabindex="-1"></a>        Universität Munich since 2011; it is directed by ...</span>
+<span id="cb31-7"><a href="#cb31-7" aria-hidden="true" tabindex="-1"></a>    &lt;/<span class="kw">description</span>&gt;</span>
+<span id="cb31-8"><a href="#cb31-8" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">description</span><span class="ot"> xml:lang=</span><span class="st">"de"</span><span class="ot"> descriptionType=</span><span class="st">"Abstract"</span>&gt;</span>
+<span id="cb31-9"><a href="#cb31-9" aria-hidden="true" tabindex="-1"></a>        Das Langzeit-Editionsprojekt „Kritische Ausgabe der Werke von </span>
+<span id="cb31-10"><a href="#cb31-10" aria-hidden="true" tabindex="-1"></a>        Richard Strauss“ wird seit Februar 2011 unter der Leitung von </span>
+<span id="cb31-11"><a href="#cb31-11" aria-hidden="true" tabindex="-1"></a>        Prof. Dr. Hartmut Schick am Institut für Musikwissenschaft der </span>
+<span id="cb31-12"><a href="#cb31-12" aria-hidden="true" tabindex="-1"></a>        Ludwig-Maximilians-Universität München ... </span>
+<span id="cb31-13"><a href="#cb31-13" aria-hidden="true" tabindex="-1"></a>    &lt;/<span class="kw">description</span>&gt;</span>
+<span id="cb31-14"><a href="#cb31-14" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">description</span><span class="ot"> xml:lang=</span><span class="st">"en"</span><span class="ot"> descriptionType=</span><span class="st">"Methods"</span>&gt;</span>
+<span id="cb31-15"><a href="#cb31-15" aria-hidden="true" tabindex="-1"></a>        digital editing, software/application development</span>
+<span id="cb31-16"><a href="#cb31-16" aria-hidden="true" tabindex="-1"></a>    &lt;/<span class="kw">description</span>&gt;</span>
+<span id="cb31-17"><a href="#cb31-17" aria-hidden="true" tabindex="-1"></a>&lt;/<span class="kw">descriptions</span>&gt;</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="geolocation-r" class="level3">
+<h3 class="anchored" data-anchor-id="geolocation-r">18 geoLocation [r]</h3>
+<p><a href="https://datacite-metadata-schema.readthedocs.io/en/4.6/properties/geolocation/">DataCite documentation [external link]</a></p>
+<ul>
+<li>This field is recommended where applicable.</li>
+<li>Describes the resource (e.g.&nbsp;where an image has been taken or where a sensor is located), <em>not</em> the related project or institute, if the former is not applicable, do <strong>not</strong> use it for the latter.</li>
+<li><em>geoLocationPlace</em> must be identical to corresponding GeoNames field in the <a href="#6-subject-m"><em>subjects</em></a>, consult the <a href="#geotagging">geotagging</a> subsection.</li>
+<li>Canonical source for coordinates is the <a href="http://www.geonames.org/export/web-services.html">GeoNames Service [external link]</a>.</li>
+</ul>
+<p><strong>Examples</strong></p>
+<ul>
+<li><em>geoLocationPlace</em> and <em>geoLocationPolygon</em>:</li>
+</ul>
+<div class="sourceCode" id="cb32"><pre class="sourceCode xml code-with-copy"><code class="sourceCode xml"><span id="cb32-1"><a href="#cb32-1" aria-hidden="true" tabindex="-1"></a>&lt;<span class="kw">geoLocations</span>&gt;</span>
+<span id="cb32-2"><a href="#cb32-2" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">geoLocation</span>&gt;</span>
+<span id="cb32-3"><a href="#cb32-3" aria-hidden="true" tabindex="-1"></a>      &lt;<span class="kw">geoLocationPlace</span>&gt;Höslwang&lt;/<span class="kw">geoLocationPlace</span>&gt;</span>
+<span id="cb32-4"><a href="#cb32-4" aria-hidden="true" tabindex="-1"></a>      &lt;<span class="kw">geoLocationPolygon</span>&gt;</span>
+<span id="cb32-5"><a href="#cb32-5" aria-hidden="true" tabindex="-1"></a>        &lt;<span class="kw">polygonPoint</span>&gt;</span>
+<span id="cb32-6"><a href="#cb32-6" aria-hidden="true" tabindex="-1"></a>          &lt;<span class="kw">pointLatitude</span>&gt;47.9231796264648&lt;/<span class="kw">pointLatitude</span>&gt;</span>
+<span id="cb32-7"><a href="#cb32-7" aria-hidden="true" tabindex="-1"></a>          &lt;<span class="kw">pointLongitude</span>&gt;12.2860469818115&lt;/<span class="kw">pointLongitude</span>&gt;</span>
+<span id="cb32-8"><a href="#cb32-8" aria-hidden="true" tabindex="-1"></a>        &lt;/<span class="kw">polygonPoint</span>&gt;</span>
+<span id="cb32-9"><a href="#cb32-9" aria-hidden="true" tabindex="-1"></a>        &lt;<span class="kw">polygonPoint</span>&gt;</span>
+<span id="cb32-10"><a href="#cb32-10" aria-hidden="true" tabindex="-1"></a>          &lt;<span class="kw">pointLatitude</span>&gt;47.9231796264648&lt;/<span class="kw">pointLatitude</span>&gt;</span>
+<span id="cb32-11"><a href="#cb32-11" aria-hidden="true" tabindex="-1"></a>          &lt;<span class="kw">pointLongitude</span>&gt;12.3512439727784&lt;/<span class="kw">pointLongitude</span>&gt;</span>
+<span id="cb32-12"><a href="#cb32-12" aria-hidden="true" tabindex="-1"></a>        &lt;/<span class="kw">polygonPoint</span>&gt;</span>
+<span id="cb32-13"><a href="#cb32-13" aria-hidden="true" tabindex="-1"></a>        &lt;<span class="kw">polygonPoint</span>&gt;</span>
+<span id="cb32-14"><a href="#cb32-14" aria-hidden="true" tabindex="-1"></a>          &lt;<span class="kw">pointLatitude</span>&gt;47.9707412719727&lt;/<span class="kw">pointLatitude</span>&gt;</span>
+<span id="cb32-15"><a href="#cb32-15" aria-hidden="true" tabindex="-1"></a>          &lt;<span class="kw">pointLongitude</span>&gt;12.3512439727784&lt;/<span class="kw">pointLongitude</span>&gt;</span>
+<span id="cb32-16"><a href="#cb32-16" aria-hidden="true" tabindex="-1"></a>        &lt;/<span class="kw">polygonPoint</span>&gt;</span>
+<span id="cb32-17"><a href="#cb32-17" aria-hidden="true" tabindex="-1"></a>        &lt;<span class="kw">polygonPoint</span>&gt;</span>
+<span id="cb32-18"><a href="#cb32-18" aria-hidden="true" tabindex="-1"></a>          &lt;<span class="kw">pointLatitude</span>&gt;47.9707412719727&lt;/<span class="kw">pointLatitude</span>&gt;</span>
+<span id="cb32-19"><a href="#cb32-19" aria-hidden="true" tabindex="-1"></a>          &lt;<span class="kw">pointLongitude</span>&gt;12.2860469818115&lt;/<span class="kw">pointLongitude</span>&gt;</span>
+<span id="cb32-20"><a href="#cb32-20" aria-hidden="true" tabindex="-1"></a>        &lt;/<span class="kw">polygonPoint</span>&gt;</span>
+<span id="cb32-21"><a href="#cb32-21" aria-hidden="true" tabindex="-1"></a>        &lt;<span class="kw">polygonPoint</span>&gt;</span>
+<span id="cb32-22"><a href="#cb32-22" aria-hidden="true" tabindex="-1"></a>          &lt;<span class="kw">pointLatitude</span>&gt;47.9231796264648&lt;/<span class="kw">pointLatitude</span>&gt;</span>
+<span id="cb32-23"><a href="#cb32-23" aria-hidden="true" tabindex="-1"></a>          &lt;<span class="kw">pointLongitude</span>&gt;12.2860469818115&lt;/<span class="kw">pointLongitude</span>&gt;</span>
+<span id="cb32-24"><a href="#cb32-24" aria-hidden="true" tabindex="-1"></a>        &lt;/<span class="kw">polygonPoint</span>&gt;</span>
+<span id="cb32-25"><a href="#cb32-25" aria-hidden="true" tabindex="-1"></a>      &lt;/<span class="kw">geoLocationPolygon</span>&gt;</span>
+<span id="cb32-26"><a href="#cb32-26" aria-hidden="true" tabindex="-1"></a>    &lt;/<span class="kw">geoLocation</span>&gt;</span>
+<span id="cb32-27"><a href="#cb32-27" aria-hidden="true" tabindex="-1"></a>  &lt;/<span class="kw">geoLocations</span>&gt;</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<ul>
+<li><em>geoLocationPlace</em> and <em>geoLocationBox</em>:</li>
+</ul>
+<div class="sourceCode" id="cb33"><pre class="sourceCode xml code-with-copy"><code class="sourceCode xml"><span id="cb33-1"><a href="#cb33-1" aria-hidden="true" tabindex="-1"></a>&lt;<span class="kw">geoLocations</span>&gt;</span>
+<span id="cb33-2"><a href="#cb33-2" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">geoLocation</span>&gt;</span>
+<span id="cb33-3"><a href="#cb33-3" aria-hidden="true" tabindex="-1"></a>        &lt;<span class="kw">geoLocationPlace</span>&gt;Hall in Tirol&lt;/<span class="kw">geoLocationPlace</span>&gt;</span>
+<span id="cb33-4"><a href="#cb33-4" aria-hidden="true" tabindex="-1"></a>        &lt;<span class="kw">geoLocationPoint</span>&gt;</span>
+<span id="cb33-5"><a href="#cb33-5" aria-hidden="true" tabindex="-1"></a>            &lt;<span class="kw">pointLongitude</span>&gt;11.51667&lt;/<span class="kw">pointLongitude</span>&gt;</span>
+<span id="cb33-6"><a href="#cb33-6" aria-hidden="true" tabindex="-1"></a>            &lt;<span class="kw">pointLatitude</span>&gt;47.28333&lt;/<span class="kw">pointLatitude</span>&gt;</span>
+<span id="cb33-7"><a href="#cb33-7" aria-hidden="true" tabindex="-1"></a>        &lt;/<span class="kw">geoLocationPoint</span>&gt;</span>
+<span id="cb33-8"><a href="#cb33-8" aria-hidden="true" tabindex="-1"></a>        &lt;<span class="kw">geoLocationBox</span>&gt;</span>
+<span id="cb33-9"><a href="#cb33-9" aria-hidden="true" tabindex="-1"></a>            &lt;<span class="kw">westBoundLongitude</span>&gt;11.5272636413574&lt;/<span class="kw">westBoundLongitude</span>&gt;</span>
+<span id="cb33-10"><a href="#cb33-10" aria-hidden="true" tabindex="-1"></a>            &lt;<span class="kw">eastBoundLongitude</span>&gt;11.4707803726196&lt;/<span class="kw">eastBoundLongitude</span>&gt;</span>
+<span id="cb33-11"><a href="#cb33-11" aria-hidden="true" tabindex="-1"></a>            &lt;<span class="kw">southBoundLatitude</span>&gt;47.2697830200196&lt;/<span class="kw">southBoundLatitude</span>&gt;</span>
+<span id="cb33-12"><a href="#cb33-12" aria-hidden="true" tabindex="-1"></a>            &lt;<span class="kw">northBoundLatitude</span>&gt;47.2893867492676&lt;/<span class="kw">northBoundLatitude</span>&gt;</span>
+<span id="cb33-13"><a href="#cb33-13" aria-hidden="true" tabindex="-1"></a>        &lt;/<span class="kw">geoLocationBox</span>&gt;</span>
+<span id="cb33-14"><a href="#cb33-14" aria-hidden="true" tabindex="-1"></a>    &lt;/<span class="kw">geoLocation</span>&gt;</span>
+<span id="cb33-15"><a href="#cb33-15" aria-hidden="true" tabindex="-1"></a>&lt;/<span class="kw">geoLocations</span>&gt;</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="fundingreference-o" class="level3">
+<h3 class="anchored" data-anchor-id="fundingreference-o">19 fundingReference [o]</h3>
+<p><a href="https://datacite-metadata-schema.readthedocs.io/en/4.6/properties/fundingreference/">DataCite documentation [external link]</a></p>
+<ul>
+<li>This field is optional.</li>
+<li>This is the place to add information about the project and its funding.</li>
+<li><em>funderName</em> is mandatory, if <em>fundingReference</em> is used. For usage see: <a href="#how-should-i-specify-an-institution">How should I Specify an Institution</a>.</li>
+<li>Use <a href="https://cordis.europa.eu/projects/de">Cordis (EU) [external link]</a>, <a href="https://gepris.dfg.de/gepris/OCTOPUS">GEPRIS (DFG) [external link]</a>, <a href="https://www.fwf.ac.at/de/forschungsfoerderung/fwf-programme/">FWF (Austria) [external link]</a> et al.&nbsp;for identification of grants.</li>
+<li><em>awardTitle</em> is the name of the grant, not the funding line or funding program.</li>
+</ul>
+<p><strong>Example</strong></p>
+<div class="sourceCode" id="cb34"><pre class="sourceCode xml code-with-copy"><code class="sourceCode xml"><span id="cb34-1"><a href="#cb34-1" aria-hidden="true" tabindex="-1"></a>&lt;<span class="kw">fundingReferences</span>&gt;</span>
+<span id="cb34-2"><a href="#cb34-2" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">fundingReference</span>&gt;</span>
+<span id="cb34-3"><a href="#cb34-3" aria-hidden="true" tabindex="-1"></a>        &lt;<span class="kw">funderName</span>&gt;Deutsche Forschungsgemeinschaft (DFG)&lt;/<span class="kw">funderName</span>&gt;</span>
+<span id="cb34-4"><a href="#cb34-4" aria-hidden="true" tabindex="-1"></a>        &lt;<span class="kw">funderIdentifier</span><span class="ot"> funderIdentifierType=</span><span class="st">"ROR"</span>&gt;</span>
+<span id="cb34-5"><a href="#cb34-5" aria-hidden="true" tabindex="-1"></a>            https://ror.org/018mejw64</span>
+<span id="cb34-6"><a href="#cb34-6" aria-hidden="true" tabindex="-1"></a>        &lt;/<span class="kw">funderIdentifier</span>&gt;</span>
+<span id="cb34-7"><a href="#cb34-7" aria-hidden="true" tabindex="-1"></a>        &lt;<span class="kw">awardNumber</span> </span>
+<span id="cb34-8"><a href="#cb34-8" aria-hidden="true" tabindex="-1"></a><span class="ot">            awardURI=</span><span class="st">"http://gepris.dfg.de/gepris/projekt/253900505"</span>&gt;</span>
+<span id="cb34-9"><a href="#cb34-9" aria-hidden="true" tabindex="-1"></a>                253900505</span>
+<span id="cb34-10"><a href="#cb34-10" aria-hidden="true" tabindex="-1"></a>         &lt;/<span class="kw">awardNumber</span>&gt; </span>
+<span id="cb34-11"><a href="#cb34-11" aria-hidden="true" tabindex="-1"></a>        &lt;<span class="kw">awardTitle</span><span class="ot"> xml:lang=</span><span class="st">"de"</span>&gt;</span>
+<span id="cb34-12"><a href="#cb34-12" aria-hidden="true" tabindex="-1"></a>            VerbaAlpina. Der alpine Kulturraum im Spiegel seiner </span>
+<span id="cb34-13"><a href="#cb34-13" aria-hidden="true" tabindex="-1"></a>            Mehrsprachigkeit</span>
+<span id="cb34-14"><a href="#cb34-14" aria-hidden="true" tabindex="-1"></a>        &lt;/<span class="kw">awardTitle</span>&gt;</span>
+<span id="cb34-15"><a href="#cb34-15" aria-hidden="true" tabindex="-1"></a>    &lt;/<span class="kw">fundingReference</span>&gt;</span>
+<span id="cb34-16"><a href="#cb34-16" aria-hidden="true" tabindex="-1"></a>&lt;/<span class="kw">fundingReferences</span>&gt;</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="relateditem-o" class="level3">
+<h3 class="anchored" data-anchor-id="relateditem-o">20 relatedItem [o]</h3>
+<p><a href="https://datacite-metadata-schema.readthedocs.io/en/4.6/properties/relateditem/">DataCite documentation [external link]</a></p>
+<p>Note that DataCite provides two separate elements to establish relationships between resources: <em>relatedItem</em> and <a href="#relatedidentifier-r"><em>relatedIdentifier</em></a>.</p>
+<p><em>relatedItem</em> complements the field <a href="#relatedidentifier-r"><em>relatedIdentifier</em></a>. Only use <em>relatedItem</em> if</p>
+<ol type="1">
+<li>the related resource you want to add does not have a PID/DOI to use <em>relatedIdentifier</em> or</li>
+<li>you want to provide addional context for a published resource (e.g.&nbsp;page numbers or the number of the chapter in a book), as such information can only be provided with <em>relatedItem</em> and not with <em>relatedIdentifier</em>.</li>
+</ol>
+<ul>
+<li>This field is optional.</li>
+<li>Information given in this field is not evaluated automatically. The information stored in <em>relatedItem</em> is not used in the PID graph and EventData. If a <em>relatedItemIdentifier</em> is provided, an identical <em>relatedIdentifier</em> is strongly recommended for indexing.</li>
+<li><em>relatedItem</em> uses the same <a href="#relationtypes"><em>relationTypes</em></a> as <a href="#relatedidentifier-r"><em>relatedIdentifier</em></a>.</li>
+</ul>
+<p><strong>Example</strong></p>
+<p>Here information on a journal series is provided, in particular the journal title, volume, issue, page numbers as well as the publisher.</p>
+<div class="sourceCode" id="cb35"><pre class="sourceCode xml code-with-copy"><code class="sourceCode xml"><span id="cb35-1"><a href="#cb35-1" aria-hidden="true" tabindex="-1"></a><span class="co">&lt;!-- Article is published in Journal "Ladinia"; </span></span>
+<span id="cb35-2"><a href="#cb35-2" aria-hidden="true" tabindex="-1"></a><span class="co">Article = A, Journal = B --&gt;</span></span>
+<span id="cb35-3"><a href="#cb35-3" aria-hidden="true" tabindex="-1"></a>&lt;<span class="kw">relatedItems</span>&gt;</span>
+<span id="cb35-4"><a href="#cb35-4" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">relatedItem</span><span class="ot"> relatedItemType=</span><span class="st">"Journal"</span><span class="ot"> relationType=</span><span class="st">"IsPublishedIn"</span>&gt;</span>
+<span id="cb35-5"><a href="#cb35-5" aria-hidden="true" tabindex="-1"></a>        &lt;<span class="kw">relatedItemIdentifier</span> </span>
+<span id="cb35-6"><a href="#cb35-6" aria-hidden="true" tabindex="-1"></a><span class="ot">            relatedItemIdentifierType=</span><span class="st">"ISSN"</span>&gt;</span>
+<span id="cb35-7"><a href="#cb35-7" aria-hidden="true" tabindex="-1"></a>                1124-1004</span>
+<span id="cb35-8"><a href="#cb35-8" aria-hidden="true" tabindex="-1"></a>        &lt;/<span class="kw">relatedItemIdentifier</span>&gt;</span>
+<span id="cb35-9"><a href="#cb35-9" aria-hidden="true" tabindex="-1"></a>        &lt;<span class="kw">titles</span>&gt;</span>
+<span id="cb35-10"><a href="#cb35-10" aria-hidden="true" tabindex="-1"></a>            &lt;<span class="kw">title</span><span class="ot"> xml:lang=</span><span class="st">"de"</span>&gt;Ladinia&lt;/<span class="kw">title</span>&gt;</span>
+<span id="cb35-11"><a href="#cb35-11" aria-hidden="true" tabindex="-1"></a>            &lt;<span class="kw">title</span> </span>
+<span id="cb35-12"><a href="#cb35-12" aria-hidden="true" tabindex="-1"></a><span class="ot">                titleType=</span><span class="st">"AlternativeTitle"</span> </span>
+<span id="cb35-13"><a href="#cb35-13" aria-hidden="true" tabindex="-1"></a><span class="ot">                xml:lang=</span><span class="st">"de"</span>&gt;</span>
+<span id="cb35-14"><a href="#cb35-14" aria-hidden="true" tabindex="-1"></a>                    Revista scientifica dl Istitut Ladin Micurá de Rü</span>
+<span id="cb35-15"><a href="#cb35-15" aria-hidden="true" tabindex="-1"></a>            &lt;/<span class="kw">title</span>&gt;</span>
+<span id="cb35-16"><a href="#cb35-16" aria-hidden="true" tabindex="-1"></a>        &lt;/<span class="kw">titles</span>&gt;</span>
+<span id="cb35-17"><a href="#cb35-17" aria-hidden="true" tabindex="-1"></a>        &lt;<span class="kw">publicationYear</span>&gt;2019&lt;/<span class="kw">publicationYear</span>&gt;</span>
+<span id="cb35-18"><a href="#cb35-18" aria-hidden="true" tabindex="-1"></a>        &lt;<span class="kw">volume</span>&gt;43&lt;/<span class="kw">volume</span>&gt;</span>
+<span id="cb35-19"><a href="#cb35-19" aria-hidden="true" tabindex="-1"></a>        &lt;<span class="kw">issue</span>&gt;1&lt;/<span class="kw">issue</span>&gt;</span>
+<span id="cb35-20"><a href="#cb35-20" aria-hidden="true" tabindex="-1"></a>        &lt;<span class="kw">firstPage</span>&gt;139&lt;/<span class="kw">firstPage</span>&gt;</span>
+<span id="cb35-21"><a href="#cb35-21" aria-hidden="true" tabindex="-1"></a>        &lt;<span class="kw">lastPage</span>&gt;155&lt;/<span class="kw">lastPage</span>&gt;</span>
+<span id="cb35-22"><a href="#cb35-22" aria-hidden="true" tabindex="-1"></a>        &lt;<span class="kw">publisher</span>&gt;Istitut Ladin Micurá de Rü&lt;/<span class="kw">publisher</span>&gt;</span>
+<span id="cb35-23"><a href="#cb35-23" aria-hidden="true" tabindex="-1"></a>    &lt;/<span class="kw">relatedItem</span>&gt;</span>
+<span id="cb35-24"><a href="#cb35-24" aria-hidden="true" tabindex="-1"></a>&lt;/<span class="kw">relatedItems</span>&gt;</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+</section>
+<section id="c.-examples-1" class="level2">
+<h2 class="anchored" data-anchor-id="c.-examples-1">C. Examples</h2>
+<section id="digital-encyclopedia-bayerisches-musiker-lexikon-online" class="level3">
+<h3 class="anchored" data-anchor-id="digital-encyclopedia-bayerisches-musiker-lexikon-online">Digital encyclopedia: “Bayerisches Musiker-Lexikon Online”</h3>
+<p>The Digital Encyclopedia of Bavarian Musicians (Bayerisches Musiker-Lexikon Online, short BMLO) refers as a musicological model project. The BMLO offers a digital biographical dictionary focussing on music science, furthermore it enriches the presented personalities of Bavarian history of music by implementing further information, gathered from biographical literature, archives, libraries and digital collections. In this way, the BMLO constitutes the core of an interconnected, virtual cluster for history of music. Currently, 24621 out of a total of 27818 records is presented on the web. As parts of this semantic network should also be mentioned the Munich Dictionary of Musik (Münchner Musiklexikon, short MUK), which serves since 2010 as a encyclopedia for music corporations with a linkage to Munich, as well as LOCI, a geographic database for music, culture and history, founded in 2012.</p>
+<p><a href="https://gitlab.lrz.de/RDMMUC/datacite/-/blob/master/examples/example_bmlo.xml">BMLO metadata example [external link]</a></p>
+</section>
+<section id="meteorological-project-climex" class="level3">
+<h3 class="anchored" data-anchor-id="meteorological-project-climex">Meteorological project: “ClimEx”</h3>
+<p>The ClimEx project investigates the effects of climate change on meteorological and hydrological extreme events and implications for water management in Bavaria and Québec. It especially consists of two new aspects:</p>
+<ul>
+<li><p>An ensemble of 50 transient runs of the canadian general circulation model CanESM2 (~200km resolution) from 1950 to 2100, resulting in 7500 years of modelled climate. As each of these runs is initialized with only slightly altered starting conditions, this ensemble can be interpreted as (modelled) natural variability. The CanESM2 then drives the regional climate model CRCM5 (~11km resolution) for a domain that covers most of central Europe. Both models are internationally established and widely used in the climate science community.</p></li>
+<li><p>A physically based hydrological model (WaSiM) is driven by this climate input for the entire hydrological Bavaria at very high temporal and spatial resolution of 3 hours and 500m to investigate both climate change impacts and natural variability of extreme events, especially floods.</p></li>
+</ul>
+<p>ClimEx further strengthens the international collaboration between Bavaria and Québec as research facilities, universities and public water agencies intensify their former cooperation approaches.</p>
+<p><a href="https://gitlab.lrz.de/RDMMUC/datacite/blob/master/examples/example_climex.xml">ClimEx metadata example [external link]</a></p>
+</section>
+<section id="volume-as-part-of-a-series-discourses-on-corruption" class="level3">
+<h3 class="anchored" data-anchor-id="volume-as-part-of-a-series-discourses-on-corruption">Volume as part of a series: “Discourses on Corruption”</h3>
+<p>The volume “Discourses on Corruption. Interdisciplinary and Intercultural Perspectives” is part of the series “Politics and Society in India and the Global South”, a collaboration of Sage Publications and the M.S. Merian – R. Tagore International Centre of Advanced Studies ‘Metamorphoses of the Political’ (ICAS:MP). ICAS:MP is an Indo-German research collaboration of six Indian and German institutions funded by the German Federal Ministry of Education and Research (BMBF). Located in New Delhi, ICAS:MP critically intervenes in global debates in the social sciences and humanities. This volume, through case studies, investigates corruption in the Global South (especially India and Brazil) and West (especially Switzerland) to gain a more nuanced view of the phenomenon.</p>
+<p><a href="https://gitlab.lrz.de/RDMMUC/datacite/-/blob/master/examples/example_mws.xml">MWS metadata example [external link]</a></p>
+</section>
+<section id="article-in-a-conference-proceeding-high-energy-physics" class="level3">
+<h3 class="anchored" data-anchor-id="article-in-a-conference-proceeding-high-energy-physics">Article in a conference proceeding: “High-Energy Physics”</h3>
+<p>The article summarizes the contents of a talk given at the Workshop on Exclusive Reactions at High Momentum Transfer, 21-24 May 2007, in Newport News, VA, United States. The article deals with the radiative decay of delta baryons to nucleons and an on-shell photon. The form factors of the decay are dertermined using QCD light-cone sum rules and photon distribution amplitudes. The proceeding was published as an edited volume in printed and electronic form. Furthermore, there are several works that are closely related to the talk: a journal publication and a preprint version of the article. These have been referenced in the metadata.</p>
+<p><a href="https://gitlab.lrz.de/RDMMUC/datacite/-/blob/master/examples/example_hep_proceeding.xml">High-Energy Physics article [external link]</a></p>
+</section>
+<section id="critical-editon-digital-print-richard-strauss-kritische-werkausgabe" class="level3">
+<h3 class="anchored" data-anchor-id="critical-editon-digital-print-richard-strauss-kritische-werkausgabe">Critical editon (digital &amp; print): “Richard Strauss Kritische Werkausgabe”</h3>
+<p>The “Kritische Ausgabe der Werke von Richard Strauss”, a long-term editorial project, has been under way at the Institut für Musikwissenschaft of the Ludwig-Maximilians-Universität Munich since 2011; it is directed by Prof.&nbsp;Dr.&nbsp;Hartmut Schick and is supervised by a project committee and advisory board constituted by the Bayerische Akademie der Wissenschaften. The project is part of the so-called Akademienprogramm, financed jointly by Germany’s federal government and federal states. Collaborations are in place with the Richard-Strauss-Institut in Garmisch Partenkirchen – which, between 2009 and 2012, prepared the <a href="www.rsi-rsqv.de">“Richard-Strauss-Quellenverzeichnis”</a>, funded by the Deutsche Forschungsgemeinschaft – with the IT-Gruppe Geisteswissenschaften at the LMU Munich, and the Richard-Strauss-Archiv at Garmisch Partenkirchen, run by the composer’s family.</p>
+<p><a href="https://gitlab.lrz.de/RDMMUC/datacite/-/blob/master/examples/example_rsw.xml">RSW metadata example [external link]</a></p>
+</section>
+<section id="digital-lexicographical-information-system-verbaalpina" class="level3">
+<h3 class="anchored" data-anchor-id="digital-lexicographical-information-system-verbaalpina">Digital lexicographical information system: “VerbaAlpina”</h3>
+<p>The project <a href="https://doi.org/10.5282/verba-alpina">VerbaAlpina [external link]</a>, funded by the DFG from 2014 to 2023 as a <a href="http://gepris.dfg.de/gepris/projekt/253900505">long-term project [external link]</a>, was dedicated to the documentation of dialectal lexical variation in the Alpine region within concept domains typical of the region. An independent goal of the project was to use digital methods as extensively and consistently as possible. Problems resulting from complete digitality were discussed, reflected upon, documented and, where possible, solutions were found. Essentially, VerbaAlpina is a lexicographical information system that unites the two traditionally mutually exclusive publication genres of “dictionary” and “language atlas” in one. The results of the VerbaAlpina project are available exclusively in electronic form. Essentially, this is the highly granularly structured lexicographical data material, as well as explanatory texts of various orientations and software components developed as part of the project. The aforementioned electronic legacies of VerbaAlpina were treated in accordance with the FAIR criteria. In the course of this, data was also transferred to the <a href="https://discover.ub.uni-muenchen.de/catalog/?f%5BcollectionStr%5D%5B%5D=VerbaAlpina">research data repository [external link]</a> of the LMU University Library.</p>
+<p>VerbaAlpina metadata: <a href="https://gitlab.lrz.de/RDMMUC/datacite/blob/master/examples/example_va_fullDataset.xml">example full data set [external link]</a>; <a href="https://gitlab.lrz.de/RDMMUC/datacite/blob/master/examples/example_va_individualDataset.xml">example individual data set [external link]</a></p>
+
+
+</section>
+</section>
+</section>
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-reuse"><h2 class="anchored quarto-appendix-heading">Reuse</h2><div class="quarto-appendix-contents"><div><a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a></div></div></section></div></main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+        const codeEl = trigger.previousElementSibling.cloneNode(true);
+        for (const childEl of codeEl.children) {
+          if (isCodeAnnotation(childEl)) {
+            childEl.remove();
+          }
+        }
+        return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
