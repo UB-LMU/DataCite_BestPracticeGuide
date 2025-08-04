@@ -1,0 +1,11 @@
+# Ignore generated HTML files
+*.html
+
+# Ignore generated PDF files
+*.pdf
+
+# Ignore automated data in "bestpractice_files" (e.g. Bootstrap, CSS, JS)
+bestpractice_files/
+_site/
+/.quarto/
+
