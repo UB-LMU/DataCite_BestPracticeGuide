@@ -1,0 +1,1 @@
+Sitemap: https://UB-LMU.github.io/DataCite_BestPracticeGuide/sitemap.xml
