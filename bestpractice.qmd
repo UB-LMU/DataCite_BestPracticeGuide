@@ -3,7 +3,7 @@
 **Christiane Bayer**, IT-Gruppe Geisteswissenschaften (LMU) \
 ([ORCID: 0000-0003-3074-4222](https://orcid.org/0000-0003-3074-4222), v2)\
 **Andreas Frech**, Universitätsbibliothek der LMU \
-([ORCID: 0000-0002-1458-1163](https://orcid.org/0000-0002-1458-1163), v2+v3+v4)\
+([ORCID: 0000-0002-1458-1163](https://orcid.org/0000-0002-1458-1163), v2+v3+v4+v5)\
 **Vanessa Gabriel**, Universitätsbibliothek der LMU \
 ([ORCID: 0000-0002-2058-5160](https://orcid.org/0000-0002-2058-5160), v2+v3)\
 **Sonja Kümmet**, Universitätsbibliothek der LMU \
@@ -11,7 +11,7 @@
 **Stephan Lücke**, IT-Gruppe Geisteswissenschaften (LMU) \
 ([ORCID: 0000-0002-5853-1918](https://orcid.org/0000-0002-5853-1918), v1+v2)\
 **Laura Meier**, Universitätsbibliothek der LMU \
-([ORCID: 0000-0003-1368-2306](https://orcid.org/0000-0003-1368-2306), v4)\
+([ORCID: 0000-0003-1368-2306](https://orcid.org/0000-0003-1368-2306), v4+v5)\
 **Johannes Munke**, Leibniz Supercomputing Centre \
 ([ORCID: 0000-0002-5031-9170](https://orcid.org/0000-0002-5031-9170), v2)\
 **Markus Putnings**, Universitätsbibliothek der FAU \
@@ -21,7 +21,7 @@
 **Julian Schulz**, Max Weber Stiftung - Deutsche Geisteswissenschaftliche Institute im Ausland \
 ([ORCID: 0000-0003-4374-2680](https://orcid.org/0000-0003-4374-2680), v1+v2)\
 **Martin Spenger**, Universitätsbibliothek der LMU \
-([ORCID: 0000-0002-8841-5985](https://orcid.org/0000-0002-8841-5985), v1+v2+v3+v4)\
+([ORCID: 0000-0002-8841-5985](https://orcid.org/0000-0002-8841-5985), v1+v2+v3+v4+v5)\
 **Tobias Weber**, Leibniz Supercomputing Centre \
 ([ORCID: 0000-0003-1815-7041](https://orcid.org/0000-0003-1815-7041), v1)\
 
@@ -29,22 +29,22 @@ If you have any questions about this DataCite Best Practice Guide, please contac
 
 # DataCite Best Practice Guide
 
-The [DataCite Metadata Schema [external link]](https://schema.datacite.org) has become a de facto standard for describing research data. Despite all of its efforts to standardize metadata allocation, this schema offers a great deal of leeway and alternatives in detail. For example, it is optional to clearly identify languages used in the metadata either via ISO 639-1, ISO 639-2, ISO 639-2/B (language codes commonly used by libraries) or ISO 639-3 language tags. The value of metadata increases with its consistency, which is achieved through compliance with standards. One of the aims of the Best Practice Guide presented here is therefore to limit the choices provided by DataCite by specifying a preference, and in this way to ensure as much consistency as possible.
+The [DataCite Metadata Schema [external link]](https://schema.datacite.org) has become a de facto standard for describing research data. Although the schema aims to standardize metadata, it still allows considerable flexibility and room for interpretaion in many areas. For example, languages used in the metadata may be identified using ISO 639-1, ISO 639-2, ISO 639-2/B, or ISO 639-3 language codes. The aim of this Best Practice Guide is to reduce ambiguity by recommending preferred options where DataCite provides multiple alternatives, thereby promoting consistency across records while simplifying the metadata creation and management.
 
-This document is a guideline for the use of the official [DataCite Metadata Schema documentation [external link]](https://schema.datacite.org), [version 4.6 [external link]](https://doi.org/10.14454/mzv1-5b55). A more convenient support documentation with better navigation can be found here as a HTML version [DataCite Metadata Schema Documentation [external link]](https://datacite-metadata-schema.readthedocs.io). 
+This document is a guideline for the official [DataCite Metadata Schema documentation [external link]](https://schema.datacite.org), [version 4.7 [external link]](https://doi.org/10.14454/qdd3-ps68). 
 It is meant for researchers, IT and library support staff. Further information on the schema can be found on the [DataCite support site [external link]](https://support.datacite.org/docs/datacite-metadata-schema).
 
-To create a DataCite XML file, we recommend to you to use the [DataCite Metadata Generator [external link]](https://dhvlab.gwi.uni-muenchen.de/datacite-generator/). This tool is kept in sync with this guideline, safe for transmission times inbetween versions. If you want to create metadata for research data on a scale that is too large for manual procedures, please contact one of the institutions named above.
+To create a DataCite XML file, we recommend that you use the [DataCite Metadata Generator [external link]](https://www.datacite-metadatengenerator.gwi.uni-muenchen.de/). The tool is synchronized with this guide, except for brief update intervals between versions. If you want to create metadata for research data on a scale that is too large for manual procedures, please contact one of the institutions named above.
 
 ## Overview
 
-The first part, [General Best Practice](#a.-general-best-practice), is a selection of recommendations and obligations when using DataCite in general and was written in an FAQ-style (Frequently Asked Questions).
+The first part, [general best practice](#a.-general-best-practice), presents general recommendations and requirements for using the DataCite metadata standard and is structured as a series of frequently asked questions (FAQ).
 
-The second part, [Best Practice for specific fields](#b.-best-practice-for-specific-fields), gives more details for each of the 20 metadata fields of the DataCite metadata standard.
+The second part, [best practice for specific fields](#b.-best-practice-for-specific-fields), gives more details for each of the 20 metadata fields of the DataCite metadata standard.
 
-The third part, [Examples](#c.-examples), is a compilation of DataCite examples.
+The third part, [complete DataCite examples](#c.-complete-datacite-examples), provides a comprehensive DataCite metadata example and links to further examples on the DataCite website.
 
-### [A. General Best Practice](#a.-general-best-practice-1)
+### [A. General best practice](#a.-general-best-practice-1)
 
 * [What do the metadata describe?](#what-do-the-metadata-describe)
 * [What is the language of the metadata?](#what-is-the-language-of-the-metadata)
@@ -52,7 +52,7 @@ The third part, [Examples](#c.-examples), is a compilation of DataCite examples.
 * [How should I specify a person?](#how-should-i-specify-a-person)
 * [How should I handle different versions of research data?](#how-should-i-handle-different-versions-of-the-same-research-data)
 
-### [B. Best Practice for specific fields](#b.-best-practice-for-specific-fields-1)
+### [B. Best practice for specific fields](#b.-best-practice-for-specific-fields-1)
 
 * [1 identifier [m]](#identifier-m)
 * [2 creator [m]](#creator-m)
@@ -75,26 +75,22 @@ The third part, [Examples](#c.-examples), is a compilation of DataCite examples.
 * [19 fundingReference [o]](#fundingreference-o)
 * [20 relatedItem [o]](#relateditem-o)
 
-Mandatory fields are indicated by the tag **[m]**, recommended fields by **[r]** and optional fields by **[o]**. Note: This guide deviates from the [DataCite Metadata Schema 4.6 [external link]](https://doi.org/10.14454/csba-e454) in the assessment of recommend and optional properties and assigns different levels of obligation to some of them. They are indicated by an * in the list above.  
+Mandatory fields are indicated by the tag **[m]**, recommended fields by **[r]** and optional fields by **[o]**. 
+Note: This guide deviates from the [DataCite Metadata Schema 4.7 [external link]](https://doi.org/10.14454/qdd3-ps68) in the assessment of recommended and optional properties and assigns different levels of obligation to some of them. They are indicated by an * in the list above.  
 
-These fields improve discovery, make long-term management of the datasets easier for the hosting institution and are helpful for future (re-)users of the dataset. The benefits of providing additional information outweigh the effort, as most of the information is already available to researchers like providing a short abstract in the [_description_](#description-m).  
+These fields improve discovery, make long-term management of the datasets easier for the hosting institution and are helpful for future (re-)users of the dataset. The benefits of providing additional information outweigh the effort, as most of the information is already available to researchers like providing a short abstract in the [_description_](#description-m).
 
-
-### [C. Examples](#c.-examples-1)
-
-* [Digital encyclopedia: "Bayerisches Musiker-Lexikon Online"](#digital-encyclopedia-bayerisches-musiker-lexikon-online)
-* [Meteorological project: "ClimEx"](#meteorological-project-climex) 
-* [Volume as part of a series: "Discourses on Corruption"](#volume-as-part-of-a-series-discourses-on-corruption)
-* [Article in a conference proceeding: "High-Energy Physics"](#article-in-a-conference-proceeding-high-energy-physics) 
-* [Critical editon (digital & print): "Richard Strauss Kritische Werkausgabe"](#critical-editon-digital-print-richard-strauss-kritische-werkausgabe)
-* [Digital lexicographical information system: "VerbaAlpina"](#digital-lexicographical-information-system-verbaalpina)
+For additional, practice-oriented recommendations on the curation and quality assurance of selected DataCite metadata properties, see also the following publication:
+Vierkant, P., Czerniak, A., Fischer, B. K., Genderjahn, S., Hagemann-Wilholt, S., Schrader, A., Ziedorn, F., Stathis, K.& El-Gebali, S. (2025). Praxisorientierte Leitlinien für Lieferanten von DataCite DOI-Metadaten (Version 1.0). Zenodo. [https://doi.org/10.5281/zenodo.17065201 [external link]](https://doi.org/10.5281/zenodo.17065201) (in German).
 
 
-## A. General Best Practice
+### [C. Complete DataCite examples](#c.-complete-datacite-examples-1)
+
+## A. General best practice
 
 ### What do the metadata describe?
 
-Unless otherwise specified all information in the metadata concerns the research data (also denoted as "resource"), neither the project in whose context the data have been created or collected nor the metadata themselves.
+Unless otherwise specified, the information provided in the metadata refers to the research data (also referred to as “resource”), not to the project in which the data were created or collected.
 
 
 ### What is the language of the metadata?
@@ -112,10 +108,10 @@ Unless otherwise specified all information in the metadata concerns the research
 
 * Proper nouns do not need to be translated.
 * Use standardized data (e.g. controlled vocabularies) whenever possible. This might allow data aggregators to display the information in the language most suitable to the use case at hand.
-* Recommendation: use either the two-letter language codes from ISO 639-1 or the three-letter language codes from ISO 639-2 (listed on [Wikipedia [external link]](https://en.wikipedia.org/wiki/List_of_ISO_639_language_codes)). Be advised: the three-letter codes are used in library systems. If you use a different standard (i.e. [BCP 47 [external link]](https://en.wikipedia.org/wiki/IETF_language_tag)), pay attention to be consistent and do not alternate between standards. In any case, DataCite expects a language code confirming to this regular expression pattern `[a-zA-Z]{1,8}(-[a-zA-Z0-9]{1,8})*`, which works for most common language codes.
+* Recommendation: Use either ISO 639-1 two-letter language codes or ISO 639-2 three-letter language codes (listed on [Wikipedia [external link]](https://en.wikipedia.org/wiki/List_of_ISO_639_language_codes)). Three-letter codes are commonly used in library systems. If you use a different standard (e.g. [BCP 47 [external link]](https://en.wikipedia.org/wiki/IETF_language_tag)), apply it consistently and avoid mixing standards.
 
 ### How should I specify a person?
-* A person should be identified by name, persistent ID and affiliation.
+* A person should be identified by name, persistent identifier (PID) and affiliation.
 * It is recommended to not use titles/academic degrees in names as they are subject to change.
 * State the name in the order "family name, given name". For example: 
   
@@ -130,10 +126,11 @@ Unless otherwise specified all information in the metadata concerns the research
 <familyName>Krefeld</familyName>
 ```
 
-* Add a persistent identifier for persons, preferably a [GND-ID (Gemeinsame Normdatei) [external link]](https://www.dnb.de/DE/Professionell/Standardisierung/GND/gnd_node.html) or an [ORCID-ID [external link]](https://orcid.org/) (Open Researcher and Contributor ID). This will make attributions robust to changes of names or affiliations:
+* Add a PID for persons, preferably an [ORCID-ID [external link]](https://orcid.org/) (Open Researcher and Contributor ID) or a [GND-ID (Gemeinsame Normdatei) [external link]](https://www.dnb.de/DE/Professionell/Standardisierung/GND/gnd_node.html). This will make attributions robust to changes of names or affiliations:
   * Recommendation for GND-ID entries: 
-    * GND-ID entries can be conveniently searched for on [WebGND [external link]](http://gnd.eurospider.com/s) or [lobid-gnd [external link]](https://lobid.org/gnd); for further search options see the [GND website [external link]](https://gnd.network/Webs/gnd/DE/Entdecken/entdecken_node.html).
+    * GND-ID entries can be conveniently searched for on [WebGND [external link]](http://gnd.eurospider.com/s), [lobid-gnd [external link]](https://lobid.org/gnd) or [GND Explorer [external link]](https://explore.gnd.network/); for further search options see the [GND website [external link]](https://gnd.network/Webs/gnd/DE/Entdecken/entdecken_node.html).
     * Only use individualized GND entries that clearly identify a person (usually by year of birth and/or profession).
+    * Use the "GND-URI" (starting with "http://d-nb.info/gnd/") to link GND entries.
 
 ```xml
 <!-- GND entry --> 
@@ -145,7 +142,7 @@ Unless otherwise specified all information in the metadata concerns the research
         
 <!-- ORCID entry -->        
 <nameIdentifier
-    schemeURI="http://orcid.org/"
+    schemeURI="https://orcid.org/"
     nameIdentifierScheme="ORCID">
         0000-0001-9657-6052
 </nameIdentifier>
@@ -158,36 +155,36 @@ Unless otherwise specified all information in the metadata concerns the research
     * If unavoidable, multiple affiliations can be specified in the order of importance for the dataset published. 
 
 ### How should I specify an institution?
-* Institutions may mainly be enterend in _affiliaton_ or _fundingReference_.
+* Institutions may mainly be enterend in _affiliaton_ (with _creator_ and _contributor_) or _fundingReference_.
 * Follow the policy of the institution.
 * State the name of the institution as specific as possible (e.g. start with the chair/group, not with the university). If the name of the institution has changed use the name as it was at the time of creation of the resource.
 * Start with the more specific organizational units first and end with the most generic unit, separated by semicolon:
   
 ```xml
-<affiliation xml:lang="de">
+<affiliation>
         Institut für Romanische Philologie; 
         Ludwig-Maximilians-Universität München    
 </affiliation>
 
 <affiliation
-    xml:lang="de"
     affiliationIdentifier="https://ror.org/05591te55" 
-    affiliationIdentifierScheme="ROR">
+    affiliationIdentifierScheme="ROR"
+    schemeURI="https://ror.org/">
         Ludwig-Maximilians-Universität München
 </affiliation>
 ```
 
 * If there is no policy or multiple names in multiple languages are given, use the English name.
-* Always specify the language in which the name is given using a _xml:lang_ tag.
+* If possible, use a _xml:lang_ tag to specify the language in which the name is given. 
   
 ```xml
 <publisher xml:lang="en">Leibniz Supercomputing Centre</publisher>
 <publisher xml:lang="de">Leibniz-Rechenzentrum</publisher>        
 ```
 
-* Affiliations are to be specified as of the time of creation of the resource.
-* Add a persistent identifier (PID) for the institution, preferably a [ROR-ID [external link]](https://ror.org/) (Research Organization Registry); if there is no entry in ROR, use a [ISNI-ID [external link]](http://www.isni.org/search) (International Standard Name Identifier) or GND-ID.
-* For [research funding](#fundingreference-o) organizations it is recommended to additionally provide the [CrossRef Funder Registry ID [external link]](https://www.crossref.org/services/funder-registry/).
+* Affiliations must be specified at the time the resource is created.
+* Add a persistent identifier (PID) for the institution, preferably a [ROR-ID [external link]](https://ror.org/) (Research Organization Registry); if there is no entry in ROR, use a [ISNI-ID [external link]](http://www.isni.org/search) (International Standard Name Identifier) or [GND-ID [external link]](https://explore.gnd.network/). (Note: Use the "GND-URI" starting with "http://d-nb.info/gnd/" to link GND entries.)
+* For research funding organizations (see [_fundingReference_](#fundingreference-o)) it is recommended to additionally provide the [CrossRef Funder Registry ID [external link]](https://www.crossref.org/services/funder-registry/).
 
 ```xml
 <fundingReference>
@@ -201,22 +198,22 @@ Unless otherwise specified all information in the metadata concerns the research
 
 ### How should I handle different versions of the same research data?
 
-Metadata can be updated without releasing a new version of the research data, but not vice versa;
-if the research data change, you need to update the metadata to reflect these changes.
+Metadata can be updated without releasing a new version of the research data. However, if the research data change, the metadata must be updated accordingly.
 
-If you want to publish several versions of the research data, but also want to have a point of reference for all of these publications together, we recommend to use a form of [DOI-versioning [external link]](https://help.zenodo.org/#versioning):
+
+If you want to publish several versions of the research data, but also want to have a point of reference for all of these publications together, we recommend to use a form of [DOI-versioning [external link]](https://zenodo.org/help/versioning):
 
 * Specify a set of metadata that is valid for all versions.
 * Specify a set of metadata for each version.
-* Update all these metadata with the according references (e.g. include *isNewVersionOf* in the metadata of the new version, see [_relatedIdentifier_](#relatedidentifier-r) for details).
+* Update all these metadata with the according references (e.g. include "isNewVersionOf" in the metadata of the new version, see [_relatedIdentifier_](#relatedidentifier-r) for details).
 
 ## B. Best practice for specific fields
 
 ### 1 identifier [m]
-[DataCite documentation [external link]](https://datacite-metadata-schema.readthedocs.io/en/4.6/properties/identifier/)
+[DataCite documentation [external link]](https://datacite-metadata-schema.readthedocs.io/en/4.7/properties/identifier/)
 
 * This field can be omitted on submission: it is mandatory according to the DataCite standard, but it will be set by the data publisher.
-* The assigned Digital Object Identifier (DOI) will be provided to you by the data publisher.
+* The assigned [Digital Object Identifier (DOI) [external link]](https://www.doi.org/) will be provided to you by the data publisher.
 
 
 __Example__
@@ -225,10 +222,10 @@ __Example__
 ```
 
 ### 2 creator [m]
-[DataCite documentation [external link]](https://datacite-metadata-schema.readthedocs.io/en/4.6/properties/creator/)
+[DataCite documentation [external link]](https://datacite-metadata-schema.readthedocs.io/en/4.7/properties/creator/)
 
 * This field is mandatory.
-* Consult sections on [how to specify a person](#how-should-i-specify-a-person) and [how to specify a institution](#how-should-i-specify-an-institution).
+* Consult sections on [how to specify a person](#how-should-i-specify-a-person) and [how to specify an institution](#how-should-i-specify-an-institution).
 * Always prefer natural persons over institutions.
 * You can use the *xml:lang* attribute to provide the language of the *creatorName*. This may be helpful, if an institution uses different names in different languages.
 
@@ -240,7 +237,7 @@ __Example__
         <givenName>Thomas</givenName>
         <familyName>Krefeld</familyName>
          <nameIdentifier
-            schemeURI="http://orcid.org/"
+            schemeURI="https://orcid.org/"
             nameIdentifierScheme="ORCID">
                 0000-0001-9657-6052
         </nameIdentifier>
@@ -249,17 +246,16 @@ __Example__
             nameIdentifierScheme="GND">
                 123778689
         </nameIdentifier>
-        <affiliation
-            xml:lang="de">
-                Institut für Romanische Philologie,
-                Ludwig-Maximilians-Universität München
+        <affiliation>
+            Institut für Romanische Philologie,
+            Ludwig-Maximilians-Universität München
         </affiliation>
     </creator>
 </creators>
 ```
 
 ### 3 title [m]
-[DataCite documentation [external link]](https://datacite-metadata-schema.readthedocs.io/en/4.6/properties/title/)
+[DataCite documentation [external link]](https://datacite-metadata-schema.readthedocs.io/en/4.7/properties/title/)
 
 * This field is mandatory.
 * Be as specific as you would be in the context of a journal publication.
@@ -285,11 +281,11 @@ __Example__
 
 
 ### 4 publisher [m]
-[DataCite documentation [external link]](https://datacite-metadata-schema.readthedocs.io/en/4.6/properties/publisher/)
+[DataCite documentation [external link]](https://datacite-metadata-schema.readthedocs.io/en/4.7/properties/publisher/)
 
 * This field is mandatory.
 * The language of the publisher name must be specified (see section on [metadata language](#what-is-the-language-of-the-metadata) for the use of _xml:lang_ attribute).
-* If possible, the attibutes _publisherIdentifier_, _publisherIdentifierScheme_ and _schemeURI_ should be used.
+* If possible, the attibutes _publisherIdentifier_, _publisherIdentifierScheme_ and _schemeURI_ should be used. Consult sections on [how to specify an institution](#how-should-i-specify-an-institution).
 * This field can be omitted on submission: it is mandatory according to the DataCite standard, but it will be set by the data publisher, i.e. the institution that hosts the (meta)data.
 
 
@@ -303,7 +299,7 @@ __Example__
 ```
 
 ### 5 publicationYear [m]
-[DataCite documentation [external link]](https://datacite-metadata-schema.readthedocs.io/en/4.6/properties/publicationyear/)
+[DataCite documentation [external link]](https://datacite-metadata-schema.readthedocs.io/en/4.7/properties/publicationyear/)
 
 * This field is mandatory.
 * This field can be omitted on submission: it is mandatory according to the DataCite standard, but it will be set by the data publisher.
@@ -314,7 +310,7 @@ __Example__
 ```
 
 ### 6 subject [m]
-[DataCite documentation [external link]](https://datacite-metadata-schema.readthedocs.io/en/4.6/properties/subject/)
+[DataCite documentation [external link]](https://datacite-metadata-schema.readthedocs.io/en/4.7/properties/subject/)
 
 * This field is mandatory, in the DataCite standard it is only recommended.
 
@@ -325,11 +321,11 @@ __Example__
 |----------------|-------------------------|---------------------------|----------------------------------------------------------------|
 |Discipline      | DDC                     | Classification            | Use the English term for the discipline and include the three digit DDC notation via the _classificationCode_ attribute ([Canonical Source [external link]](https://www.oclc.org/content/dam/oclc/dewey/resources/summaries/deweysummaries.pdf)). |
 | | | | |
-|Keywords        | Wikidata QID and GND  | Keyword                   | Wikidata and GND terms are both mandatory, including redundancy (if an appropriate entry does not exist contact the responsible Institution). Use [Wikidata-Search [external link]](https://www.wikidata.org) and [GND-Search [external link]](http://swb.bsz-bw.de/DB=2.104/LNG=EN/) to find the appropriate identifiers.
+|Keywords        | Wikidata QID and GND  | Keyword                   | Wikidata and GND terms are both mandatory, including redundancy (if an appropriate entry does not exist contact the responsible Institution). Use [Wikidata-Search [external link]](https://www.wikidata.org) and [GND Explorer [external link]](https://explore.gnd.network/) to find the appropriate identifiers. (Note: Use the "GND-URI" starting with "http://d-nb.info/gnd/" to link GND terms.)
 
 * It is also mandatory to include at least the _valueURI_ or the _classificationCode_ attribute. 
 * It is recommended to inculde a *xml:lang* attribute for the *subject*.
-* To improve machine-readablility we recommend using **both** _valueURI_ and _classificationCode_. 
+* To improve machine-readability we recommend using **both** _valueURI_ and _classificationCode_. 
 
 __Example__
 ```xml
@@ -344,7 +340,7 @@ __Example__
 <!-- keywords -->   
     <subject 
         xml:lang="en"
-        subjectScheme="Wikidata QID" 
+        subjectScheme="Wikidata" 
         schemeURI="https://www.wikidata.org/wiki/" 
         valueURI="https://www.wikidata.org/wiki/Q223776" 
         classificationCode="Q223776">
@@ -354,9 +350,9 @@ __Example__
         xml:lang="en"
         subjectScheme="GND" 
         schemeURI="https://d-nb.info/gnd/" 
-        valueURI="https://d-nb.info/gnd/1135686874" 
-        classificationCode="1135686874">
-            Gravity Assist
+        valueURI="https://d-nb.info/gnd/4143246-0" 
+        classificationCode="4143246-0">
+            Astrodynamik
     </subject>
 </subjects>
 ```
@@ -366,7 +362,7 @@ There should be no overlap between the discipline specifier(s) and the keywords.
 Specifying the location via subject is mandatory, if applicable to the resource:
 
 * Canonical source for geonames is the [GeoNames Service [external link]](http://www.geonames.org/export/web-services.html) (a registration for API access is necessary).
-* See [_geoLocation_ section](#geolocation-r) for a more detailed specification.
+* See [_geoLocation_](#geolocation-r) for a more detailed specification.
 
 #### Additional subject annotations
 * Additional subjects may be added.
@@ -376,7 +372,6 @@ Specifying the location via subject is mandatory, if applicable to the resource:
 
 __Example__
 
-For this example a complete DataCite metadata file is available, see [VerbaAlpina](#digital-lexicographical-information-system-verbaalpina).
 ```xml
 <subjects>
 <!-- mandatory-->
@@ -398,11 +393,11 @@ For this example a complete DataCite metadata file is available, see [VerbaAlpin
         schemeURI="https://d-nb.info/gnd/"
         valueURI="https://d-nb.info/gnd/4740815-7"
         classificationCode ="4740815-7">
-            Chalet 
+            Chalet
     </subject>
     <subject
         xml:lang="en"
-        subjectScheme="wikidata"        
+        subjectScheme="Wikidata"        
         schemeURI="https://www.wikidata.org/wiki/"
         valueURI="https://www.wikidata.org/wiki/Q136689"
         classificationCode="Q136689">
@@ -410,7 +405,7 @@ For this example a complete DataCite metadata file is available, see [VerbaAlpin
     </subject>
     <subject
         xml:lang="fr"
-        subjectScheme="wikidata"        
+        subjectScheme="Wikidata"        
         schemeURI="https://www.wikidata.org/wiki/"
         valueURI="https://www.wikidata.org/wiki/Lexeme:L643765"
         classificationCode="L643765">
@@ -437,12 +432,12 @@ For this example a complete DataCite metadata file is available, see [VerbaAlpin
 ```
 
 ### 7 contributor [r]
-[DataCite documentation [external link]](https://datacite-metadata-schema.readthedocs.io/en/4.6/properties/contributor/)
+[DataCite documentation [external link]](https://datacite-metadata-schema.readthedocs.io/en/4.7/properties/contributor/)
 
 * This field is recommended if the data are published with a free license.
-* If the license specified via the [_rights_](#rights-m) field restricts the usage in a way that possibly necessitates interaction with the rights holder, a _contributor_ of type "RightsHolder" must be specified. Examples of free licenses are CC-0, CC-BY, or CC-SA; non-free licenses are for example CC-NC or CC-ND.
-* Consult the sections on [how to specify a person](#how-should-i-specify-a-person) and [how to specify a institution](#how-should-i-specify-an-institution).
-* If contributors change over versions, the version metadata should only include the actual contributors of the updated version. A metadata set representing all versions of the dataset (including links to the versions) can include all contributors with the dates of participation, see [how to handle different versions of the research data](#how-should-i-handle-different-versions-of-the-same-research-data).
+* If the license specified via the [_rights_](#rights-m) field restricts the usage in a way that possibly necessitates interaction with the rights holder, a _contributor_ of type "RightsHolder" must be specified. Examples of free licenses are CC0 1.0, CC BY 4.0, or CC BY-SA 4.0; non-free licenses are for example CC BY-NC 4.0, CC BY-NC-ND 4.0, CC BY-NC-SA 4.0 or CC BY-ND 4.0.
+* Consult the sections on [how to specify a person](#how-should-i-specify-a-person) and [how to specify an institution](#how-should-i-specify-an-institution).
+* If contributors change over versions, the version metadata should only include the contributors of the updated version. A metadata set representing all versions of the dataset (including links to the versions) can include all contributors with the dates of participation, see [how to handle different versions of the research data](#how-should-i-handle-different-versions-of-the-same-research-data).
 * Duplicate mentions between _creator_ and _contributor_ are unproblematic.
 * If a person has multiple roles, it is recommended to identify the most important role of that person and select only one.
 * Be as specific as possible (a "ProjectLeader" is also considered to be a "ProjectMember", but "ProjectLeader" carries more information). Use generic role descriptions only when nothing else fits.
@@ -475,15 +470,15 @@ For this example a complete DataCite metadata file is available, see [VerbaAlpin
 | | |
 |ResearchGroup        | *Typically refers to a group of individuals within a lab, department or division that has a specifically defined focus of activity.*|
 | | |
-|RightsHolder      | *Person or institution owning or managing property rights, including intellectual property rights over the resource.* Mandatory for non-free licenses; person or institution that owns the rights listed in field [Rights](#rights-m). |
+|RightsHolder      | *Person or institution owning or managing property rights, including intellectual property rights over the resource.* Mandatory for non-free licenses; person or institution that owns the rights listed in field [_rights_](#rights-m). |
 | | |
-|Sponsor      | *Organization or person that issued a contract or under the auspices of which a work has been printed, published, developed, etc.*|
+|Sponsor      | *Person or organisation that issued a contract or under the auspices of which a work has been written, printed, published, developed, etc.*|
 | | |
 |Supervisor      | *Designated administrator over one or more groups/teams working to produce a resource, or over one or more steps of a development process.* We recommmed using this role for PhD advisors of the creators, who did not particiate as creators or in other roles themselves.|
 | | |
 |Translator      | *A person, organization, or automated system responsible for converting the content of a resource from one language into another, preserving its meaning and intended message.*|
 | | |
-|WorkPackage- \ Leader | *The Work Package Leader is responsible for ensuring the comprehensive contents, versioning, and availability of the Work Package during the development of the resource.*|
+|WorkPackageLeader | *The Work Package Leader is responsible for ensuring the comprehensive contents, versioning, and availability of the Work Package during the development of the resource.*|
 
 __Example__
 ```xml
@@ -494,10 +489,10 @@ __Example__
         <familyName>Ludwig</familyName>
         <nameIdentifier
             nameIdentifierScheme="ORCID"
-            schemeURI="http://orcid.org/">
+            schemeURI="https://orcid.org/">
                 0000-0002-4225-4098
         </nameIdentifier>
-        <affiliation xml:lang="de">
+        <affiliation>
             Department für Geographie, 
             Ludwig-Maximilians-Universität München
         </affiliation>
@@ -513,7 +508,7 @@ __Example__
             schemeURI="https://d-nb.info/gnd/">
                 141321350
         </nameIdentifier>
-        <affiliation xml:lang="de">
+        <affiliation>
             Institut für Musikwissenschaft, Universität Wien
         </affiliation>
     </contributor>
@@ -521,40 +516,48 @@ __Example__
 ```
 
 ### 8 date [r]
-[DataCite documentation [external link]](https://datacite-metadata-schema.readthedocs.io/en/4.6/properties/date/)
+[DataCite documentation [external link]](https://datacite-metadata-schema.readthedocs.io/en/4.7/properties/date/)
 
 * This field is recommended.
 * It is recommended to provide date and time according to the [W3C time and data formats [external link]](https://www.w3.org/TR/NOTE-datetime). If the time is specified always include the time zone.   
-* Time periods can be specified by specifying the start date and the end date separated by a slash (/).
+* Time periods can be specified by providing the start date and the end date separated by a slash (/).
 * The following types should be filled-out by the data producer:
     * **Collected**: time range when the resource was arranged (not necessarily identical to the time range when the resource was created).
-    * **Covered**: date range that the resource content applies to or covers. (Example: A text corpus of newspaper articles about a historic event will *cover* a time span (associated with the event). The corpus can be *collected* over a different time span.)
+    * **Coverage**: date range that the resource content applies to or covers. (Example: A text corpus of newspaper articles about a historic event will *cover* a time span (associated with the event). The corpus can be *collected* over a different time span.)
     * **Created**: first version of a resource; must not be identical with updated.
     * **Updated**: for a more recent version of the resource; must not be identical with created.
+    * **Valid**: date or date range during which the resource is considered accurate. (Example: A dataset containing a land use classification that is valid for the year 2025 can specify 2025-01-01/2025-12-31 as the valid date range.)
 * The following types are set by the publisher:
     * **Submitted**: point in time when the data were recieved by the data publisher.
     * **Accepted**: point in time when the data publisher accepts the data for publication.
     * **Issued**: long format of the field [_publicationYear_](#publicationyear-m), point in time when a publisher publishes the data; should be set.
     * **Available**: only use in the context of embargo periods (this is not recommended).
     * **Withdrawn**: point in time when the publisher retracts the data publication.
-* For dates describing the period the resource covers use "Other" for _dateType_ and add "coverage" as a description under _datesInformation_, see example below.
 * It is recommended to use the free text attribute _dateInformation_ for disambiguation, if multiple dates with the same type are specified.
-* "Copyrighted" as a _dateType_ should not be used.
+* **Copyrighted** as a _dateType_ should not be used.
 
-__Example__
+__Example__ 
 ```xml
 <dates>
-    <date dateType="Created">2016</date>
-    <date
-        dateType="Other"
-        dateInformation="coverage">
-            2050-09-01T00:00:00+01:00/2050-09-30T23:59:59+01:00
+    <date 
+      dateType="Created"
+      dateInformation="First field campaign">
+        2016
+    </date>
+    <date 
+      dateType="Created"
+      dateInformation="Second field campaign">
+        2021
+    </date>
+    <date 
+      dateType="Coverage">
+        2050-09-01T00:00:00+01:00/2050-09-30T23:59:59+01:00
     </date>
 </dates>
 ```
 
 ### 9 language [o]
-[DataCite documentation [external link]](https://datacite-metadata-schema.readthedocs.io/en/4.6/properties/language/)
+[DataCite documentation [external link]](https://datacite-metadata-schema.readthedocs.io/en/4.7/properties/language/)
 
 * This field is optional.
 * The field describes the main language of the **resource**, not of the metadata.
@@ -566,7 +569,7 @@ __Example__
 ```
 
 ### 10 resourceType [m]
-[DataCite documentation [external link]](https://datacite-metadata-schema.readthedocs.io/en/4.6/properties/resourcetype/)
+[DataCite documentation [external link]](https://datacite-metadata-schema.readthedocs.io/en/4.7/properties/resourcetype/)
 
 * This field is mandatory.
 * DateCite allows various resource types. 
@@ -578,20 +581,22 @@ Decision tree to pick the right _resourceTypeGeneral_:
 
 2. Decide if the resource is data or discursive text (e.g. journal article or analytical text). If it is discursive text, choose one of the following:
 
-    * Book
-    * BookChapter
-    * ConferencePaper
-    * ConferenceProceeding
-    * DataPaper
-    * Dissertation
-    * Journal
-    * JournalArticle
-    * OutputManagementPlan [Note: A data management plan is a special form of output management plan]
-    * PeerReview
-    * Preprint
-    * Report
-    * Standard
-    * StudyRegistration
+    * "Book"
+    * "BookChapter"
+    * "ConferencePaper"
+    * "ConferenceProceeding"
+    * "DataPaper"
+    * "Dissertation"
+    * "Journal"
+    * "JournalArticle"
+    * "OutputManagementPlan" [Note: A data management plan is a special form of output management plan]
+    * "PeerReview"
+    * "Poster"
+    * "Preprint"
+    * "Presentation"
+    * "Report"
+    * "Standard"
+    * "StudyRegistration"
   
     If not: Proceed with 3.
 3. If the data submission contains heterogeneous data, consider publishing it in separate data publications or (less preferred) use "Collection". If the data are homogeneous, proceed with 4.
@@ -604,11 +609,11 @@ Decision tree to pick the right _resourceTypeGeneral_:
 10. If the data are text files, use "Text". If not, proceed with 11.
 11. Check if one of the following types is applicable: 
     
-    * Award (Use this one if, for example, the resource is an entry in a Current Research Information System (CRIS) that details a Leibniz Prize awarded to a staff member.)
-    * Event (For example, for a conference or an award ceremony.)
-    * InteractiveResource (This type can be used for interactive tutorials in a learning management system or for certain websites.)
-    * Project (If, for example, a project is funded by DFG the corresponding [GEPRIS [external link]](https://gepris.dfg.de/gepris/OCTOPUS) entry would be assigned the _resourceTypeGeneral_ *Project*.)
-    * Service (For example, if a university IT center offers access to an LLM running on its servers, this would be a "Service". Note that the LLM code itself would be "Software")
+    * "Award" (Use this one if, for example, the resource is an entry in a Current Research Information System (CRIS) that details a Leibniz Prize awarded to a staff member.)
+    * "Event" (For example, for a conference or an award ceremony.)
+    * "InteractiveResource2 (This type can be used for interactive tutorials in a learning management system or for certain websites.)
+    * "Project" (If, for example, a project is funded by DFG the corresponding [GEPRIS [external link]](https://gepris.dfg.de/gepris/) entry would be assigned the _resourceTypeGeneral_ "Project".)
+    * "Service" (For example, if a university IT center offers access to an LLM running on its servers, this would be a "Service". Note that the LLM code itself would be "Software".)
 
     If not, proceed with 12.
 12. Use "Other".
@@ -629,16 +634,16 @@ __Examples__
 
 
 ### 11 alternateIdentifier [o]
-[DataCite documentation [external link]](https://datacite-metadata-schema.readthedocs.io/en/4.6/properties/alternateidentifier/)
+[DataCite documentation [external link]](https://datacite-metadata-schema.readthedocs.io/en/4.7/properties/alternateidentifier/)
 
 * This field is optional.
-* These alternate IDs additionally identify the resource, meaning that it can also be found via these identifiers and distinguished from other resources by this ID.
+* These alternate identifiers additionally identify the resource, meaning that it can also be found via these identifiers and distinguished from other resources by this ID.
 * The _alternateIdentifier_ can be a persistent, globally unique ID. However, the field may also be used for identifiers, which are only unique and specific in the context of the research project (e.g. local identifiers or workspace identifiers) but not globally. Examples for alternate identifiers are sequence numbers, time stamps or database numbers. Contrary, the global identifier in field [_identifier_](#identifier-m) **must** be a DOI. 
 * The attribute _alternateIdentifierType_ must be used to specifiy the type of the identifer.
 
 __Recommendation for _alternateIdentifierType_:__
 
-For common global identifers, just specify the name of the identifier or its acronym. Examples of such identifiers are: ARK, arXiv, bibcode, CSTR, DOI, EAN13, EISSN, ePIC, Handle, IGSN, ISBN, ISSN, ISTC, LISSN, LSID, PMID, PURL, RRID, UPC, URL, URN, and w3id.
+For common global identifers, just specify the name of the identifier or its acronym. Examples of such identifiers are: ARK, arXiv, bibcode, CSTR, DOI, EAN13, EISSN, ePIC, Handle, IGSN, ISBN, ISSN, ISTC, LISSN, LSID, PMID, PURL, RAiD, RRID, SWHID, UPC, URL, URN, and w3id.
 
 For other identifiers we recommend to first give the origin of the ID:
 
@@ -668,23 +673,23 @@ Each VerbaAlpina dataset is assigned an [internal ID [external link]](https://do
 
 
 ### 12 relatedIdentifier [r]
-[DataCite documentation [external link]](https://datacite-metadata-schema.readthedocs.io/en/4.6/properties/relatedidentifier/)
+[DataCite documentation [external link]](https://datacite-metadata-schema.readthedocs.io/en/4.7/properties/relatedidentifier/)
 
 Note that DataCite provides two separate elements to establish relationships between resources: _relatedIdentifier_ and [_relatedItem_](#relateditem-o).
 
 The *relatedIdentifier* element should be used for machine-readable identifiers (like DOI, PubMed ID or ISBN). This identifier points to additional information on the related resource. It is recommended as it facilitates automated discovery of the described resource.
 
-The element [_relatedItem_](#relateditem-oa) can be used for information on a related object that does not have an identifier (e.g. conference contributions or book series). It is also useful if an identifier exists but one wants to provide additional, more specific information on the related resource, e.g. to provide the page number, volume and title of a journal.
+The element [_relatedItem_](#relateditem-o) can be used for information on a related object that does not have an identifier (e.g. conference contributions or book series). It is also useful if an identifier exists but one wants to provide additional, more specific information on the related resource, e.g. to provide the page number, volume and title of a journal.
 
 * This field is recommended.
 * If possible, relations of the described resource should be mirrored in the metadata of the related resource. For example, make sure that a paper referencing a dataset includes the identifier of the dataset in its metadata and vice versa. This also applies to all reciprocal _relationTypes_ (e.g. "IsNewVersionOf" and "IsPreviousVersionOf").
-* The _relatedIdentifierType_ must be taken from a [fixed list [external link]](https://datacite-metadata-schema.readthedocs.io/en/4.6/appendices/appendix-1/relatedIdentifierType/): ARK, arXiv, bibcode, CSTR, DOI, EAN13, EISSN, Handle, IGSN, ISBN, ISSN, ISTC, LISSN, LSID, PMID, PURL, RRID, UPC, URL, URN, w3id.
+* The _relatedIdentifierType_ must be taken from a [fixed list [external link]](https://datacite-metadata-schema.readthedocs.io/en/4.7/appendices/appendix-1/relatedIdentifierType/): ARK, arXiv, bibcode, CSTR, DOI, EAN13, EISSN, Handle, IGSN, ISBN, ISSN, ISTC, LISSN, LSID, PMID, PURL, RAiD, RRID, SWHID, UPC, URL, URN, w3id.
 * The publisher may curate the list of _relatedIdentifiers_ (e.g. adding relevant related resources over time on a best effort basis).
-* The relations are always specified from the perspective of the described resource (refered to as resource A in the examples). The related resource is called resource B in the examples. For detailed definitions of all relationTypes see the [DataCite schema documentation [external link]](https://datacite-metadata-schema.readthedocs.io/en/4.6/appendices/appendix-1/relationType/)
+* The relations are always specified from the perspective of the described resource (refered to as resource A in the examples). The related resource is called resource B in the examples. For detailed definitions of all relationTypes see the [DataCite schema documentation [external link]](https://datacite-metadata-schema.readthedocs.io/en/4.7/appendices/appendix-1/relationType/).
   
 ![](images/DataCite_relatedIdentifier.JPG)
 
-* Only use these _relationTypes_:
+* Use the _relationType_ that best describes the relationship between the resources. Only use "Other" if none of the _relationTypes_ apply. You may use _relationTypeInformation_ to provide additional information about the relationship. This is particularly recommended when using the _relationType_ "Other".
 
 ::: {.landscape}
 
@@ -692,30 +697,32 @@ The element [_relatedItem_](#relateditem-oa) can be used for information on a re
 
 |Relation categories | Usage | relationType | Guidance / Example |
 |-----------------|-------------------|-----------------------|----------------------------------------------------------------------------|
-|Versions|Use to differentiate specific and unspecific versions of a resource |HasVersion (IsVersionOf); IsNewVersionOf (IsPreviousVersionOf); IsVariantFormOf (IsOriginalFormOf); IsIdenticalTo; Obsoletes (IsObsoletedBy)|Be as specific as possible. Use "NewVersion" and "PreviousVersion" if A is the predecessor or successor of B; use of "Obsolets" and "IsObsoletedBy" is recommended for standards, legal regulations, etc. If the version is unspecific use "HasVersion" and "IsVersionOf".|
+|Versions|Use to differentiate specific and unspecific versions of a resource |HasVersion (IsVersionOf); IsNewVersionOf (IsPreviousVersionOf); IsVariantFormOf (IsOriginalFormOf); IsIdenticalTo; Obsoletes (IsObsoletedBy)|Be as specific as possible. Use "IsNewVersionOf" and "IsPreviousVersionOf" if A is the predecessor or successor of B; use of "Obsolets" and "IsObsoletedBy" is recommended for standards, legal regulations, etc. If the version is unspecific use "HasVersion" and "IsVersionOf".|
 | | | | |
-|Hierarchy|Use to create hierarchical relationships|IsPartOf (HasPart)| "HasPart" indicates A includes the part B; "IsPart" indicates A is a portion of B. Example: a container "HasPart" a dataset.|
+|Hierarchy|Use to create hierarchical relationships|IsPartOf (HasPart)| "HasPart" indicates A includes the part B; "IsPart" indicates A is a portion of B. Example: A container "HasPart" a dataset.|
 | | | | |
 |Provenance|Use to refer to source materials (for software also see below)| HasTranslation (IsTranslationOf); IsSourceOf; IsDerivedFrom; Continues (IsContinuedBy); Collects (IsCollectedBy) |Examples: A book in English (resource A)  "IsTranslationOf" a work written in Spanish (resource B). Volume 2 of a book series (resource A) "Continues" volume 1 (resource B). A dataset (resource A) "IsSourceOf" a diagram (resource B). An Instrument (resource A), e.g. a microscope, "Collects" an image set (resource B); a PhysicalObject (resource A) "isCollectedBy" an Instrument (resource B).|
 | | | | |
-|Complemen-tary (for software see below)| Use for resources that build on or complement each other |IsSourceOf; IsDerivedFrom; Continues (IsContinuedBy); IsSupplementTo (IsSupplementedBy)|Examples: Volume 2 of a book series (resource A) "Continues" volume 1 (resource B). A computer notebook (resource A) "IsSupplementTo" an article (resource B).|
+|Complemen-tary | Use for resources that build on or complement each other (for software also see below) |IsSourceOf; IsDerivedFrom; Continues (IsContinuedBy); IsSupplementTo (IsSupplementedBy)|Examples: Volume 2 of a book series (resource A) "Continues" volume 1 (resource B). A computer notebook (resource A) "IsSupplementTo" an article (resource B).|
 | | | | |
 |Bibliographic|Use to relate published texts/ material |IsPublishedIn; References (IsReferencedBy); Cites (IsCitedBy)|Examples: An article (resource A) "IsPublishedIn" an edited volume (resource B), e.g., conference proceedings. A presentation (resource A) "References" a dataset (resource B) when discussing a plot.|
 | | | | |
 |Additional information|Use for resources that provide further information on the described resource |Documents (IsDocumentedBy); HasMetadata (IsMetadataFor); Describes (IsDescribedBy); Reviews (IsReviewedBy)|A digtital representation of a painting (resource A) "HasMetadata" in Europeana (Resource B). An article (resource A) "isDescribedBy" a PubMed entry (resource B). |
 | | | | |
-|Software specific| Requires can be used to indicate software dependencies. Compiles relates software code and compiler.|Requires (IsRequiredBy); Compiles (IsCompiledBy)| A piece of code (resource A) "Requires" a software library (resource B).|
+|Software specific| Use to describe software specific relationships |Requires (IsRequiredBy); Compiles (IsCompiledBy)| "Requires" can be used to indicate software dependencies. A piece of code (resource A) "Requires" a software library (resource B). "Compiles" relates software code and compiler. |
 :::
 
 __Example 1 (DOI)__
 
-The ClimEx Project "IsDescribedBy" an article in the Journal of Applied Meteorology and Climatology. The article's DOI is [10.1175/JAMC-D-18-0021.1](https://doi.org/10.1175/JAMC-D-18-0021.1). For the full DataCite metadata for this example see [ClimEx](#meteorological-project-climex) below.
+The ClimEx Project "IsDescribedBy" an article in the Journal of Applied Meteorology and Climatology. The article's DOI is [10.1175/JAMC-D-18-0021.1](https://doi.org/10.1175/JAMC-D-18-0021.1). 
+
 ```xml
 <relatedIdentifiers>
     <relatedIdentifier 
         relatedIdentifierType="DOI" 
-        relationType="IsDescribedBy">
-            10.1175/JAMC-D-18-0021.1             
+        relationType="IsDescribedBy"
+        resourceTypeGeneral="JournalArticle">
+            10.1175/JAMC-D-18-0021.1
     </relatedIdentifier>
 </relatedIdentifiers>
 ```
@@ -728,12 +735,12 @@ PubMed provides a description and additional information on an article published
     <relatedIdentifier 
 		relatedIdentifierType="PMID" 
 		relationType="IsDescribedBy">
-			34552256 
+			34552256
     </relatedIdentifier>
     <relatedIdentifier
         relatedIdentifierType="arXiv"
         relationType="IsNewVersionOf">
-            arXiv:2107.02222          
+            arXiv:2107.02222
     </relatedIdentifier>
 </relatedIdentifiers>
 ```
@@ -746,7 +753,7 @@ Wikidata provides metadata for the BMLO project and dataset. Thus, BMLO "HasMeta
     <relatedIdentifier
         relatedIdentifierType="URL" 
         relationType="HasMetadata"
-        subjectScheme="wikidata"        
+        relatedMetadataScheme="Wikidata" 
         schemeURI="https://www.wikidata.org/wiki/">
             Q47191
     </relatedIdentifier>
@@ -793,7 +800,7 @@ Pangaea publishes datasets in the field of Earth & Environmental Science. Pangae
   
 
 ### 13 size [r]
-[DataCite documentation [external link]](https://datacite-metadata-schema.readthedocs.io/en/4.6/properties/size/)
+[DataCite documentation [external link]](https://datacite-metadata-schema.readthedocs.io/en/4.7/properties/size/)
 
 * This field is recommended, whereas it is optional in the DataCite standard.
 * This field is repeatable. Thus, different measures for the size / volume of the dataset can be given.  
@@ -811,7 +818,7 @@ __Example__
 ```
 
 ### 14 format [o]
-[DataCite documentation [external link]](https://datacite-metadata-schema.readthedocs.io/en/4.6/properties/format/)
+[DataCite documentation [external link]](https://datacite-metadata-schema.readthedocs.io/en/4.7/properties/format/)
 
 * This field is optional.
 * Use MIME type format as specified in [RFC 2646 [external link]](https://tools.ietf.org/html/rfc2046), possible values should be taken from [the IANA list of Media Types [external link]](https://www.iana.org/assignments/media-types/media-types.xhtml).
@@ -833,7 +840,7 @@ __Example__
 ```
 
 ### 15 version [o]
-[DataCite documentation [external link]](https://datacite-metadata-schema.readthedocs.io/en/4.6/properties/version/)
+[DataCite documentation [external link]](https://datacite-metadata-schema.readthedocs.io/en/4.7/properties/version/)
 
 * This field is optional.
 * Note that this field refers to the **version of the resource**, not the version of the metadata.
@@ -851,7 +858,7 @@ __Example 2 (three labels - Major.Minor.Patch)__
 
 
 ### 16 rights [m]
-[DataCite documentation [external link]](https://datacite-metadata-schema.readthedocs.io/en/4.6/properties/rights/)
+[DataCite documentation [external link]](https://datacite-metadata-schema.readthedocs.io/en/4.7/properties/rights/)
 
 * This field is mandatory, whereas the DataCite standard specifies it as optional.
 * If applicable, *rightsURI* must be set.
@@ -859,10 +866,10 @@ __Example 2 (three labels - Major.Minor.Patch)__
 * It is not recommended to publish both research data and software code as part of a single publication (consider two separate publications, see [*resourceType*](#resourcetype-m)).
 
 
-Guidance for using a license:
+Guidance for choosing a license:
 
-* Recommendation: [Creative Commons (CC) [external link]](https://creativecommons.org/) as license for data and [Apache 2.0 license [external link]](http://www.apache.org/licenses/LICENSE-2.0) for software.
-* Use the standardized short identifier list provided by [SPDX [external link]](https://spdx.org/license-list/) to specify the license in the _rightsIdentifier_ attribute.
+* Recommendation: Use one of the [Creative Commons (CC) [external link]](https://creativecommons.org/) licenses for data and [Apache 2.0 license [external link]](http://www.apache.org/licenses/LICENSE-2.0) for software.
+* Use the standardized short identifier list provided by [SPDX [external link]](https://spdx.org/licenses/) to specify the license in the _rightsIdentifier_ attribute.
 * You should not use CC licenses with the NC or ND limitation to ensure reusability (although submissions with these limitations are accepted).
 * For further license options consult [Choose a license [external link]](https://choosealicense.com/) or the [CC license helper [external link]](https://creativecommons.org/choose/).
 
@@ -875,8 +882,8 @@ __Example 1 (Dataset)__
         schemeURI="https://spdx.org/licenses/"
         rightsIdentifierScheme="SPDX"
         rightsIdentifier="CC0-1.0"
-        rightsURI="http://creativecommons.org/publicdomain/zero/1.0/">
-            CC0 1.0
+        rightsURI="https://creativecommons.org/publicdomain/zero/1.0/legalcode">
+            Creative Commons Zero v1.0 Universal
     </rights>
 </rightsList>
 ```
@@ -897,18 +904,18 @@ __Example 2 (Software)__
 
 
 ### 17 description [m]
-[DataCite documentation [external link]](https://datacite-metadata-schema.readthedocs.io/en/4.6/properties/description/)
+[DataCite documentation [external link]](https://datacite-metadata-schema.readthedocs.io/en/4.7/properties/description/)
 
 * This field is mandatory, whereas the DataCite standard only recommends it: There has to be at least one entry of type "Abstract" in English.
 * Always specify the used language (_xml:lang_ attribute) of each description.
 * If there are descriptions in more than one language, the content may be different (no literal translation required).
 * Each description has a limit of 300 words.
-* Description of _descriptionType_ "Methods" is optional. Best practice: use keywords from [this controlled list](https://gitlab.lrz.de/RDMMUC/datacite/blob/master/Description_Methods.md), separated by comma.
-* Description of _descriptionType_ "TechnicalInfo" is optional. Best practice: use keywords from [this controlled list](https://gitlab.lrz.de/RDMMUC/datacite/blob/master/Description_TechnicalInfo.md), separated by comma. Additionally, data producers could consider creating a README file and link it via the [_relatedIdentifier_](#12-relatedidentifier-r) field.
+* Description of _descriptionType_ "Methods" is optional.
+* Description of _descriptionType_ "TechnicalInfo" is optional. Additionally, data producers could consider creating a README file and link it via the [_relatedIdentifier_](#relatedidentifier-r) field.
 * These types are not recommended:
-    * SeriesInformation (If needed, information on series title, volume, issue, or page number should be provided via the [_relatedItem_](#relateditem-o) field.) 
-    * TableOfContents
-    * Other
+    * "SeriesInformation" (If needed, information on series title, volume, issue, or page number should be provided via the [_relatedItem_](#relateditem-o) field.) 
+    * "TableOfContents"
+    * "Other"
 
 __Example__
 ```xml
@@ -933,11 +940,11 @@ __Example__
 
 
 ### 18 geoLocation [r]
-[DataCite documentation [external link]](https://datacite-metadata-schema.readthedocs.io/en/4.6/properties/geolocation/)
+[DataCite documentation [external link]](https://datacite-metadata-schema.readthedocs.io/en/4.7/properties/geolocation/)
 
 * This field is recommended where applicable.
-* Describes the resource (e.g. where an image has been taken or where a sensor is located), *not* the related project or institute, if the former is not applicable, do **not** use it for the latter.
-* _geoLocationPlace_ must be identical to corresponding GeoNames field in the [_subjects_](#6-subject-m), consult the [geotagging](#geotagging) subsection.
+* Describes the resource itself (e.g. where an image was taken or a sensor is located), *not* the related project or institute. If no resource location applies, leave this field empty.
+* _geoLocationPlace_ must be identical to corresponding GeoNames field in the [_subjects_](#subject-m), consult the [geotagging](#geotagging) subsection.
 * Canonical source for coordinates is the [GeoNames Service [external link]](http://www.geonames.org/export/web-services.html).
 
 __Examples__
@@ -949,24 +956,24 @@ __Examples__
       <geoLocationPlace>Höslwang</geoLocationPlace>
       <geoLocationPolygon>
         <polygonPoint>
-          <pointLatitude>47.9231796264648</pointLatitude>
           <pointLongitude>12.2860469818115</pointLongitude>
+          <pointLatitude>47.9231796264648</pointLatitude>
         </polygonPoint>
         <polygonPoint>
-          <pointLatitude>47.9231796264648</pointLatitude>
           <pointLongitude>12.3512439727784</pointLongitude>
-        </polygonPoint>
-        <polygonPoint>
-          <pointLatitude>47.9707412719727</pointLatitude>
-          <pointLongitude>12.3512439727784</pointLongitude>
-        </polygonPoint>
-        <polygonPoint>
-          <pointLatitude>47.9707412719727</pointLatitude>
-          <pointLongitude>12.2860469818115</pointLongitude>
-        </polygonPoint>
-        <polygonPoint>
           <pointLatitude>47.9231796264648</pointLatitude>
+        </polygonPoint>
+        <polygonPoint>
+          <pointLongitude>12.3512439727784</pointLongitude>
+          <pointLatitude>47.9707412719727</pointLatitude>
+        </polygonPoint>
+        <polygonPoint>
           <pointLongitude>12.2860469818115</pointLongitude>
+          <pointLatitude>47.9707412719727</pointLatitude>
+        </polygonPoint>
+        <polygonPoint>
+          <pointLongitude>12.2860469818115</pointLongitude>
+          <pointLatitude>47.9231796264648</pointLatitude>
         </polygonPoint>
       </geoLocationPolygon>
     </geoLocation>
@@ -994,12 +1001,12 @@ __Examples__
 
 
 ### 19 fundingReference [o]
-[DataCite documentation [external link]](https://datacite-metadata-schema.readthedocs.io/en/4.6/properties/fundingreference/)
+[DataCite documentation [external link]](https://datacite-metadata-schema.readthedocs.io/en/4.7/properties/fundingreference/)
 
 * This field is optional.
 * This is the place to add information about the project and its funding.
-* _funderName_ is mandatory, if _fundingReference_ is used. For usage see: [How should I Specify an Institution](#how-should-i-specify-an-institution).
-* Use [Cordis (EU) [external link]](https://cordis.europa.eu/projects/de), [GEPRIS (DFG) [external link]](https://gepris.dfg.de/gepris/OCTOPUS), [FWF (Austria) [external link]](https://www.fwf.ac.at/de/forschungsfoerderung/fwf-programme/) et al. for identification of grants.
+* _funderName_ is mandatory, if _fundingReference_ is used. For usage see: [How should I specify an institution](#how-should-i-specify-an-institution).
+* Use authoritative funding databases such as [Cordis (EU) [external link]](https://cordis.europa.eu/projects/de), [GEPRIS (DFG) [external link]](https://gepris.dfg.de/gepris), [FWF (Austria) [external link]](https://www.fwf.ac.at/de/forschungsfoerderung/fwf-programme/) to identify grants. Provide a persistent URL or PID for the funding award (e.g., a GEPRIS URL or DOI) using the _awardURI_ property.
 * _awardTitle_ is the name of the grant, not the funding line or funding program.
 
 
@@ -1007,15 +1014,17 @@ __Example__
 ```xml
 <fundingReferences>
     <fundingReference>
-        <funderName>Deutsche Forschungsgemeinschaft (DFG)</funderName>
-        <funderIdentifier funderIdentifierType="ROR">
-            https://ror.org/018mejw64
+        <funderName>Deutsche Forschungsgemeinschaft</funderName>
+        <funderIdentifier 
+            funderIdentifierType="ROR"
+            schemeURI="https://ror.org/">
+                https://ror.org/018mejw64
         </funderIdentifier>
         <awardNumber 
             awardURI="http://gepris.dfg.de/gepris/projekt/253900505">
                 253900505
          </awardNumber> 
-        <awardTitle xml:lang="de">
+        <awardTitle>
             VerbaAlpina. Der alpine Kulturraum im Spiegel seiner 
             Mehrsprachigkeit
         </awardTitle>
@@ -1024,7 +1033,7 @@ __Example__
 ```
 
 ### 20 relatedItem [o]
-[DataCite documentation [external link]](https://datacite-metadata-schema.readthedocs.io/en/4.6/properties/relateditem/)
+[DataCite documentation [external link]](https://datacite-metadata-schema.readthedocs.io/en/4.7/properties/relateditem/)
 
 Note that DataCite provides two separate elements to establish relationships between resources: *relatedItem* and [_relatedIdentifier_](#relatedidentifier-r).
 
@@ -1039,7 +1048,8 @@ Note that DataCite provides two separate elements to establish relationships bet
 
 __Example__ 
 
-Here information on a journal series is provided, in particular the journal title, volume, issue, page numbers as well as the publisher. 
+This section provides information about the journal, including its title, volume, issue, page numbers, and publisher.
+
 ```xml
 <!-- Article is published in Journal "Ladinia"; 
 Article = A, Journal = B -->
@@ -1050,10 +1060,10 @@ Article = A, Journal = B -->
                 1124-1004
         </relatedItemIdentifier>
         <titles>
-            <title xml:lang="de">Ladinia</title>
+            <title xml:lang="it">Ladinia</title>
             <title 
                 titleType="AlternativeTitle" 
-                xml:lang="de">
+                xml:lang="it">
                     Revista scientifica dl Istitut Ladin Micurá de Rü
             </title>
         </titles>
@@ -1066,44 +1076,338 @@ Article = A, Journal = B -->
 	</relatedItem>
 </relatedItems>
 ```
-## C. Examples
+## C. Complete DataCite examples
 
-### Digital encyclopedia: "Bayerisches Musiker-Lexikon Online"
-The Digital Encyclopedia of Bavarian Musicians (Bayerisches Musiker-Lexikon Online, short BMLO) refers as a musicological model project. The BMLO offers a digital biographical dictionary focussing on music science, furthermore it enriches the presented personalities of Bavarian history of music by implementing further information, gathered from biographical literature, archives, libraries and digital collections. In this way, the BMLO constitutes the core of an interconnected, virtual cluster for history of music. Currently, 24621 out of a total of 27818 records is presented on the web. As parts of this semantic network should also be mentioned the Munich Dictionary of Musik (Münchner Musiklexikon, short MUK), which serves since 2010 as a encyclopedia for music corporations with a linkage to Munich, as well as LOCI, a geographic database for music, culture and history, founded in 2012.
+DataCite provides examples for all available properties. To showcase further use cases, the curated lists of [demonstration examples [external link]](https://datacite-metadata-schema.readthedocs.io/en/4.7/xml/#demonstration-examples) and [live examples [external link]](https://datacite-metadata-schema.readthedocs.io/en/4.7/xml/#live-examples) can be used as references for creating own metadata files.
 
-[BMLO metadata example [external link]](https://gitlab.lrz.de/RDMMUC/datacite/-/blob/master/examples/example_bmlo.xml)
+Example files can also be downloaded as XML files and uploaded in the [DataCite Metadata Generator [external link]](https://www.datacite-metadatengenerator.gwi.uni-muenchen.de/) for further processing.
 
-### Meteorological project: "ClimEx"
-The ClimEx project investigates the effects of climate change on meteorological and hydrological extreme events and implications for water management in Bavaria and Québec.
-It especially consists of two new aspects:
+::: {.content-hidden when-format="pdf"}
+Below is the [comprehensive DataCite metadata example [external link]](https://schema.datacite.org/meta/kernel-4.7/example/datacite-example-full-v4.xml) demonstrating all available properties. The example is taken from the [official DataCite Metadata Schema documentation [external link]](https://schema.datacite.org/meta/kernel-4.7/).
 
-* An ensemble of 50 transient runs of the canadian general circulation model CanESM2 (~200km resolution) from 1950 to 2100, resulting in 7500 years of modelled climate. As each of these runs is initialized with only slightly altered starting conditions, this ensemble can be interpreted as (modelled) natural variability. The CanESM2 then drives the regional climate model CRCM5 (~11km resolution) for a domain that covers most of central Europe. Both models are internationally established and widely used in the climate science community.
-
-* A physically based hydrological model (WaSiM) is driven by this climate input for the entire hydrological Bavaria at very high temporal and spatial resolution of 3 hours and 500m to investigate both climate change impacts and natural variability of extreme events, especially floods.
-
-ClimEx further strengthens the international collaboration between Bavaria and Québec as research facilities, universities and public water agencies intensify their former cooperation approaches.
-
-[ClimEx metadata example [external link]](https://gitlab.lrz.de/RDMMUC/datacite/blob/master/examples/example_climex.xml)
-
-### Volume as part of a series: "Discourses on Corruption"
-The volume “Discourses on Corruption. Interdisciplinary and Intercultural Perspectives” is part of the series “Politics and Society in India and the Global South”, a collaboration of Sage Publications and the M.S. Merian – R. Tagore International Centre of Advanced Studies ‘Metamorphoses of the Political’ (ICAS:MP). ICAS:MP is an Indo-German research collaboration of six Indian and German institutions funded by the German Federal Ministry of Education and Research (BMBF). Located in New Delhi, ICAS:MP critically intervenes in global debates in the social sciences and humanities. This volume, through case studies, investigates corruption in the Global South (especially India and Brazil) and West (especially Switzerland) to gain a more nuanced view of the phenomenon.
-
-[MWS metadata example [external link]](https://gitlab.lrz.de/RDMMUC/datacite/-/blob/master/examples/example_mws.xml)
-
-### Article in a conference proceeding: "High-Energy Physics"
-The article summarizes the contents of a talk given at the Workshop on Exclusive Reactions at High Momentum Transfer, 21-24 May 2007, in Newport News, VA, United States. The article deals with the radiative decay of delta baryons to nucleons and an on-shell photon. The form factors of the decay are dertermined using QCD light-cone sum rules and photon distribution amplitudes. The proceeding was published as an edited volume in printed and electronic form. Furthermore, there are several works that are closely related to the talk: a journal publication and a preprint version of the article. These have been referenced in the metadata.
-
-[High-Energy Physics article [external link]](https://gitlab.lrz.de/RDMMUC/datacite/-/blob/master/examples/example_hep_proceeding.xml)
-
-
-### Critical editon (digital & print): "Richard Strauss Kritische Werkausgabe"
-The “Kritische Ausgabe der Werke von Richard Strauss”, a long-term editorial project, has been under way at the Institut für Musikwissenschaft of the Ludwig-Maximilians-Universität Munich since 2011; it is directed by Prof. Dr. Hartmut Schick and is supervised by a project committee and advisory board constituted by the Bayerische Akademie der Wissenschaften. The project is part of the so-called Akademienprogramm, financed jointly by Germany’s federal government and federal states. Collaborations are in place with the Richard-Strauss-Institut in Garmisch Partenkirchen – which, between 2009 and 2012, prepared the [“Richard-Strauss-Quellenverzeichnis”](www.rsi-rsqv.de), funded by the Deutsche Forschungsgemeinschaft – with the IT-Gruppe Geisteswissenschaften at the LMU Munich, and the Richard-Strauss-Archiv at Garmisch Partenkirchen, run by the composer’s family.
-
-[RSW metadata example [external link]](https://gitlab.lrz.de/RDMMUC/datacite/-/blob/master/examples/example_rsw.xml)
-
-### Digital lexicographical information system: "VerbaAlpina"
-The project [VerbaAlpina [external link]](https://doi.org/10.5282/verba-alpina), funded by the DFG from 2014 to 2023 as a [long-term project [external link]](http://gepris.dfg.de/gepris/projekt/253900505), was dedicated to the documentation of dialectal lexical variation in the Alpine region within concept domains typical of the region. An independent goal of the project was to use digital methods as extensively and consistently as possible. Problems resulting from complete digitality were discussed, reflected upon, documented and, where possible, solutions were found. Essentially, VerbaAlpina is a lexicographical information system that unites the two traditionally mutually exclusive publication genres of "dictionary" and "language atlas" in one. The results of the VerbaAlpina project are available exclusively in electronic form. Essentially, this is the highly granularly structured lexicographical data material, as well as explanatory texts of various orientations and software components developed as part of the project. The aforementioned electronic legacies of VerbaAlpina were treated in accordance with the FAIR criteria. In the course of this, data was also transferred to the [research data repository [external link]](https://discover.ub.uni-muenchen.de/catalog/?f%5BcollectionStr%5D%5B%5D=VerbaAlpina) of the LMU University Library.
-
-VerbaAlpina metadata: [example full data set [external link]](https://gitlab.lrz.de/RDMMUC/datacite/blob/master/examples/example_va_fullDataset.xml); [example individual data set [external link]](https://gitlab.lrz.de/RDMMUC/datacite/blob/master/examples/example_va_individualDataset.xml)
-
-
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Example with all properties -->
+<resource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://datacite.org/schema/kernel-4" xsi:schemaLocation="http://datacite.org/schema/kernel-4 https://schema.datacite.org/meta/kernel-4/metadata.xsd">
+    <identifier identifierType="DOI">10.82433/B09Z-4K37</identifier>
+    <creators>
+        <creator>
+            <creatorName nameType="Personal">ExampleFamilyName, ExampleGivenName</creatorName>
+            <givenName>ExampleGivenName</givenName>
+            <familyName>ExampleFamilyName</familyName>
+            <nameIdentifier nameIdentifierScheme="ORCID" schemeURI="https://orcid.org">https://orcid.org/0000-0001-5727-2427</nameIdentifier>
+            <affiliation affiliationIdentifier="https://ror.org/04wxnsj81" affiliationIdentifierScheme="ROR" schemeURI="https://ror.org">ExampleAffiliation</affiliation>
+        </creator>
+        <creator>
+            <creatorName xml:lang="en" nameType="Organizational">ExampleOrganization</creatorName>
+            <nameIdentifier nameIdentifierScheme="ROR" schemeURI="https://ror.org">https://ror.org/04wxnsj81</nameIdentifier>
+        </creator>
+    </creators>
+    <titles>
+        <title xml:lang="en">Example Title</title>
+        <title titleType="Subtitle" xml:lang="en">Example Subtitle</title>
+        <title titleType="TranslatedTitle" xml:lang="fr">Example TranslatedTitle</title>
+        <title titleType="AlternativeTitle" xml:lang="en">Example AlternativeTitle</title>
+    </titles>
+    <publisher xml:lang="en" publisherIdentifier="https://ror.org/04z8jg394" publisherIdentifierScheme="ROR" schemeURI="https://ror.org/">Example Publisher</publisher>
+    <publicationYear>2024</publicationYear>
+    <resourceType resourceTypeGeneral="Dataset">Example ResourceType</resourceType>
+    <subjects>
+        <subject subjectScheme="Fields of Science and Technology (FOS)" schemeURI="http://www.oecd.org/science/inno" valueURI="http://www.oecd.org/science/inno/38235147.pdf">FOS: Computer and information sciences</subject>
+        <subject subjectScheme="Australian and New Zealand Standard Research Classification (ANZSRC), 2020" schemeURI="https://www.abs.gov.au/statistics/classifications/australian-and-new-zealand-standard-research-classification-anzsrc" classificationCode="461001">Digital curation and preservation</subject>
+        <subject>Example Subject</subject>
+    </subjects>
+    <contributors>
+        <contributor contributorType="ContactPerson">
+            <contributorName nameType="Personal">ExampleFamilyName, ExampleGivenName</contributorName>
+            <givenName>ExampleGivenName</givenName>
+            <familyName>ExampleFamilyName</familyName>
+            <nameIdentifier nameIdentifierScheme="ORCID" schemeURI="https://orcid.org"> https://orcid.org/0000-0001-5727-2427</nameIdentifier>
+            <affiliation affiliationIdentifier="https://ror.org/04wxnsj81" affiliationIdentifierScheme="ROR" schemeURI="https://ror.org">ExampleAffiliation</affiliation>
+        </contributor>
+        <contributor contributorType="DataCollector">
+            <contributorName nameType="Personal">ExampleFamilyName, ExampleGivenName</contributorName>
+            <givenName>ExampleGivenName</givenName>
+            <familyName>ExampleFamilyName</familyName>
+            <nameIdentifier nameIdentifierScheme="ORCID" schemeURI="https://orcid.org"> https://orcid.org/0000-0001-5727-2427</nameIdentifier>
+            <affiliation affiliationIdentifier="https://ror.org/04wxnsj81" affiliationIdentifierScheme="ROR" schemeURI="https://ror.org">ExampleAffiliation</affiliation>
+        </contributor>
+        <contributor contributorType="DataCurator">
+            <contributorName nameType="Personal">ExampleFamilyName, ExampleGivenName</contributorName>
+            <givenName>ExampleGivenName</givenName>
+            <familyName>ExampleFamilyName</familyName>
+            <nameIdentifier nameIdentifierScheme="ORCID" schemeURI="https://orcid.org"> https://orcid.org/0000-0001-5727-2427</nameIdentifier>
+            <affiliation affiliationIdentifier="https://ror.org/04wxnsj81" affiliationIdentifierScheme="ROR" schemeURI="https://ror.org">ExampleAffiliation</affiliation>
+        </contributor>
+        <contributor contributorType="DataManager">
+            <contributorName nameType="Personal">ExampleFamilyName, ExampleGivenName</contributorName>
+            <givenName>ExampleGivenName</givenName>
+            <familyName>ExampleFamilyName</familyName>
+            <nameIdentifier nameIdentifierScheme="ORCID" schemeURI="https://orcid.org"> https://orcid.org/0000-0001-5727-2427</nameIdentifier>
+            <affiliation affiliationIdentifier="https://ror.org/04wxnsj81" affiliationIdentifierScheme="ROR" schemeURI="https://ror.org">ExampleAffiliation</affiliation>
+        </contributor>
+        <contributor contributorType="Distributor">
+            <contributorName nameType="Organizational">ExampleOrganization</contributorName>
+            <nameIdentifier nameIdentifierScheme="ROR" schemeURI="https://ror.org"> https://ror.org/03yrm5c26</nameIdentifier>
+        </contributor>
+        <contributor contributorType="Editor">
+            <contributorName nameType="Personal">ExampleFamilyName, ExampleGivenName</contributorName>
+            <givenName>ExampleGivenName</givenName>
+            <familyName>ExampleFamilyName</familyName>
+            <nameIdentifier nameIdentifierScheme="ORCID" schemeURI="https://orcid.org"> https://orcid.org/0000-0001-5727-2427</nameIdentifier>
+            <affiliation affiliationIdentifier="https://ror.org/04wxnsj81" affiliationIdentifierScheme="ROR" schemeURI="https://ror.org">ExampleAffiliation</affiliation>
+        </contributor>
+        <contributor contributorType="HostingInstitution">
+            <contributorName nameType="Organizational">ExampleOrganization</contributorName>
+            <nameIdentifier nameIdentifierScheme="ROR" schemeURI="https://ror.org"> https://ror.org/03yrm5c26</nameIdentifier>
+        </contributor>
+        <contributor contributorType="Producer">
+            <contributorName nameType="Personal">ExampleFamilyName, ExampleGivenName</contributorName>
+            <givenName>ExampleGivenName</givenName>
+            <familyName>ExampleFamilyName</familyName>
+            <nameIdentifier nameIdentifierScheme="ORCID" schemeURI="https://orcid.org"> https://orcid.org/0000-0001-5727-2427</nameIdentifier>
+            <affiliation affiliationIdentifier="https://ror.org/04wxnsj81" affiliationIdentifierScheme="ROR" schemeURI="https://ror.org">ExampleAffiliation</affiliation>
+        </contributor>
+        <contributor contributorType="ProjectLeader">
+            <contributorName nameType="Personal">ExampleFamilyName, ExampleGivenName</contributorName>
+            <givenName>ExampleGivenName</givenName>
+            <familyName>ExampleFamilyName</familyName>
+            <nameIdentifier nameIdentifierScheme="ORCID" schemeURI="https://orcid.org"> https://orcid.org/0000-0001-5727-2427</nameIdentifier>
+            <affiliation affiliationIdentifier="https://ror.org/04wxnsj81" affiliationIdentifierScheme="ROR" schemeURI="https://ror.org">ExampleAffiliation</affiliation>
+        </contributor>
+        <contributor contributorType="ProjectManager">
+            <contributorName nameType="Personal">ExampleFamilyName, ExampleGivenName</contributorName>
+            <givenName>ExampleGivenName</givenName>
+            <familyName>ExampleFamilyName</familyName>
+            <nameIdentifier nameIdentifierScheme="ORCID" schemeURI="https://orcid.org"> https://orcid.org/0000-0001-5727-2427</nameIdentifier>
+            <affiliation affiliationIdentifier="https://ror.org/04wxnsj81" affiliationIdentifierScheme="ROR" schemeURI="https://ror.org">ExampleAffiliation</affiliation>
+        </contributor>
+        <contributor contributorType="ProjectMember">
+            <contributorName nameType="Personal">ExampleFamilyName, ExampleGivenName</contributorName>
+            <givenName>ExampleGivenName</givenName>
+            <familyName>ExampleFamilyName</familyName>
+            <nameIdentifier nameIdentifierScheme="ORCID" schemeURI="https://orcid.org"> https://orcid.org/0000-0001-5727-2427</nameIdentifier>
+            <affiliation affiliationIdentifier="https://ror.org/04wxnsj81" affiliationIdentifierScheme="ROR" schemeURI="https://ror.org">ExampleAffiliation</affiliation>
+        </contributor>
+        <contributor contributorType="RegistrationAgency">
+            <contributorName nameType="Organizational">DataCite</contributorName>
+            <nameIdentifier nameIdentifierScheme="ROR" schemeURI="https://ror.org"> https://ror.org/04wxnsj81</nameIdentifier>
+        </contributor>
+        <contributor contributorType="RegistrationAuthority">
+            <contributorName nameType="Organizational">International DOI Foundation</contributorName>
+        </contributor>
+        <contributor contributorType="RelatedPerson">
+            <contributorName nameType="Personal">ExampleFamilyName, ExampleGivenName</contributorName>
+            <givenName>ExampleGivenName</givenName>
+            <familyName>ExampleFamilyName</familyName>
+            <nameIdentifier nameIdentifierScheme="ORCID" schemeURI="https://orcid.org"> https://orcid.org/0000-0001-5727-2427</nameIdentifier>
+            <affiliation affiliationIdentifier="https://ror.org/04wxnsj81" affiliationIdentifierScheme="ROR" schemeURI="https://ror.org">ExampleAffiliation</affiliation>
+        </contributor>
+        <contributor contributorType="Researcher">
+            <contributorName nameType="Personal">ExampleFamilyName, ExampleGivenName</contributorName>
+            <givenName>ExampleGivenName</givenName>
+            <familyName>ExampleFamilyName</familyName>
+            <nameIdentifier nameIdentifierScheme="ORCID" schemeURI="https://orcid.org"> https://orcid.org/0000-0001-5727-2427</nameIdentifier>
+            <affiliation affiliationIdentifier="https://ror.org/04wxnsj81" affiliationIdentifierScheme="ROR" schemeURI="https://ror.org">ExampleAffiliation</affiliation>
+        </contributor>
+        <contributor contributorType="ResearchGroup">
+            <contributorName>ExampleContributor</contributorName>
+            <affiliation affiliationIdentifier="https://ror.org/03yrm5c26" affiliationIdentifierScheme="ROR" schemeURI="https://ror.org">ExampleOrganization</affiliation>
+        </contributor>
+        <contributor contributorType="RightsHolder">
+            <contributorName nameType="Personal">ExampleFamilyName, ExampleGivenName</contributorName>
+            <givenName>ExampleGivenName</givenName>
+            <familyName>ExampleFamilyName</familyName>
+            <nameIdentifier nameIdentifierScheme="ORCID" schemeURI="https://orcid.org"> https://orcid.org/0000-0001-5727-2427</nameIdentifier>
+            <affiliation affiliationIdentifier="https://ror.org/04wxnsj81" affiliationIdentifierScheme="ROR" schemeURI="https://ror.org">ExampleAffiliation</affiliation>
+        </contributor>
+        <contributor contributorType="Sponsor">
+            <contributorName>ExampleContributor</contributorName>
+            <affiliation affiliationIdentifier="https://ror.org/03yrm5c26" affiliationIdentifierScheme="ROR" schemeURI="https://ror.org"> https://ror.org/03yrm5c26</affiliation>
+        </contributor>
+        <contributor contributorType="Supervisor">
+            <contributorName nameType="Personal">ExampleFamilyName, ExampleGivenName</contributorName>
+            <givenName>ExampleGivenName</givenName>
+            <familyName>ExampleFamilyName</familyName>
+            <nameIdentifier nameIdentifierScheme="ORCID" schemeURI="https://orcid.org"> https://orcid.org/0000-0001-5727-2427</nameIdentifier>
+            <affiliation affiliationIdentifier="https://ror.org/04wxnsj81" affiliationIdentifierScheme="ROR" schemeURI="https://ror.org">ExampleAffiliation</affiliation>
+        </contributor>
+        <contributor contributorType="Translator">
+            <contributorName nameType="Personal">ExampleFamilyName, ExampleGivenName</contributorName>
+            <givenName>ExampleGivenName</givenName>
+            <familyName>ExampleFamilyName</familyName>
+            <nameIdentifier nameIdentifierScheme="ORCID" schemeURI="https://orcid.org"> https://orcid.org/0000-0001-5727-2427</nameIdentifier>
+            <affiliation affiliationIdentifier="https://ror.org/04wxnsj81" affiliationIdentifierScheme="ROR" schemeURI="https://ror.org">ExampleAffiliation</affiliation>
+        </contributor>
+        <contributor contributorType="WorkPackageLeader">
+            <contributorName nameType="Organizational">ExampleOrganization</contributorName>
+            <nameIdentifier nameIdentifierScheme="ROR" schemeURI="https://ror.org"> https://ror.org/03yrm5c26</nameIdentifier>
+        </contributor>
+        <contributor contributorType="Other">
+            <contributorName nameType="Personal">ExampleFamilyName, ExampleGivenName</contributorName>
+            <givenName>ExampleGivenName</givenName>
+            <familyName>ExampleFamilyName</familyName>
+            <nameIdentifier nameIdentifierScheme="ORCID" schemeURI="https://orcid.org"> https://orcid.org/0000-0001-5727-2427</nameIdentifier>
+            <affiliation affiliationIdentifier="https://ror.org/04wxnsj81" affiliationIdentifierScheme="ROR" schemeURI="https://ror.org">ExampleAffiliation</affiliation>
+        </contributor>
+    </contributors>
+    <dates>
+        <date dateType="Accepted">2024-01-01</date>
+        <date dateType="Available">2024-01-01</date>
+        <date dateType="Copyrighted">2024-01-01</date>
+        <date dateType="Collected">2024-01-01/2024-12-31</date>
+        <date dateType="Coverage">2024-01-01/2024-12-31</date>
+        <date dateType="Created">2024-01-01</date>
+        <date dateType="Issued">2024-01-01</date>
+        <date dateType="Submitted">2024-01-01</date>
+        <date dateType="Updated">2024-01-01</date>
+        <date dateType="Valid">2024-01-01</date>
+        <date dateType="Withdrawn">2024-01-01</date>
+        <date dateType="Other" dateInformation="ExampleDateInformation">2024-01-01</date>
+    </dates>
+    <language>en</language>
+    <alternateIdentifiers>
+        <alternateIdentifier alternateIdentifierType="Local accession number">12345</alternateIdentifier>
+    </alternateIdentifiers>
+    <relatedIdentifiers>
+        <relatedIdentifier relatedIdentifierType="ARK" relationType="IsCitedBy" resourceTypeGeneral="Audiovisual">ark:/13030/tqb3kh97gh8w</relatedIdentifier>
+        <relatedIdentifier relatedIdentifierType="arXiv" relationType="Cites" resourceTypeGeneral="Award">arXiv:0706.0001</relatedIdentifier>
+        <relatedIdentifier relatedIdentifierType="bibcode" relationType="IsSupplementTo" resourceTypeGeneral="Book">2018AGUFM.A24K..07S</relatedIdentifier>
+        <relatedIdentifier relatedIdentifierType="CSTR" relationType="IsSupplementedBy" resourceTypeGeneral="BookChapter">31253.11.sciencedb.13238</relatedIdentifier>
+        <relatedIdentifier relatedIdentifierType="DOI" relationType="IsContinuedBy" resourceTypeGeneral="Collection">10.1016/j.epsl.2011.11.037</relatedIdentifier>
+        <relatedIdentifier relatedIdentifierType="EAN13" relationType="Continues" resourceTypeGeneral="ComputationalNotebook">9783468111242</relatedIdentifier>
+        <relatedIdentifier relatedIdentifierType="EISSN" relationType="Describes" resourceTypeGeneral="ConferencePaper">1562-6865</relatedIdentifier>
+        <relatedIdentifier relatedIdentifierType="Handle" relationType="IsDescribedBy" resourceTypeGeneral="ConferenceProceeding">10013/epic.10033</relatedIdentifier>
+        <relatedIdentifier relatedIdentifierType="IGSN" relationType="HasMetadata" resourceTypeGeneral="DataPaper">IECUR0097</relatedIdentifier>
+        <relatedIdentifier relatedIdentifierType="ISBN" relationType="IsMetadataFor" resourceTypeGeneral="Dataset">978-3-905673-82-1</relatedIdentifier>
+        <relatedIdentifier relatedIdentifierType="ISSN" relationType="HasVersion" resourceTypeGeneral="Dissertation">0077-5606</relatedIdentifier>
+        <relatedIdentifier relatedIdentifierType="ISTC" relationType="IsVersionOf" resourceTypeGeneral="Event">0A9 2002 12B4A105 7</relatedIdentifier>
+        <relatedIdentifier relatedIdentifierType="LISSN" relationType="IsNewVersionOf" resourceTypeGeneral="Image">1188-1534</relatedIdentifier>
+        <relatedIdentifier relatedIdentifierType="LSID" relationType="IsPreviousVersionOf" resourceTypeGeneral="Instrument">urn:lsid:ubio.org:namebank:11815</relatedIdentifier>
+        <relatedIdentifier relatedIdentifierType="PMID" relationType="IsPartOf" resourceTypeGeneral="InteractiveResource">12082125</relatedIdentifier>
+        <relatedIdentifier relatedIdentifierType="PURL" relationType="HasPart" resourceTypeGeneral="Journal">http://purl.oclc.org/foo/bar</relatedIdentifier>
+        <relatedIdentifier relatedIdentifierType="RAiD" relationType="IsPartOf" resourceTypeGeneral="Project">https://raid.org/10.26259/5c43ca8f</relatedIdentifier>
+        <relatedIdentifier relatedIdentifierType="RRID" relationType="IsPublishedIn" resourceTypeGeneral="Model">RRID:SCR_014641</relatedIdentifier>
+        <relatedIdentifier relatedIdentifierType="SWHID" relationType="IsReferencedBy" resourceTypeGeneral="Software">swh:1:cnt:94a9ed024d3859793618152ea559a168bbcbb5e2</relatedIdentifier>
+        <relatedIdentifier relatedIdentifierType="UPC" relationType="IsReferencedBy" resourceTypeGeneral="OutputManagementPlan">123456789999</relatedIdentifier>
+        <relatedIdentifier relatedIdentifierType="URL" relationType="References" resourceTypeGeneral="PeerReview">http://www.heatflow.und.edu/index2.html</relatedIdentifier>
+        <relatedIdentifier relatedIdentifierType="URN" relationType="IsDocumentedBy" resourceTypeGeneral="PhysicalObject">urn:nbn:de:101:1-201102033592</relatedIdentifier>
+        <relatedIdentifier relatedIdentifierType="w3id" relationType="Documents" resourceTypeGeneral="Preprint">https://w3id.org/games/spec/coil#Coil_Bomb_Die_Of_Age</relatedIdentifier>
+        <relatedIdentifier relatedIdentifierType="DOI" relationType="IsCompiledBy" resourceTypeGeneral="Poster">10.1016/j.epsl.2011.11.037</relatedIdentifier>
+        <relatedIdentifier relatedIdentifierType="DOI" relationType="Compiles" resourceTypeGeneral="Presentation">10.1016/j.epsl.2011.11.037</relatedIdentifier>
+        <relatedIdentifier relatedIdentifierType="DOI" relationType="IsVariantFormOf" resourceTypeGeneral="JournalArticle">10.1016/j.epsl.2011.11.037</relatedIdentifier>
+        <relatedIdentifier relatedIdentifierType="DOI" relationType="IsOriginalFormOf" resourceTypeGeneral="Report">10.1016/j.epsl.2011.11.037</relatedIdentifier>
+        <relatedIdentifier relatedIdentifierType="DOI" relationType="IsIdenticalTo" resourceTypeGeneral="Service">10.1016/j.epsl.2011.11.037</relatedIdentifier>
+        <relatedIdentifier relatedIdentifierType="DOI" relationType="IsReviewedBy" resourceTypeGeneral="Sound">10.1016/j.epsl.2011.11.037</relatedIdentifier>
+        <relatedIdentifier relatedIdentifierType="DOI" relationType="Reviews" resourceTypeGeneral="Standard">10.1016/j.epsl.2011.11.037</relatedIdentifier>
+        <relatedIdentifier relatedIdentifierType="DOI" relationType="IsDerivedFrom" resourceTypeGeneral="StudyRegistration">10.1016/j.epsl.2011.11.037</relatedIdentifier>
+        <relatedIdentifier relatedIdentifierType="DOI" relationType="IsSourceOf" resourceTypeGeneral="Text">10.1016/j.epsl.2011.11.037</relatedIdentifier>
+        <relatedIdentifier relatedIdentifierType="DOI" relationType="IsRequiredBy" resourceTypeGeneral="Workflow">10.1016/j.epsl.2011.11.037</relatedIdentifier>
+        <relatedIdentifier relatedIdentifierType="DOI" relationType="Requires" resourceTypeGeneral="Other">10.1016/j.epsl.2011.11.037</relatedIdentifier>
+        <relatedIdentifier relatedIdentifierType="DOI" relationType="Obsoletes" resourceTypeGeneral="Other">10.1016/j.epsl.2011.11.037</relatedIdentifier>
+        <relatedIdentifier relatedIdentifierType="DOI" relationType="IsObsoletedBy" resourceTypeGeneral="Other">10.1016/j.epsl.2011.11.037</relatedIdentifier>
+        <relatedIdentifier relatedIdentifierType="DOI" relationType="Collects" resourceTypeGeneral="Other">10.1016/j.epsl.2011.11.037</relatedIdentifier>
+        <relatedIdentifier relatedIdentifierType="DOI" relationType="IsCollectedBy" resourceTypeGeneral="Other">10.1016/j.epsl.2011.11.037</relatedIdentifier>
+        <relatedIdentifier relatedIdentifierType="DOI" relationType="HasTranslation" resourceTypeGeneral="Other">10.1016/j.epsl.2011.11.037</relatedIdentifier>
+        <relatedIdentifier relatedIdentifierType="DOI" relationType="IsTranslationOf" resourceTypeGeneral="Other">10.1016/j.epsl.2011.11.037</relatedIdentifier>
+        <relatedIdentifier relatedIdentifierType="DOI" relationType="Other" resourceTypeGeneral="Other" relationTypeInformation="Example relationTypeInformation">10.1016/j.epsl.2011.11.037</relatedIdentifier>
+    </relatedIdentifiers>
+    <sizes>
+        <size>1 MB</size>
+        <size>90 pages</size>
+    </sizes>
+    <formats>
+        <format>application/xml</format>
+        <format>text/plain</format>
+    </formats>
+    <version>1</version>
+    <rightsList>
+        <rights xml:lang="en" schemeURI="https://spdx.org/licenses/" rightsIdentifierScheme="SPDX" rightsIdentifier="CC-BY-4.0" rightsURI="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International</rights>
+    </rightsList>
+    <descriptions>
+        <description xml:lang="en" descriptionType="Abstract">Example Abstract</description>
+        <description xml:lang="en" descriptionType="Methods">Example Methods</description>
+        <description xml:lang="en" descriptionType="SeriesInformation">Example SeriesInformation</description>
+        <description xml:lang="en" descriptionType="TableOfContents">Example TableOfContents</description>
+        <description xml:lang="en" descriptionType="TechnicalInfo">Example TechnicalInfo</description>
+        <description xml:lang="en" descriptionType="Other">Example Other</description>
+    </descriptions>
+    <geoLocations>
+        <geoLocation>
+            <geoLocationPlace>Vancouver, British Columbia, Canada</geoLocationPlace>
+            <geoLocationPoint>
+                <pointLatitude>49.2827</pointLatitude>
+                <pointLongitude>-123.1207</pointLongitude>
+            </geoLocationPoint>
+            <geoLocationBox>
+                <westBoundLongitude>-123.27</westBoundLongitude>
+                <eastBoundLongitude>-123.02</eastBoundLongitude>
+                <southBoundLatitude>49.195</southBoundLatitude>
+                <northBoundLatitude>49.315</northBoundLatitude>
+            </geoLocationBox>
+            <geoLocationPolygon>
+                <polygonPoint>
+                    <pointLatitude>41.991</pointLatitude>
+                    <pointLongitude>-71.032</pointLongitude>
+                </polygonPoint>
+                <polygonPoint>
+                    <pointLatitude>42.893</pointLatitude>
+                    <pointLongitude>-69.622</pointLongitude>
+                </polygonPoint>
+                <polygonPoint>
+                    <pointLatitude>41.991</pointLatitude>
+                    <pointLongitude>-68.211</pointLongitude>
+                </polygonPoint>
+                <polygonPoint>
+                    <pointLatitude>41.090</pointLatitude>
+                    <pointLongitude>-69.622</pointLongitude>
+                </polygonPoint>
+                <polygonPoint>
+                    <pointLatitude>41.991</pointLatitude>
+                    <pointLongitude>-71.032</pointLongitude>
+                </polygonPoint>
+            </geoLocationPolygon>
+        </geoLocation>
+    </geoLocations>
+    <fundingReferences>
+        <fundingReference>
+            <funderName>Example Funder</funderName>
+            <funderIdentifier funderIdentifierType="Crossref Funder ID">https://doi.org/10.13039/501100000780</funderIdentifier>
+            <awardNumber awardURI="https://example.com/example-award-uri">12345</awardNumber>
+            <awardTitle>Example AwardTitle</awardTitle>
+        </fundingReference>
+    </fundingReferences>
+    <relatedItems>
+        <relatedItem relatedItemType="Text" relationType="Cites" relationTypeInformation="Example relationTypeInformation">
+            <relatedItemIdentifier relatedItemIdentifierType="ISSN">1234-5678</relatedItemIdentifier>
+            <creators>
+                <creator>
+                    <creatorName nameType="Personal">ExampleFamilyName, ExampleGivenName</creatorName>
+                    <givenName>ExampleGivenName</givenName>
+                    <familyName>ExampleFamilyName</familyName>
+                </creator>
+            </creators>
+            <titles>
+                <title>Example RelatedItem Title</title>
+                <title titleType="TranslatedTitle">Example RelatedItem TranslatedTitle</title>
+            </titles>
+            <publicationYear>1990</publicationYear>
+            <volume>1</volume>
+            <issue>2</issue>
+            <number numberType="Other">1</number>
+            <firstPage>1</firstPage>
+            <lastPage>100</lastPage>
+            <publisher>Example RelatedItem Publisher</publisher>
+            <edition>Example RelatedItem Edition</edition>
+            <contributors>
+                <contributor contributorType="Other">
+                    <contributorName nameType="Personal">ExampleFamilyName, ExampleGivenName</contributorName>
+                    <givenName>ExampleGivenName</givenName>
+                    <familyName>ExampleFamilyName</familyName>
+                </contributor>
+            </contributors>
+        </relatedItem>
+    </relatedItems>
+</resource>
+```
+:::

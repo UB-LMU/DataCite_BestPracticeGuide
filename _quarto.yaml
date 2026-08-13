@@ -25,7 +25,7 @@ format:
       - text: Published versions on Zenodo (with DOI)
         href: https://doi.org/10.5281/zenodo.3559799
       - text: DataCite Metadata Generator
-        href: https://dhvlab.gwi.uni-muenchen.de/datacite-generator/
+        href: https://www.datacite-metadatengenerator.gwi.uni-muenchen.de/
     code-links:
       - text: GitHub Repository
         icon: github
@@ -33,7 +33,7 @@ format:
 
   pdf:
     title: DataCite Best Practice Guide
-    subtitle: Version 4.0 (19.05.2025)
+    subtitle: Version 5.0 (12.08.2026)
     output-file: datacite-best-practice-guide.pdf
     toc: true
     toc-title: "Contents"

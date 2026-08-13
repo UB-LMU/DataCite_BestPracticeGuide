@@ -9,3 +9,4 @@ bestpractice_files/
 _site/
 /.quarto/
 
+**/*.quarto_ipynb

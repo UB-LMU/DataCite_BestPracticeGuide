@@ -2,15 +2,16 @@
 
 Recent version:
 
-* Version 4.0 / 19.05.2025 [https://doi.org/10.5281/zenodo.15607293](https://doi.org/10.5281/zenodo.15607293)
+Version 5.0 / 12.08.2026 [https://doi.org/10.5281/zenodo.21904201](https://doi.org/10.5281/zenodo.21904201)
 
 Previous version:
 
+* Version 4.0 / 19.05.2025 [https://doi.org/10.5281/zenodo.15607293](https://doi.org/10.5281/zenodo.15607293)
 * Version: 3.0 / 03.05.2024 [https://doi.org/10.5281/zenodo.7099881](https://doi.org/10.5281/zenodo.7099881)
 * Version: 2.0 / 20.09.2022 [https://doi.org/10.5281/zenodo.7040047](https://doi.org/10.5281/zenodo.7040047)
 * Version: 1.0 / 15.11.2019 [https://doi.org/10.5281/zenodo.3559800](https://doi.org/10.5281/zenodo.3559800) 
 
-This repository contains the DataCite Best Practice Guide, along with example files from various projects, supporting images, and configuration files. The guide is also available on Zenodo: [https://doi.org/10.5281/zenodo.3559800](https://doi.org/10.5281/zenodo.3559800) A publication accompanying the guide is available with [Korpus im Text](http://www.kit.gwi.uni-muenchen.de/?p=51272).
+This repository contains the DataCite Best Practice Guide, along with supporting images, and configuration files. The guide is also available on Zenodo: [https://doi.org/10.5281/zenodo.3559799](https://doi.org/10.5281/zenodo.3559799) A publication accompanying the guide is available with [Korpus im Text](http://www.kit.gwi.uni-muenchen.de/?p=51272).
 
 The document was created with participation from the following institutions/projects:
 
@@ -23,8 +24,7 @@ The document was created with participation from the following institutions/proj
 
 ## Files and Folder Structure
 
-- **.github/workflows/publish.yml**: Configuration of GitHub Actions (publication workflow, see: [https://quarto.org/docs/publishing/github-pages.html](https://quarto.org/docs/publishing/github-pages.html))
-- **examples/*.xml**: Example metadata files structured in XML format, each demonstrating metadata from different projects.
+- **.github/workflows/publish.yml** (only on GitHub): Configuration of GitHub Actions (publication workflow, see: [https://quarto.org/docs/publishing/github-pages.html](https://quarto.org/docs/publishing/github-pages.html))
 - **images/**: Images used within the DataCite Best Practice Guide or on the Website (e.g. favicon).
 - **_quarto.yaml**: Defines the structure and settings of this Quarto project. It specifies the website format, output options (HTML and PDF), styling, navigation, and metadata. This file ensures consistent rendering and simplifies project configuration.
 - **.gitignore**: Lists files and directories that should not be tracked by Git. 
@@ -35,9 +35,9 @@ The document was created with participation from the following institutions/proj
 
 ## Usage
 
-Use this repository as a reference for implementing or understanding the DataCite metadata schema. You can view or edit the .qmd file with [Quarto](https://quarto.org/) and regenerate the website and PDF as needed.
+Use this repository as a reference for implementing or understanding the **DataCite Metadata Schema, Version 4.7**. You can view or edit the .qmd file with [Quarto](https://quarto.org/) and regenerate the website and PDF as needed.
 
-This project uses GitHub Actions to automatically build and publish the Quarto website and PDF on every push to the **4.6** branch on GitHub (see [Quarto: Publishing](https://quarto.org/docs/publishing/github-pages.html)). 
+This project uses GitHub Actions to automatically build and publish the Quarto website and PDF on every push to the **4.7** branch on GitHub (see: [Quarto: Publishing](https://quarto.org/docs/publishing/github-pages.html)). 
 
 The workflow:
 
@@ -51,7 +51,7 @@ This ensures that the latest version is always available online without manually
 The **bestpractice.qmd** file is based on standard Markdown syntax, with only a few Quarto-specific elements. It can also be saved and edited as a .md (Markdown) file, allowing you to work with it in both Markdown editors and the Quarto publishing workflow.
 
 ## Rendering Quarto Markdown locally
-Environment used: Quarto 1.7.31 with Visual Studio Code 1.101.1
+Environment used: Quarto 1.10.18 with Visual Studio Code 1.132.0
 
 The Quarto file is configured to generate a HTML version as well as a PDF version of the Quarto file (.qmd), using Pandoc as technical backbone.
 
